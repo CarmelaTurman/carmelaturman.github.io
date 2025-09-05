@@ -1,0 +1,15 @@
+Question: What is the difference between non-semantic and semantic tags in HTML?
+Answer:
+Non-semantic tags don't inherently describe the content they contain. They provide no information about the meaning or structure of the content enclosed within them.
+Semantic tags clearly define the content’s purpose and structure. They provide meaning to the content enclosed, both to the browser and to developers.
+
+Question: What are two (or more) benefits of using semantic tags?
+Answer:
+Semantic tags provide meaning to the web content, making it easier for screen readers and other assistive technologies to navigate and interpret the information.
+Using semantic tags makes the HTML code more readable and meaningful to developers.
+
+Sources:
+Semantic Elements https://www.w3schools.com/html/html5_semantic_elements.asp
+A Detailed Guide on HTML Semantics https://www.browserstack.com/guide/html-semantic
+Semantic HTML https://www.browserstack.com/guide/html-semantic
+Semantic HTML5 Elements Explained https://www.freecodecamp.org/news/semantic-html5-elements/
