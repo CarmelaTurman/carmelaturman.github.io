@@ -2,14 +2,15 @@
  * General Styles 
  */ 
 body { 
-    font-family: 'Times New Roman', Times, serif; 
-    background-color: white; 
+    font-family: 'Times New Roman'
+    background-color white; 
     color: black; 
     margin: 0; 
-    padding: 2rem; 
+    padding: 3rem; 
 } 
  
 h1, h2 { 
+    align margin-left:;
     font-weight: bold; 
     text-transform: uppercase; 
 } 
@@ -24,12 +25,12 @@ p {
     font-weight: bold; 
     font-style: italic; 
     text-align: center; 
-    margin: 2em 0; 
+    margin: 5em 0; 
 } 
  
 .callout p { 
-    font-size: 2em; 
-    line-height: 1.2; 
+    font-size: 3em; 
+    line-height: 2.2; 
 } 
  
 /* 
@@ -37,17 +38,18 @@ p {
  */ 
 .grid-container { 
     display: grid; 
-    grid-template-columns: repeat(6, 1fr); 
-    gap: 1rem; 
+    grid-template-columns: repeat(6, 4fr); 
+    gap: 2rem; 
+    margin: 2rem auto;
 } 
  
 .grid-item { 
-    padding: 1rem; 
+    padding: 2rem; 
 } 
  
 .header-title { 
     grid-column: 1 / span 6; 
-    text-align: center; 
+    text-align: left; 
 } 
  
 .content { 
@@ -55,12 +57,12 @@ p {
 } 
  
 .anni-albers-section / { 
-    grid-column: 5 / span 2; 
+    grid-column: 5 / span 4; 
 } 
  
 .author-info { 
     grid-column: 1 / span 6; 
-    text-align: center; 
+    text-align: left; 
 } 
  
 .callout.callout-1 { 
@@ -72,17 +74,18 @@ p {
 .callout.callout-2 { 
     grid-column: 3 / span 4; 
     font-size: 1.5em; 
-    text-align: left; 
+    text-align: right; 
 } 
  
 /* 
  * Layout for index2.html using CSS Flexbox 
  */ 
-#second-layout .flex-container { 
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-} 
+#second-layout .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2rem auto;
+  max-width: 1200px;
  
 #second-layout .header-title { 
     width: 100%; 
@@ -90,12 +93,14 @@ p {
     order: 1; 
 } 
  
-#second-layout .flex-content { 
-    display: flex; 
-    flex-direction: row; 
-    flex-wrap: wrap; 
-    width: 100%; 
-    order: 2; 
+#second-layout .flex-content 
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  order: 2;
+  margin-top: 1rem;
 } 
  
 #second-layout .content { 
@@ -110,7 +115,7 @@ p {
  
 #second-layout .author-info { 
     width: 100%; 
-    text-align: center; 
+    text-align: right; 
     order: 3; 
 } 
  
