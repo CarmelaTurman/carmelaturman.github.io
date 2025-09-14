@@ -6,7 +6,7 @@ body {
     background-color white; 
     color: black; 
     margin: 0; 
-    padding: 3rem; 
+    padding: 2rem; 
 } 
  
 h1, h2 { 
@@ -30,7 +30,7 @@ p {
  
 .callout p { 
     font-size: 3em; 
-    line-height: 2.2; 
+    line-height: 1.2; 
 } 
  
 /* 
@@ -38,7 +38,7 @@ p {
  */ 
 .grid-container { 
     display: grid; 
-    grid-template-columns: repeat(6, 4fr); 
+    grid-template-columns: repeat(6, 2fr); 
     gap: 2rem; 
     margin: 2rem auto;
 } 
@@ -48,7 +48,7 @@ p {
 } 
  
 .header-title { 
-    grid-column: 1 / span 6; 
+    grid-column: 1 / span 4; 
     text-align: left; 
 } 
  
@@ -85,7 +85,7 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 2rem auto;
-  max-width: 1200px;
+  max-width: 800px;
  
 #second-layout .header-title { 
     width: 100%; 
