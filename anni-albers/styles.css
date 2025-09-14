@@ -29,8 +29,10 @@ p {
 } 
  
 .callout p { 
-    font-size: 1em; 
-    line-height: 1.2; 
+    font-weight: bold; 
+    font-style: italic; 
+    text-align: center; 
+    margin: 3em 1; 
 } 
  
 /* 
@@ -66,17 +68,41 @@ p {
 } 
  
 .callout.callout-1 { 
+    grid-column: 2/span 4; 
+    font-size: 2em; 
+    line-height: 1.2; 
     grid-column: 2 / span 2; 
     font-size: 1.5em; 
     text-align: center; 
 } 
  
 .callout.callout-2 { 
+    grid-column: 3/span 4; 
+    font-size: 2em; 
+    line-height: 1.2; 
     grid-column: 3 / span 2; 
     font-size: 1.5em; 
     text-align: right; 
 } 
  
+.callout.callout-3 { 
+    grid-column: 3/span 4; 
+    font-size: 2em; 
+    line-height: 1.2; 
+    grid-column: 3 / span 2; 
+    font-size: 1.5em; 
+    text-align: right; 
+} 
+
+.callout.callout-4 { 
+    grid-column: 3/span 4; 
+    font-size: 2em; 
+    line-height: 1.2; 
+    grid-column: 3 / span 2; 
+    font-size: 1.5em; 
+    text-align: right; 
+} 
+
 /* 
  * Layout for index2.html using CSS Flexbox 
  */ 
@@ -121,9 +147,10 @@ p {
 } 
  
 #second-layout .callout.callout-1 { 
-    width: 66.666%; /* 4/6 columns */ 
+    width: 66.666%; /* 4/6 columns, offset with margin */ 
     margin: 2em 0; 
-    text-align: center; 
+    margin-left: 33.333%; /* Offset for 2 columns */ 
+    text-align: left; 
     flex-basis: 66.666%; 
 } 
  
@@ -131,7 +158,7 @@ p {
     width: 66.666%; /* 4/6 columns, offset with margin */ 
     margin: 2em 0; 
     margin-left: 33.333%; /* Offset for 2 columns */ 
-    text-align: left; 
+    text-align: right; 
     flex-basis: 66.666%; 
 } 
  
@@ -146,7 +173,7 @@ p {
     width: 66.666%; /* 4/6 columns, offset with margin */ 
     margin: 2em 0; 
     margin-left: 33.333%; /* Offset for 2 columns */ 
-    text-align: left; 
+    text-align: center; 
     flex-basis: 66.666%; 
 
 }
