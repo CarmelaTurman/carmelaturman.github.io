@@ -1,9 +1,9 @@
-/* 
+* 
  * General Styles 
  */ 
 body { 
-    font-family: 'Times New Roman'
-    background-color white; 
+    font-family: 'Times New Roman', Times, serif; 
+    background-color: white; 
     color: black; 
     margin: 0; 
     padding: 2rem; 
@@ -54,7 +54,7 @@ p {
     grid-column: 1 / span 4; 
 } 
  
-.anni-albers-section { 
+.anni-albers-section / { 
     grid-column: 5 / span 2; 
 } 
  
@@ -142,4 +142,5 @@ p {
     margin-left: 33.333%; /* Offset for 2 columns */ 
     text-align: left; 
     flex-basis: 66.666%; 
+
 } 
