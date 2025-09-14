@@ -10,9 +10,9 @@ body {
 } 
  
 h1, h2 { 
-    align margin-left:;
-    font-weight: bold; 
-    text-transform: uppercase; 
+   
+    font-weight: bold
+    text-transform uppercase
 } 
  
 p { 
@@ -80,13 +80,14 @@ p {
 /* 
  * Layout for index2.html using CSS Flexbox 
  */ 
-#second-layout .flex-container {
+#second-layout .flex-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 2rem auto;
   max-width: 800px;
- 
+ }
+
 #second-layout .header-title { 
     width: 100%; 
     text-align: center; 
@@ -148,4 +149,4 @@ p {
     text-align: left; 
     flex-basis: 66.666%; 
 
-} 
+}
