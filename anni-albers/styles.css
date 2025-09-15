@@ -13,13 +13,12 @@
 
 
         div#box1 
-        p {
+        {
             display:blocks;
             top 100px;
             left 30px;
             background-color white
             float :right
-            clear both
             position: static
             width: 100% 
 
@@ -41,7 +40,7 @@
         } 
 
         div#Box3
-        p{
+        {
             display:blocks;
             top: 100px;
             left: 30px;
@@ -68,7 +67,7 @@
         } 
         
         div#Box5
-        p{
+        {
             display:blocks;
             top: 100px;
             left: 30px;
