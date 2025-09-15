@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<body>
 
 	<!-- meta tags and title -->
 	<meta charset="UTF-8">
@@ -9,30 +10,28 @@
 
 	<!-- external and internal CSS -->
 	<link rel="stylesheet" href="styles.css" media="all">
+
 	<style>
 	
-    .container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); 
-    gap: 20px; 
-    width: 1200px; 
-    margin: 0 auto; 
+    p {
+        display:block
+        width:50%
+
     }
-        <div# contentBox1:
-        p{
+        <div#box1:p{
             display: block;
-            top:100px
-            left:30px
+            top: 100px
+            left: 30px
             position: static
-            background-color:white
-            float:left
+            background-color: white
+            float: left
             clear both
             width: 30%
-            overflow:hidden    
+            overflow: hidden    
         } 
         </div>
 
-        <div# contentBox2:{
+        <div#Box2:{
            position: absolute
            background-color: white 
            padding: 10px;
@@ -44,20 +43,20 @@
         
         </div>
 
-        <div# contentBox3:
+        <div#Box3:
           p{
             display: block;
-            top:100px
-            left:30px
+            top: 100px
+            left: 30px
             position: static
-            background-color:white
-            float:left
+            background-color: white
+            float: left
             width: 30%
-            overflow:hidden    
+            overflow: hidden    
         } 
         </div>
 
-         <div# contentBox4:{
+         <div#Box4:{
             position: absolute
             background-color: white 
             padding: 10px;
@@ -69,21 +68,21 @@
         
         </div>
 
-         <div# contentBox5:
+         <div#Box5:
         p{
             display: block;
-            top:100px
-            left:30px
+            top: 100px
+            left: 30px
             position: static
-            background-color:white
-            float:left
+            background-color: white
+            float: left
             clear both
             width: 30%
-            overflow:hidden    
+            overflow: hidden    
         } 
         </div>
 
-    <div# contentBox6:{
+    <div#Box6:{
             position: absolute
             background-color: white 
             padding: 10px;
