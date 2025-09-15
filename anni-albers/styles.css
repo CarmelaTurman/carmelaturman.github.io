@@ -24,9 +24,10 @@
 
 .float {
     background-color: white;
-    margin: 15px;
+    font-size: 24;
+    margin: 20px;
     width: 150px;
-    height: 150px;
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
@@ -35,13 +36,14 @@
 
 .column {
     background-color: white;
+    font-size: 28px;
     border-radius: 5px;
     float: auto;
-    width: 100%;
+    width: 400;
     margin: 15px;
-    height: 150px;
+    height: 350px;
     border-radius: 5px;
-    padding: 1em;
+    padding: 2em;
 }
 
 </body>
