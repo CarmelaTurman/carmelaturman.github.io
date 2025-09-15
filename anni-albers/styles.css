@@ -11,28 +11,19 @@
 	<!-- external and internal CSS -->
 	<link rel="stylesheet" href="styles.css" media="all">
 
-	<style>
-	
-    p {
-        display:block
-        width:50%
-    }
 
         div#box1 
-        p{
-            display: block;
-            border: 0px;
-            padding: 0px;
-            margin: 0px;
-            top: 100px
-            left 100px
-            position static
+        p {
+            display:blocks;
+            top 100px;
+            left 30px;
             background-color white
-            float left
+            float :right
             clear both
-            width 30%
-            overflow hidden    
-        } 
+            position: static
+            width: 30% 
+
+         } 
 
         div#Box2
         {
@@ -42,27 +33,22 @@
             margin: 10px;
             top: 300px
             left 200px
-            position left
-            background-color white
-            float left
-            width 300px
-            overflow hidden
-        } 
-
-        div#Box3
-          p{
-            display: block;
-            border: 0px;
-            padding: 0px;
-            margin: 0px;
-            top: 100px
-            left 100px
             position static
             background-color white
             float left
-            clear both
-            width 30%
-            overflow hidden   
+            width 300px
+        } 
+
+        div#Box3
+        p{
+            display:blocks;
+            top: 100px;
+            left: 30px;
+            background-color:white;
+            float: center;
+            clear: both;
+            position: static;
+            width: 10%    
         } 
 
         div#Box4
@@ -73,27 +59,22 @@
             margin: 10px;
             top: 300px
             left 200px
-            position right
+            position static
             background-color white
-            float right
+            float left
             width 300px
-            overflow hidden
         } 
         
         div#Box5
         p{
-             display: block;
-            border: 0px;
-            padding: 0px;
-            margin: 0px;
-            top: 100px
-            left 100px
-            position absolute
-            background-color white
-            float left
-            clear both
-            width 30%
-            overflow hidden   
+            display:blocks;
+            top: 100px;
+            left: 30px;
+            background-color:white;
+            float: left;
+            clear: both;
+            position: static;
+            width: 10%   
         } 
        
         div#Box6
@@ -104,14 +85,13 @@
             margin: 10px;
             top: 300px
             left 200px
-            position left
+            position static
             background-color white
-            float center
+            float left
             width 300px
-            overflow hidden
         } 
     
-    </style
+
 
 </body>
 </html>
