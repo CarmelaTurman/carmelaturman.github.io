@@ -24,14 +24,9 @@
         font-size: 36px;
         display:box;
         float: auto;
-        position: fixed 
-        width 40% 
+        position: fixed; 
+        width: 400px
         } 
-
-    .column {
-        flex: 1; 
-        padding: 0 15px;
-        }
 
         .callout2 {
         border: 2em;
@@ -41,13 +36,8 @@
         font-size: 36px;
         display:box;
         float:auto;
-        position: fixed 
-        width 40%   
-        }
-
-        .column {
-        flex: 1; 
-        padding: 0 15px;
+        position: fixed; 
+        width: 1000px
         }
 
          .callout3 {
@@ -58,13 +48,8 @@
         font-size: 36px;
         display:box;
         float: auto;
-        position: left
-        width 40%   
-        }
-
-        .column {
-        flex: 1; 
-        padding: 0 15px;
+        position: left;
+        width: 400px  
         }
 
          .callout4 {
@@ -75,14 +60,9 @@
         font-size: 36px;
         display:box;
         float: auto;
-        position: right
-        width 40%   
-        }
-
-        .column {
-        flex: 1; 
-        padding: 0 15px;
-        }  
+        position: right;
+        width: 200 px 
+        } 
 
         .grid-container {
         display: grid;
@@ -95,7 +75,7 @@
         {   
             display: block;
             font-size: 24px;
-            border: 10px;
+            border: 0;
             padding: 10px;  
             position: static
             background-color white;
@@ -109,7 +89,7 @@
         .grid-container {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        gap: 20px;
+    
         }
 
         .grid-item2 {
@@ -117,7 +97,7 @@
         {
             display: block;
             font-size: 24px;
-            border: 10px;
+            border: 0;
             padding: 10px;  
             position: static
             background-color white;
@@ -139,7 +119,7 @@
          {
             display: block;
             font-size: 30px;
-            border: 10px;
+            border: 0;
             padding: 10px;  
             position: left
             background-color white;
@@ -161,7 +141,7 @@
         {
             display: block;
             font-size: 24px;
-            border: 10px;
+            border: 0;
             padding: 10px;  
             position: static
             background-color white;
