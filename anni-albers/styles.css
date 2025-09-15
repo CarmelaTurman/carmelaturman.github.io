@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<body>
+    <body>
 
     <!-- meta tags and title -->
 	<meta charset="UTF-8">
@@ -12,11 +12,103 @@
 	<!-- external and internal CSS -->
 	<link rel="stylesheet" href="styles.css" media="all">
 
+
+    body {
     p {
         font-family: "Times New Roman"
     }
-    
-    .callout1 {
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+    }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+.column {
+    flex: 0 0 30%; 
+    background-color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    padding: 10px;  
+    position: static
+    background-color white;
+    float: auto;
+    overflow: auto; 
+}
+
+p {
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 36px;
+    padding: 10px;  
+    position: static
+    background-color white;
+    float: auto;
+    overflow: auto; 
+    margin: 0 0 10px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+h4 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    padding: 10px;  
+    position: static
+    background-color white;
+    float: auto;
+    overflow: auto; 
+}
+
+p {
+    line-height: 1.5;
+}
+
+h5 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    padding: 10px;  
+    position: static
+    background-color white;
+    float: auto;
+    overflow: auto; 
+}
+
+p {
+    line-height: 1.5;
+}
+
+h6 {
+    margin: 0 0 10px;
+    font-size: 36px;
+    padding: 10px;  
+    position: static
+    background-color white;
+    float: auto;
+    overflow: auto; 
+}
+
+p {
+    line-height: 1.5;
+}
+
+
+
+.callout1 {
         border: 2em;
         background-color: white;
         font-size: 28x;
@@ -54,71 +146,7 @@
         width: 200 px 
         } 
 
-        .grid-item1 {
-        p 
-        {   
-            font-size: 24px;
-            padding: 10px;  
-            position: static
-            background-color white;
-            float: auto;
-            overflow: auto; 
-        } 
-         }
-
-
-        .grid-item2 {
-        p
-        {
-            font-size: 36px;
-            padding: 10px;  
-            position: static
-            background-color white;
-            float: auto;
-            overflow: auto; 
-        } 
-        } 
-
-        .grid-item3 { 
-        p
-         {
-        font-size: 24px;
-            padding: 10px;  
-            position: static
-            background-color white;
-            float: auto;
-            overflow: auto; 
-        } 
-        } 
-
-        .grid-item4 { 
-        p
-        {
-       font-size: 24px;
-            padding: 10px;  
-            position: static;
-            background-color: white;
-            float: auto;
-            overflow: auto;  
-        } 
-        } 
-
-        .grid-item5 { 
-        p
-        {
-       font-size: 36px;
-            padding: 10px;  
-            position: static
-            background-color white;
-            float: auto;
-            overflow: auto;  
-        } 
-        } 
-    
-
-</body>
-
+        
+    </body>
 </head>
 </html>
-
-
