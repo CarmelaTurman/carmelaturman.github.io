@@ -12,20 +12,25 @@
 	<link rel="stylesheet" href="styles.css" media="all">
 
 
+        p {
+        margin-bottom: 1.3em;
+        text-align:justify
+        }
+
         div#box1 
         {
             display:blocks;
-            top 100px;
-            left 30px;
-            background-color white
-            float :right
-            position: static
-            width: 100% 
+            top: 100px;
+            left: 100px;
+            background-color: white
+            float left;
+            position: static 
+            width 60% 
 
          } 
 
         div#Box2
-        {
+        p {
             display: block;
             border: 10px;
             padding: 10px;
@@ -36,19 +41,20 @@
             background-color white;
             float: right;
             width: 300px;
-            overflow: hidden;
+      
         } 
 
         div#Box3
         {
-            display:blocks;
+            display: block;
             top: 100px;
-            left: 30px;
+            left: 300px;
             background-color:white;
-            float: bottom;
+            float: right;
             clear: both;
             position: static;
-            width: 75%    
+            width: 50%
+            height 50%    
         } 
 
         div#Box4
@@ -63,19 +69,20 @@
             background-color white;
             float: right;
             width: 300px;
-            overflow: hidden;
+          
         } 
         
         div#Box5
         {
-            display:blocks;
+            display: block;
             top: 100px;
-            left: 30px;
+            left: 300px;
             background-color:white;
             float: center;
             clear: both;
             position: static;
-            width: 75%   
+            width: 50%
+            height 50%    
         } 
        
         div#Box6
@@ -84,13 +91,15 @@
             border: 10px;
             padding: 10px;
             margin: 10px;
-            top: 300px
-            left 200px
-            position static
+            top: 100px;
+            bottom: 100px;
+            left: 100px;
+            right:100px;
+            position: static
             background-color white;
             float: left;
             width: 300px;
-            overflow: hidden;
+            height: 300px
         } 
     
 
