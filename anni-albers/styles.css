@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-<body>
+<head
 
-	<!-- meta tags and title -->
+
+    <!-- meta tags and title -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<Title> Designing as Visual Organization </Title>
@@ -16,7 +16,6 @@
     p {
         display:block
         width:50%
-
     }
         div#box1 
         p{
@@ -25,13 +24,13 @@
             padding: 0px;
             margin: 0px;
             top: 100px
-            left: 100px
-            position: static
+            left 100px
+            position static
             background-color white
-            float: left
+            float left
             clear both
-            width: 30%
-            overflow: hidden    
+            width 30%
+            overflow hidden    
         } 
         
 
@@ -42,13 +41,13 @@
             padding: 0px;
             margin: 0px;
             top: 100px
-            left: 100px
-            position: right
+            left 100px
+            position right
             background-color white
-            float: left
+            float left
             clear both
-            width: 30%
-            overflow: hidden
+            width 30%
+            overflow hidden
         } 
 
         div#Box3
@@ -58,29 +57,29 @@
             padding: 0px;
             margin: 0px;
             top: 100px
-            left: 100px
-            position: static
+            left 100px
+            position static
             background-color white
-            float: left
+            float left
             clear both
-            width: 30%
-            overflow: hidden   
+            width 30%
+            overflow hidden   
         } 
 
-         div#Box4
+        div#Box4
          {
             display: block;
             border: 0px;
             padding: 0px;
             margin: 0px;
             top: 100px
-            left: 100px
-            position: static
+            left 100px
+            position static
             background-color white
-            float: left
+            float left
             clear both
-            width: 30%
-            overflow: hidden
+            width 30%
+            overflow hidden
         } 
         
         div#Box5
@@ -90,35 +89,34 @@
             padding: 0px;
             margin: 0px;
             top: 100px
-            left: 100px
-            position: absolute
+            left 100px
+            position absolute
             background-color white
-            float: left
+            float left
             clear both
-            width: 30%
-            overflow: hidden   
+            width 30%
+            overflow hidden   
         } 
        
-
-    div#Box6
+        div#Box6
             {
             display: block;
             border: 0px;
             padding: 0px;
             margin: 0px;
             top: 100px
-            left: 100px
-            position: static
+            left 100px
+            position static
             background-color white
-            float: left
+            float left
             clear both
-            width: 30%
-            overflow: hidden
+            width 30%
+            overflow hidden
         } 
+    
+    </style
 
-    </style>
-
-
-</head>     
 </body>
 </html>
+
+
