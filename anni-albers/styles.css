@@ -18,6 +18,7 @@
         font-family: "Times New Roman"
     }
    
+    }
 
 .container {
     display: flex;
@@ -26,11 +27,12 @@
     }
 
 .column {
-    flex: 0 0 30%; 
+    flex: 0 0 10%; 
     background-color: white;
     margin: 10px 10;
     padding: 10px;
     border-radius: 5px;
+    margin: 0 0 20px;
 }
 
 h2 {
@@ -40,6 +42,7 @@ h2 {
     background-color white;
     float: center;
     overflow: auto; 
+     margin: 0 0 20px;
 }
 
 p {
@@ -47,12 +50,13 @@ p {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 18px;
     padding: 5px;  
     position: static
     background-color white;
     float: auto;
-    overflow: auto; 
+    overflow: auto;
+      margin: 0 0 20px;
     
 }
 
@@ -61,12 +65,13 @@ p {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px;  
     position: static
     background-color white;
     float: left;
     overflow: auto; 
+     margin: 0 0 20px;
 }
 
 p {
@@ -74,12 +79,13 @@ p {
 }
 
 h2 {
-    font-size: 26px;
+    font-size: 18px;
     padding: 5px;  
     position: static
     background-color white;
     float: bottom; center;
     overflow: auto; 
+    margin: 0 0 20px;
 }
 
 p {
@@ -92,7 +98,8 @@ h2 {
     position: static
     background-color white;
     float: auto;
-    overflow: auto; 
+    overflow: auto;
+     margin: 0 0 20px;
 }
 
 p {
@@ -105,7 +112,7 @@ p {
         font-size: 36px;
         float: auto;
         position: right;
-        width: 1200 px 
+        width: 800px 
         } 
 
         .callout2 {
@@ -114,14 +121,14 @@ p {
         font-size: 24px;
         float: auto;
         position: center;
-        width: 800px 
+        
         }
 
 
          .callout3 {
         border: 0;
         background-color: white;
-        font-size: 16px;
+        font-size: 30px;
         float: right;
         position: left;
         width: 800 px  
@@ -134,7 +141,7 @@ p {
         font-size: 28px;
         float: auto;
         position: right;
-        width: 600 px 
+       width: 800px 
         } 
 
         
