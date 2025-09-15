@@ -20,8 +20,10 @@
             font-family: "Times New Roman"
         }
 
-        div#box1 
+         .callout {    
+        div#box1
         {
+            .callout h2 {
             font-size: 16px;
             display:blocks;
             top: 100px;
@@ -30,9 +32,10 @@
             float left;
             position: static 
             width 60% 
-
          } 
-
+          }   
+      } 
+      
         div#Box2
         p {
             display: block;
