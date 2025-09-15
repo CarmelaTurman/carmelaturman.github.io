@@ -11,31 +11,26 @@
 	<!-- external and internal CSS -->
 	<link rel="stylesheet" href="styles.css" media="all">
 
-
-    .lead {
-    column-count: 6;
-    }    
-
-        p {
+    p {
             font-family: "Times New Roman"
-        }
+    }
 
-         .callout {    
+        .callout {    
         div#box1
-        {
             .callout h2 {
             font-size: 16px;
             display:blocks;
             top: 100px;
             left: 100px;
+            right: 100px;
+            bottom: 100px;
             background-color: white
             float left;
             position: static 
             width 60% 
          } 
           }   
-      } 
-      
+
         div#Box2
         p {
             display: block;
