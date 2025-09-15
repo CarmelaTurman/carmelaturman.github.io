@@ -38,34 +38,34 @@
 
 h2 {
     margin: 0 0 10px;
-    font-size: 16px;
-    padding: 10px;  
-    position: static
+    font-size: 12px;
+    padding: 5px;  
+    position: fixed
     background-color white;
     float: auto;
     overflow: auto; 
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1;
 }
 
 h3 {
-    font-size: 18px;
-    padding: 10px;  
+    font-size: 14px;
+    padding: 5px;  
     position: static
     background-color white;
     float: auto;
     overflow: auto; 
-    margin: 0 0 10px;
+    
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1;
 }
 
 h4 {
-    margin: 0 0 10px;
+    margin: 10 0 10px;
     font-size: 20px;
     padding: 10px;  
     position: static
@@ -79,9 +79,9 @@ p {
 }
 
 h5 {
-    margin: 0 0 10px;
+    margin: 10 0 10px;
     font-size: 16px;
-    padding: 10px;  
+    padding: 5px;  
     position: static
     background-color white;
     float: auto;
@@ -94,7 +94,7 @@ p {
 
 h6 {
     margin: 0 0 10px;
-    font-size: 20px;
+    font-size: 14px;
     padding: 10px;  
     position: static
     background-color white;
@@ -106,24 +106,22 @@ p {
     line-height: 1.5;
 }
 
-
-
 .callout1 {
         border: 2em;
         background-color: white;
-        font-size: 18x;
+        font-size: 24px;
         float: auto;
         position: right;
-        width: 800 px 
+        width: 600 px 
         } 
 
         .callout2 {
         border: 2em;
         background-color: white;
-        font-size: 24px;
+        font-size: 20px;
         float: auto;
         position: center;
-        width: 200 px 
+        width: 400px 
         }
 
 
@@ -132,8 +130,8 @@ p {
         background-color: white;
         font-size: 16px;
         float: auto;
-        position: right;
-        width: 600 px  
+        position: left;
+        width: 400 px  
         }
 
 
@@ -142,8 +140,8 @@ p {
         background-color: white;
         font-size: 20px;
         float: auto;
-        position: left;
-        width: 200 px 
+        position: right;
+        width: 300 px 
         } 
 
         
