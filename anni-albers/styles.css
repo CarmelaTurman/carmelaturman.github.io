@@ -15,21 +15,21 @@
             font-family: "Times New Roman"
     }
 
-        .callout {    
+        
         div#box1
-            .callout h2 {
+            .callout {
             font-size: 16px;
-            display:blocks;
+            display:box;
             top: 100px;
             left: 100px;
             right: 100px;
             bottom: 100px;
             background-color: white
-            float left;
+            float center;
             position: static 
-            width 60% 
-         } 
-          }   
+            width 40% 
+            } 
+         
 
         div#Box2
         p {
