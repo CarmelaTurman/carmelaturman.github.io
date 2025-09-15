@@ -17,10 +17,7 @@
     p {
         font-family: "Times New Roman"
     }
-    margin: 0;
-    padding: 20px;
-    background-color: white;
-    }
+   
 
 .container {
     display: flex;
@@ -31,27 +28,26 @@
 .column {
     flex: 0 0 30%; 
     background-color: white;
-    margin: 10px 0;
+    margin: 10px 10;
     padding: 10px;
     border-radius: 5px;
 }
 
 h2 {
-    margin: 0 0 10px;
-    font-size: 12px;
+    font-size: 18px;
     padding: 5px;  
-    position: fixed
+    position: static
     background-color white;
-    float: auto;
+    float: center;
     overflow: auto; 
 }
 
 p {
-    line-height: 1;
+    line-height: 5;
 }
 
 h3 {
-    font-size: 14px;
+    font-size: 20px;
     padding: 5px;  
     position: static
     background-color white;
@@ -65,31 +61,29 @@ p {
 }
 
 h4 {
-    margin: 10 0 10px;
     font-size: 20px;
     padding: 10px;  
     position: static
     background-color white;
-    float: auto;
+    float: left;
     overflow: auto; 
 }
 
 p {
-    line-height: 1.5;
+    line-height: 6;
 }
 
 h5 {
-    margin: 10 0 10px;
-    font-size: 16px;
+    font-size: 26px;
     padding: 5px;  
     position: static
     background-color white;
-    float: auto;
+    float: bottom; center;
     overflow: auto; 
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1;
 }
 
 h6 {
@@ -109,19 +103,19 @@ p {
 .callout1 {
         border: 2em;
         background-color: white;
-        font-size: 24px;
+        font-size: 36px;
         float: auto;
         position: right;
-        width: 600 px 
+        width: 1200 px 
         } 
 
         .callout2 {
         border: 2em;
         background-color: white;
-        font-size: 20px;
+        font-size: 24px;
         float: auto;
         position: center;
-        width: 400px 
+        width: 800px 
         }
 
 
@@ -129,19 +123,19 @@ p {
         border: 2em;
         background-color: white;
         font-size: 16px;
-        float: auto;
+        float: right;
         position: left;
-        width: 400 px  
+        width: 800 px  
         }
 
 
          .callout4 {
         border: 2em;
         background-color: white;
-        font-size: 20px;
+        font-size: 28px;
         float: auto;
         position: right;
-        width: 300 px 
+        width: 600 px 
         } 
 
         
