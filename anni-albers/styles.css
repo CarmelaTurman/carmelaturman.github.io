@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head
-
+<head>
+<body>
 
     <!-- meta tags and title -->
 	<meta charset="UTF-8">
@@ -12,10 +12,10 @@
 	<link rel="stylesheet" href="styles.css" media="all">
 
     p {
-            font-family: "Times New Roman"
+        font-family: "Times New Roman"
     }
     
-    .callout {
+    .callout1 {
         display: flex;
         justify-content: space-between; 
         border: 2em;
@@ -28,14 +28,74 @@
         float: right;
         position: static 
         width 40% 
-            } 
+        } 
 
-.column {
-  flex: 1; 
-  padding: 0 15px;
-}
-            
-        div#Box2
+    .column {
+        flex: 1; 
+        padding: 0 15px;
+        }
+
+        .callout2 {
+            display: flex;
+        justify-content: space-between; 
+        border: 2em;
+        border-left: 5px;
+        border-radius:5px;
+        background-color: white;
+        margin: 20px;
+        font-size: 36px;
+        display:box;
+        float: right;
+        position: static 
+        width 40%   
+        }
+
+        .column {
+        flex: 1; 
+        padding: 0 15px;
+        }
+
+         .callout3 {
+            display: flex;
+        justify-content: space-between; 
+        border: 2em;
+        border-left: 5px;
+        border-radius:5px;
+        background-color: white;
+        margin: 20px;
+        font-size: 36px;
+        display:box;
+        float: left;
+        position: static 
+        width 40%   
+        }
+
+        .column {
+        flex: 1; 
+        padding: 0 15px;
+        }
+
+         .callout4 {
+            display: flex;
+        justify-content: space-between; 
+        border: 2em;
+        border-left: 5px;
+        border-radius:5px;
+        background-color: white;
+        margin: 20px;
+        font-size: 36px;
+        display:box;
+        float: right;
+        position: static 
+        width 40%   
+        }
+
+        .column {
+        flex: 1; 
+        padding: 0 15px;
+        }  
+
+        div#Box1
         p {
             display: block;
             font-size: 24px;
@@ -48,10 +108,9 @@
             background-color white;
             float: right;
             width: 300px;
-      
         } 
 
-        div#Box3
+        div#Box2
         {
             display: block;
             font-size: 24px;
@@ -65,7 +124,7 @@
             height 50%    
         } 
 
-        div#Box4
+        div#Box3
          {
             display: block;
             font-size: 36px;
@@ -81,7 +140,7 @@
           
         } 
         
-        div#Box5
+        div#Box4
         {
             display: block;
             font-size: 16px;
@@ -95,7 +154,7 @@
             height 50%    
         } 
        
-        div#Box6
+        div#Box5
             {
             display: block;
             font-size: 24px;
@@ -114,8 +173,8 @@
         } 
     
 
-
 </body>
+</head>
 </html>
 
 
