@@ -26,49 +26,49 @@
     }
 
 .column {
-    flex: 0 0 10%; 
+    flex: 10 0 10%; 
     background-color: white;
     margin: 10px 10;
     padding: 10px;
     border-radius: 5px;
-    margin: 0 0 20px;
+    margin: 10 0 20px;
 }
 
 p {
-    font-size: 18px;
+    font-size: 24px;
     padding: 5px;  
     position: static
     background-color white;
-    float: center;
+    float: auto;
     overflow: auto; 
      margin: 0 0 20px;
 }
 
 p {
-    line-height: 5;
+    line-height: 1.5;
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
     padding: 5px;  
     position: static
     background-color white;
     float: auto;
     overflow: auto;
-      margin: 0 0 20px;
+    margin: 10 10 10px;
     
 }
 
 p {
-    line-height: 1;
+    line-height: 1.5;
 }
 
 p {
-    font-size: 18px;
+    font-size: 24px;
     padding: 10px;  
     position: static
     background-color white;
-    float: left;
+    float: auto;
     overflow: auto; 
      margin: 0 0 20px;
 }
@@ -82,9 +82,9 @@ p {
     padding: 5px;  
     position: static
     background-color white;
-    float: bottom; center;
+    float: auto;
     overflow: auto; 
-    margin: 0 0 20px;
+    margin: 10 0 20px;
 }
 
 p {
@@ -92,13 +92,13 @@ p {
 }
 
 p {
-    font-size: 14px;
+    font-size: 24px;
     padding: 10px;  
     position: static
     background-color white;
     float: auto;
     overflow: auto;
-     margin: 0 0 20px;
+     margin: 0 0 0px;
 }
 
 p {
@@ -111,7 +111,7 @@ p {
         font-size: 36px;
         float: auto;
         position: right;
-        width: 800px 
+        width: 75% 
         } 
 
         .callout2 {
@@ -120,6 +120,7 @@ p {
         font-size: 24px;
         float: auto;
         position: center;
+        width: 75% 
         
         }
 
@@ -129,7 +130,7 @@ p {
         font-size: 30px;
         float: right;
         position: left;
-        width: 800 px  
+        width: 75% 
         }
 
          .callout4 {
@@ -138,7 +139,7 @@ p {
         font-size: 28px;
         float: auto;
         position: right;
-       width: 800px 
+       width: 75% 
         } 
 
         
