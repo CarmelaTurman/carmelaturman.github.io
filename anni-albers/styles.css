@@ -14,23 +14,27 @@
     p {
             font-family: "Times New Roman"
     }
-
-        
-        div#box1
-            .callout {
-            font-size: 16px;
-            display:box;
-            top: 100px;
-            left: 100px;
-            right: 100px;
-            bottom: 100px;
-            background-color: white
-            float center;
-            position: static 
-            width 40% 
+    
+    .callout {
+        display: flex;
+        justify-content: space-between; 
+        border: 2em;
+        border-left: 5px;
+        border-radius:5px;
+        background-color: white;
+        margin: 20px;
+        font-size: 36px;
+        display:box;
+        float: right;
+        position: static 
+        width 40% 
             } 
-         
 
+.column {
+  flex: 1; 
+  padding: 0 15px;
+}
+            
         div#Box2
         p {
             display: block;
