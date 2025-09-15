@@ -18,82 +18,103 @@
         width:50%
 
     }
-        <div#box1: 
+        div#box1 
         p{
             display: block;
+            border: 0px;
+            padding: 0px;
+            margin: 0px;
             top: 100px
-            left: 30px
+            left: 100px
             position: static
-            background-color: white
+            background-color white
             float: left
             clear both
             width: 30%
             overflow: hidden    
         } 
-        </div>
-
-        <div#Box2:{
-           position: absolute
-           background-color: white 
-           padding: 10px;
-           margin: 10px;
-           width: 300px
-           height: 200px 
-           overflow: hidden
-        } 
         
-        </div>
 
-        <div#Box3:
+        div#Box2
+        {
+            display: block;
+            border: 0px;
+            padding: 0px;
+            margin: 0px;
+            top: 100px
+            left: 100px
+            position: right
+            background-color white
+            float: left
+            clear both
+            width: 30%
+            overflow: hidden
+        } 
+
+        div#Box3
           p{
             display: block;
+            border: 0px;
+            padding: 0px;
+            margin: 0px;
             top: 100px
-            left: 30px
+            left: 100px
             position: static
-            background-color: white
-            float: left
-            width: 30%
-            overflow: hidden    
-        } 
-        </div>
-
-         <div#Box4:{
-            position: absolute
-            background-color: white 
-            padding: 10px;
-            margin: 10px;
-            width: 300px
-            height: 200px 
-            overflow: hidden
-        } 
-        
-        </div>
-
-         <div#Box5:
-        p{
-            display: block;
-            top: 100px
-            left: 30px
-            position: static
-            background-color: white
+            background-color white
             float: left
             clear both
             width: 30%
-            overflow: hidden    
+            overflow: hidden   
         } 
-        </div>
 
-    <div#Box6:{
-            position: absolute
-            background-color: white 
-            padding: 10px;
-            margin: 10px;
-            width: 300px
-            height: 200px 
+         div#Box4
+         {
+            display: block;
+            border: 0px;
+            padding: 0px;
+            margin: 0px;
+            top: 100px
+            left: 100px
+            position: static
+            background-color white
+            float: left
+            clear both
+            width: 30%
             overflow: hidden
         } 
         
-        </div>
+        div#Box5
+        p{
+             display: block;
+            border: 0px;
+            padding: 0px;
+            margin: 0px;
+            top: 100px
+            left: 100px
+            position: absolute
+            background-color white
+            float: left
+            clear both
+            width: 30%
+            overflow: hidden   
+        } 
+       
+
+    div#Box6
+            {
+            display: block;
+            border: 0px;
+            padding: 0px;
+            margin: 0px;
+            top: 100px
+            left: 100px
+            position: static
+            background-color white
+            float: left
+            clear both
+            width: 30%
+            overflow: hidden
+        } 
 
     </style>
 
