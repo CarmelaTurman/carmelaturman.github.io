@@ -13,8 +13,8 @@
 	
         <div# contentBox1:
         p {
-            display: inline;
-            position: absolute;
+            display: block;
+            position: static;
             background-color:white
             padding: 10px;
             margin: 10px;
@@ -24,22 +24,7 @@
         } 
         </div>
 
-        <div# contentBox2:
-        
-            display block;
-            top:100px;
-            left: 30px;
-            background-color:white
-            float:left
-            position:static
-            width:30px;
-            height: 200px;
-            overflow:hidden    
-        
-        </div>
-
-        <div# contentBox3:
-        p {
+        <div# contentBox2:{
             display block;
             top:100px;
             left: 30px;
@@ -48,43 +33,55 @@
             position:static
             width:30px;
             height: 200px;
-            overflow:hidden  
-        } 
-
-        <div# contentBox4:
+            overflow:hidden    
+             } 
         
+        </div>
+
+        <div# contentBox3:
+        p {
+            display: block;
+            position: static;
+            background-color:white
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            height: 200px;
+            overflow:hidden    
+        }  
+
+         <div# contentBox4:{
             display block;
             top:100px;
             left: 30px;
             background-color:white
-            float:left
+            float:right
             position:static
             width:30px;
             height: 200px;
-            overflow:hidden 
-          } 
+            overflow:hidden    
+             } 
 
          <div# contentBox5:
-        p {
-            display block;
-            top:100px;
-            left: 30px;
+       p {
+            display: block;
+            position: static;
             background-color:white
-            float:left
-            position:static
-            width:30px;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
             height: 200px;
-            overflow:hidden 
-          } 
+            overflow:hidden    
+        } 
+
     </div>
 
-    <div# contentBox6:
-        
+    <div# contentBox6:{
             display block;
             top:100px;
             left: 30px;
             background-color:white
-            float:left
+            float:right
             position:static
             width:30px;
             height: 200px;
