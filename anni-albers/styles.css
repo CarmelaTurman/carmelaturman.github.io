@@ -31,7 +31,7 @@
     margin: 10px 10;
     padding: 10px;
     border-radius: 5px;
-    margin: 10 0 20px;
+    margin: 0 0 0px;
 }
 
 p {
@@ -41,7 +41,7 @@ p {
     background-color white;
     float: auto;
     overflow: auto; 
-     margin: 0 0 20px;
+    margin: 0 0 0px;
 }
 
 p {
@@ -55,7 +55,7 @@ p {
     background-color white;
     float: auto;
     overflow: auto;
-    margin: 10 10 10px;
+    margin: 0 0 0px;
     
 }
 
@@ -70,7 +70,7 @@ p {
     background-color white;
     float: auto;
     overflow: auto; 
-     margin: 0 0 20px;
+    margin: 0 0 0px;
 }
 
 p {
@@ -84,11 +84,11 @@ p {
     background-color white;
     float: auto;
     overflow: auto; 
-    margin: 10 0 20px;
+    margin: 0 0 0px;
 }
 
 p {
-    line-height: 1;
+    line-height: 1.5
 }
 
 p {
@@ -98,7 +98,7 @@ p {
     background-color white;
     float: auto;
     overflow: auto;
-     margin: 0 0 0px;
+    margin: 0 0 0px;
 }
 
 p {
