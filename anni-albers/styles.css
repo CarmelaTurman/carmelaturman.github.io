@@ -54,7 +54,13 @@ p {
 } 
  
 .content { 
-    grid-column: 2 / span 6; 
+    grid-column: 2 / span 6;                            .callout.callout-1 { 
+                                                        grid-column: 3/span 3; 
+                                                        font-size: 2.5em; 
+                                                        line-height: 1.2; 
+                                                        grid-column: 2 / span 1; 
+                                                        font-size: 1.5em; 
+                                                        text-align: left; 
 } 
  
 .anni-albers-section / { 
@@ -63,43 +69,36 @@ p {
  
 .author-info { 
     grid-column: 2 / span 3; 
-    text-align: left; 
+    text-align: center; 
 } 
  
-.callout.callout-1 { 
-    grid-column: 3/span 3; 
-    font-size: 2.5em; 
-    line-height: 1.2; 
-    grid-column: 2 / span 1; 
-    font-size: 1.5em; 
-    text-align: left; 
-} 
+.callout.callout-2 {                                         
  
-.callout.callout-2 { 
     grid-column: 2/span 2; 
     font-size: 2em; 
     line-height: 1.2; 
     grid-column: 2 / span 2; 
     font-size: 1.5em; 
-    text-align: right; 
+    text-align: center; 
+}                                                           
+                                                            .callout.callout-3 { 
+                                                            grid-column: 2/span 2; 
+                                                            font-size: 2em; 
+                                                            line-height: 1.2; 
+                                                            grid-column: 2 / span 1; 
+                                                            font-size: 1.5em; 
+                                                            text-align: right; 
 } 
  
-.callout.callout-3 { 
-    grid-column: 2/span 2; 
-    font-size: 2em; 
-    line-height: 1.2; 
-    grid-column: 2 / span 1; 
-    font-size: 1.5em; 
-    text-align: right; 
-} 
+                           
 
-.callout.callout-4 { 
-    grid-column: 3/span 2; 
-    font-size: 2em; 
-    line-height: 1.2; 
-    grid-column: 3 / span 2; 
-    font-size: 1.5em; 
-    text-align: right; 
+                                .callout.callout-4 { 
+                                grid-column: 3/span 2; 
+                                font-size: 2em; 
+                                line-height: 1.2; 
+                                grid-column: 3 / span 2; 
+                                font-size: 1.5em; 
+                                text-align: left; 
 } 
 
 /* 
@@ -132,8 +131,8 @@ p {
 } 
  
 #second-layout .content { 
-    flex: 0 0 66.666%;
-    padding: 1rem; 
+    flex: 100%;
+    padding: 2rem; 
 } 
  
 #second-layout .anni-albers-section { 
@@ -150,7 +149,7 @@ p {
 #second-layout .callout.callout-1 { 
     width: 66.666%; 
     margin: 2em 0; 
-    margin-left: 66.666%; 
+    margin-left: 100%; 
     text-align: right; 
     flex-basis: 100%; 
 } 
@@ -158,7 +157,7 @@ p {
 #second-layout .callout.callout-2 { 
     width: 66.666%; 
     margin: 2em 1; 
-    margin-right: 66.666%; 
+    margin-right: 100%; 
     text-align: left; 
     flex-basis: 100%; 
 } 
@@ -166,14 +165,14 @@ p {
 #second-layout .callout.callout-3 { 
      width: 66.666%; 
     margin: 2em 1; 
-    margin-right: 66.666%; 
-    text-align: right; 
+    margin-right: 100; 
+    text-align: center; 
     flex-basis: 100%; 
 } 
  
 #second-layout .callout.callout-4 { 
      width: 66.666%; 
     margin: 2em 1; 
-    margin-right: 66.666%; 
+    margin-right: 100%; 
     text-align: center; 
     flex-basis: 100%; }
