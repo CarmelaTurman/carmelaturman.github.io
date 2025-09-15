@@ -21,7 +21,7 @@
             float :right
             clear both
             position: static
-            width: 30% 
+            width: 100% 
 
          } 
 
@@ -35,7 +35,7 @@
             left 200px
             position static
             background-color white;
-            float: left;
+            float: right;
             width: 300px;
             overflow: hidden;
         } 
@@ -46,10 +46,10 @@
             top: 100px;
             left: 30px;
             background-color:white;
-            float: center;
+            float: bottom;
             clear: both;
             position: static;
-            width: 40%    
+            width: 75%    
         } 
 
         div#Box4
@@ -62,7 +62,7 @@
             left 200px
             position static
             background-color white;
-            float: left;
+            float: right;
             width: 300px;
             overflow: hidden;
         } 
@@ -73,10 +73,10 @@
             top: 100px;
             left: 30px;
             background-color:white;
-            float: right;
+            float: center;
             clear: both;
             position: static;
-            width: 40%   
+            width: 75%   
         } 
        
         div#Box6
