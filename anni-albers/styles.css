@@ -11,19 +11,21 @@
 	<link rel="stylesheet" href="styles.css" media="all">
 	<style>
 	
-        <div class= contentBox1:{
-           position: absolute;
-           background-color:white
-           padding: 10px;
-           margin: 10px;
-           width: 300px;
-           height: 200px;
-           overflow:hidden    
+        <div# contentBox1:
+        p {
+            display: inline;
+            position: absolute;
+            background-color:white
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            height: 200px;
+            overflow:hidden    
         } 
         </div>
 
-        <div class= contentBox2:
-        p {
+        <div# contentBox2:
+        
             display block;
             top:100px;
             left: 30px;
@@ -33,10 +35,10 @@
             width:30px;
             height: 200px;
             overflow:hidden    
-        } 
+        
         </div>
 
-        <div class= contentBox3:
+        <div# contentBox3:
         p {
             display block;
             top:100px;
@@ -49,8 +51,8 @@
             overflow:hidden  
         } 
 
-        <div class= contentBox4:
-        p {
+        <div# contentBox4:
+        
             display block;
             top:100px;
             left: 30px;
@@ -62,7 +64,7 @@
             overflow:hidden 
           } 
 
-         <div class= contentBox5:
+         <div# contentBox5:
         p {
             display block;
             top:100px;
@@ -76,8 +78,8 @@
           } 
     </div>
 
-    <div class= contentBox6:
-        p {
+    <div# contentBox6:
+        
             display block;
             top:100px;
             left: 30px;
@@ -91,7 +93,7 @@
           </div>
 
     </style>
-    
+
     <!-- external and internal JavaScript -->
 	<script src="scripts.js" defer></script>
 	<script>
