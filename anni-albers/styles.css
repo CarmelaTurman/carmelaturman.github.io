@@ -38,7 +38,7 @@
 
 h2 {
     margin: 0 0 10px;
-    font-size: 24px;
+    font-size: 16px;
     padding: 10px;  
     position: static
     background-color white;
@@ -51,7 +51,7 @@ p {
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 18px;
     padding: 10px;  
     position: static
     background-color white;
@@ -66,7 +66,7 @@ p {
 
 h4 {
     margin: 0 0 10px;
-    font-size: 24px;
+    font-size: 20px;
     padding: 10px;  
     position: static
     background-color white;
@@ -80,7 +80,7 @@ p {
 
 h5 {
     margin: 0 0 10px;
-    font-size: 24px;
+    font-size: 16px;
     padding: 10px;  
     position: static
     background-color white;
@@ -94,7 +94,7 @@ p {
 
 h6 {
     margin: 0 0 10px;
-    font-size: 36px;
+    font-size: 20px;
     padding: 10px;  
     position: static
     background-color white;
@@ -111,7 +111,7 @@ p {
 .callout1 {
         border: 2em;
         background-color: white;
-        font-size: 28x;
+        font-size: 18x;
         float: auto;
         position: right;
         width: 800 px 
@@ -120,9 +120,9 @@ p {
         .callout2 {
         border: 2em;
         background-color: white;
-        font-size: 36px;
-        float: right;
-        position: right;
+        font-size: 24px;
+        float: auto;
+        position: center;
         width: 200 px 
         }
 
@@ -130,7 +130,7 @@ p {
          .callout3 {
         border: 2em;
         background-color: white;
-        font-size: 24px;
+        font-size: 16px;
         float: auto;
         position: right;
         width: 600 px  
@@ -140,9 +140,9 @@ p {
          .callout4 {
         border: 2em;
         background-color: white;
-        font-size: 36px;
+        font-size: 20px;
         float: auto;
-        position: right;
+        position: left;
         width: 200 px 
         } 
 
