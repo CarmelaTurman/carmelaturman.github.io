@@ -16,10 +16,11 @@
             display: block;
             position: static;
             background-color:white
+             float:left
             padding: 10px;
             margin: 10px;
-            width: 300px;
-            height: 200px;
+            width: 100px;
+            height: 75px;
             overflow:hidden    
         } 
         </div>
@@ -32,7 +33,7 @@
             float:right
             position:static
             width:30px;
-            height: 200px;
+            height: 100px;
             overflow:hidden    
              } 
         
@@ -43,22 +44,23 @@
             display: block;
             position: static;
             background-color:white
+             float:left
             padding: 10px;
             margin: 10px;
-            width: 300px;
-            height: 200px;
+            width: 100px;
+            height: 100px;
             overflow:hidden    
         }  
 
          <div# contentBox4:{
             display block;
-            top:100px;
+            top:75px;
             left: 30px;
             background-color:white
             float:right
             position:static
-            width:30px;
-            height: 200px;
+            width:100px;
+            height: 150px;
             overflow:hidden    
              } 
 
@@ -67,6 +69,7 @@
             display: block;
             position: static;
             background-color:white
+            float:center
             padding: 10px;
             margin: 10px;
             width: 300px;
@@ -83,7 +86,7 @@
             background-color:white
             float:right
             position:static
-            width:30px;
+            width:100px;
             height: 200px;
             overflow:hidden 
           } 
