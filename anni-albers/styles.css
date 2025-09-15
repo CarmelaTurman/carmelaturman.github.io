@@ -5,30 +5,33 @@
 */  
 
 body 
-{  
-
-<div class="grid-container">
-  <div class="grid-item">Item 1</div>
-  <div class="grid-item">Item 2</div>
-  <div class="grid-item">Item 3</div>
-  <div class="grid-item">Item 4</div>
-  <div class="grid-item">Item 5</div>
-  <div class="grid-item">Item 6</div>
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr); /* Creates 6 equal-width columns */
-  gap: 20px; /* Adds space between grid items */
-}
 
 font-family: 'Times New Roman' 
+
+{ .grid-container 
+  display: grid
+  grid-template-columns: repeat (6, 1fr)
+  gap: 20px
+
+
+<div class= "grid-container">
+  <div class="grid-item">.callout.callout-1</div>
+
+  <div class="grid-item">.callout.callout-2</div>
+
+  <div class="grid-item">.callout.callout-3</div>
+
+  <div class="grid-item">.callout.callout-4</div>
+
+  <div class="grid-item">Item 5</div>
+
+  <div class="grid-item">Item 6</div>
 
 
 .grid-item {
   background-color: white
   padding: 15px;
-  border: 1px 
-  text-align: center;
+  text-align: left;
   
 }
 color: black;  
@@ -39,42 +42,29 @@ padding: 2rem;
 
 }  
 
+
 h1, h2 {  
-
 font-weight: bold;  
-
 text-transform: uppercase;  
-
 }  
 
-p {  
-
+{  
 margin-bottom: 1em;  
-
 line-height: 1.5;  
-
 }  
 
 /* Base styles for callouts */  
 
 .callout {  
-
 font-weight: bold;  
-
 font-style: italic;  
-
 text-align: center;  
-
 margin: 2em 0;  
-
 }  
 
 .callout p {  
-
 font-size: 2em;  
-
 line-height: 1.2;  
-
 }  
 
 /*  
@@ -86,181 +76,110 @@ line-height: 1.2;
 .grid-container {  
 
 display: grid;  
-
 grid-template-columns: repeat(6, 1fr);  
-
 gap: 1rem;  
-
 }  
 
 .grid-item {  
-
 padding: 1rem;  
-
 }  
 
 .header-title {  
-
 grid-column: 1 / span 6;  
-
-text-align: center;  
-
+text-align: left;  
 }  
 
 .content {  
-
 grid-column: 1 / span 4;  
-
 }  
 
 .anni-albers-section {  
-
 grid-column: 5 / span 2;  
-
 }  
 
 .author-info {  
-
 grid-column: 1 / span 6;  
-
-text-align: center;  
-
+text-align: left;  
 }  
 
 .callout.callout-1 {  
-
 grid-column: 2 / span 4;  
-
 font-size: 1.5em;  
-
 text-align: center;  
-
 }  
 
 .callout.callout-2 {  
-
 grid-column: 3 / span 4;  
-
 font-size: 1.5em;  
-
 text-align: left;  
-
 }  
 
 /*  
-
 * Layout for index2.html using CSS Flexbox  
-
 */  
 
 #second-layout .flex-container {  
-
 display: flex;  
-
 flex-wrap: wrap;  
-
 justify-content: space-between;  
-
 }  
 
 #second-layout .header-title {  
-
 width: 100%;  
-
 text-align: center;  
-
 order: 1;  
-
 }  
 
 #second-layout .flex-content {  
-
 display: flex;  
-
 flex-direction: row;  
-
 flex-wrap: wrap;  
-
 width: 100%;  
-
 order: 2;  
-
 }  
 
 #second-layout .content {  
-
 flex: 0 0 66.666%; /* 4/6 columns */  
-
 padding: 1rem;  
-
 }  
 
 #second-layout .anni-albers-section {  
-
-flex: 0 0 33.333%; /* 2/6 columns */  
-
+flex: 0 0 66.666%; /* 2/6 columns */  
 padding: 1rem;  
-
 }  
 
 #second-layout .author-info {  
-
 width: 100%;  
-
-text-align: center;  
-
+text-align: left;  
 order: 3;  
-
 }  
 
 #second-layout .callout.callout-1 {  
-
 width: 66.666%; /* 4/6 columns */  
-
-margin: 2em 0;  
-
+Margin: 2em 0;  
 text-align: center;  
-
 flex-basis: 66.666%;  
-
 }  
 
 #second-layout .callout.callout-2 {  
-
 width: 66.666%; /* 4/6 columns, offset with margin */  
-
 margin: 2em 0;  
-
 margin-left: 33.333%; /* Offset for 2 columns */  
-
 text-align: left;  
-
 flex-basis: 66.666%;  
-
 }  
 
 #second-layout .callout.callout-3 {  
-
 width: 66.666%; /* 4/6 columns */  
-
 margin: 2em 0;  
-
 text-align: center;  
-
 flex-basis: 66.666%;  
-
 }  
 
 #second-layout .callout.callout-4 {  
-
 width: 66.666%; /* 4/6 columns, offset with margin */  
-
 margin: 2em 0;  
-
 margin-left: 33.333%; /* Offset for 2 columns */  
-
 text-align: left;  
-
 flex-basis: 66.666%;  
-
 } 
