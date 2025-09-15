@@ -46,7 +46,7 @@ p {
     line-height: 5;
 }
 
-h3 {
+h2 {
     font-size: 20px;
     padding: 5px;  
     position: static
@@ -60,7 +60,7 @@ p {
     line-height: 1;
 }
 
-h4 {
+h2 {
     font-size: 20px;
     padding: 10px;  
     position: static
@@ -73,7 +73,7 @@ p {
     line-height: 6;
 }
 
-h5 {
+h2 {
     font-size: 26px;
     padding: 5px;  
     position: static
@@ -86,8 +86,7 @@ p {
     line-height: 1;
 }
 
-h6 {
-    margin: 0 0 10px;
+h2 {
     font-size: 14px;
     padding: 10px;  
     position: static
@@ -101,7 +100,7 @@ p {
 }
 
 .callout1 {
-        border: 2em;
+        border: 0;
         background-color: white;
         font-size: 36px;
         float: auto;
@@ -110,7 +109,7 @@ p {
         } 
 
         .callout2 {
-        border: 2em;
+        border: 0;
         background-color: white;
         font-size: 24px;
         float: auto;
@@ -120,7 +119,7 @@ p {
 
 
          .callout3 {
-        border: 2em;
+        border: 0;
         background-color: white;
         font-size: 16px;
         float: right;
@@ -130,7 +129,7 @@ p {
 
 
          .callout4 {
-        border: 2em;
+        border: 0;
         background-color: white;
         font-size: 28px;
         float: auto;
