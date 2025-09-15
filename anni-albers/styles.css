@@ -95,18 +95,17 @@
         padding: 0 15px;
         }  
 
-        .flex-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
+        .grid-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
         }
 
-          .flex-item1 {  
+        .grid-item1 {
         p 
         {   
-            display: flex; block;
-            flex-wrap: wrap;
-            gap: 20px;
+            display: block;
+            gap:20px;
             font-size: 24px;
             border: 0px;
             padding: 10px;
@@ -120,7 +119,7 @@
         } 
          }
 
-        .flex-item2 { 
+        .grid-item2 {
         p
         {
             display: block;
@@ -136,7 +135,7 @@
         } 
         } 
 
-        .flex-item3 { 
+        .grid-item3 { 
         p
          {
             display: block;
@@ -153,7 +152,7 @@
         } 
         } 
         
-        .flex-item4 { 
+        .grid-item4 { 
         p
         {
             display: block;
@@ -169,7 +168,7 @@
         } 
         } 
        
-        .flex-item5 { 
+        .grid-item5 { 
         p
         {
             display: block;
