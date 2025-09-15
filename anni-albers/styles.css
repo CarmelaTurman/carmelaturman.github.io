@@ -1,164 +1,103 @@
-/*  
+<!DOCTYPE html>
+<html>
+<head>
 
-* General Styles  
+	<!-- meta tags and title -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Designing as Visual Organization</title>
 
-*/  
+	<!-- external and internal CSS -->
+	<link rel="stylesheet" href="styles.css" media="all">
+	<style>
+	
+        <div class= contentBox1:{
+           position: absolute;
+           background-color:white
+           padding: 10px;
+           margin: 10px;
+           width: 300px;
+           height: 200px;
+           overflow:hidden    
+        } 
+        </div>
 
-body 
+        <div class= contentBox2:
+        p {
+            display block;
+            top:100px;
+            left: 30px;
+            background-color:white
+            float:left
+            position:static
+            width:30px;
+            height: 200px;
+            overflow:hidden    
+        } 
+        </div>
 
-font-family:Times New Roman
+        <div class= contentBox3:
+        p {
+            display block;
+            top:100px;
+            left: 30px;
+            background-color:white
+            float:right
+            position:static
+            width:30px;
+            height: 200px;
+            overflow:hidden  
+        } 
 
-{.grid-container 
-  display:grid
-  grid-template-columns:repeat: (6, 1fr)
-  gap: 16px
+        <div class= contentBox4:
+        p {
+            display block;
+            top:100px;
+            left: 30px;
+            background-color:white
+            float:left
+            position:static
+            width:30px;
+            height: 200px;
+            overflow:hidden 
+          } 
 
-.grid-item {
-  background-color: white
-  padding: 15px;
-  text-align: left
-}
-color:black 
-margin: 2px;
-padding 2rem  
-}  
+         <div class= contentBox5:
+        p {
+            display block;
+            top:100px;
+            left: 30px;
+            background-color:white
+            float:left
+            position:static
+            width:30px;
+            height: 200px;
+            overflow:hidden 
+          } 
+    </div>
 
-h1, h2 {  
-font-weight: bold;  
-text-transform: uppercase;  
-}  
+    <div class= contentBox6:
+        p {
+            display block;
+            top:100px;
+            left: 30px;
+            background-color:white
+            float:left
+            position:static
+            width:30px;
+            height: 200px;
+            overflow:hidden 
+          } 
+          </div>
 
-{  
-margin-bottom: 1em
-line-height:1.5 
-}  
+    </style>
+    
+    <!-- external and internal JavaScript -->
+	<script src="scripts.js" defer></script>
+	<script>
+		// in-page JavaScript here
+	</script>
 
-/* Base styles for callouts */  
-
-.callout {  
-font-weight: bold;  
-font-style: italic;  
-text-align: center;  
-margin: 2em 0;  
-}  
-
-.callout p {  
-font-size: 2em;  
-line-height: 1.2;  
-}  
-
-/*  
-
-* Layout for index.html using CSS Grid  
-
-*/  
-
-.grid-container {  
-
-display: grid;  
-grid-template-columns: repeat(6, 1fr);  
-gap: 1rem;  
-}  
-
-.grid-item {  
-padding: 1rem;  
-}  
-
-.header-title {  
-grid-column: 1 / span 6;  
-text-align: left;  
-}  
-
-.content {  
-grid-column: 1 / span 4;  
-}  
-
-.anni-albers-section {  
-grid-column: 5 / span 2;  
-}  
-
-.author-info {  
-grid-column: 1 / span 6;  
-text-align: left;  
-}  
-
-.callout.callout-1 {  
-font-size: 2em;  
-line-height: 1.2;  
-text-align: center;  
-}  
-
-.callout.callout-2 {  
-font-size: 2em;  
-line-height: 1.2;  
-}  
-
-/*  
-* Layout for index2.html using CSS Flexbox  
-*/  
-
-#second-layout .flex-container {  
-display: flex;  
-flex-wrap: wrap;  
-justify-content: space-between;  
-}  
-
-#second-layout .header-title {  
-width: 100%;  
-text-align: center;  
-order: 1;  
-}  
-
-#second-layout .flex-content {  
-display: flex;  
-flex-direction: row;  
-flex-wrap: wrap;  
-width: 100%;  
-order: 2;  
-}  
-
-#second-layout .content {  
-flex: 0 0 66.666%; /* 4/6 columns */  
-padding: 1rem;  
-}  
-
-#second-layout .anni-albers-section {  
-flex: 0 0 66.666%; /* 2/6 columns */  
-padding: 1rem;  
-}  
-
-#second-layout .author-info {  
-width: 100%;  
-text-align: left;  
-order: 3;  
-}  
-
-#second-layout .callout.callout-1 {  
-width: 66.666%; /* 4/6 columns */  
-Margin: 2em 0;  
-text-align: center;  
-flex-basis: 66.666%;  
-}  
-
-#second-layout .callout.callout-2 {  
-width: 66.666%; /* 4/6 columns, offset with margin */  
-margin: 2em 0;  
-margin-left: 66.666%; /* Offset for 2 columns */  
-text-align: left;  
-flex-basis: 66.666%;  
-}  
-
-#second-layout .callout.callout-3 {  
-width: 66.666%; /* 4/6 columns */  
-margin: 2em 0;  
-text-align: center;  
-flex-basis: 66.666%;  
-}  
-
-#second-layout .callout.callout-4 {  
-width: 66.666%; /* 4/6 columns, offset with margin */  
-margin: 2em 0;  
-margin-left: 66.666%; /* Offset for 2 columns */  
-text-align: left;  
-flex-basis: 66.666%;  
-} 
+</head>     
+</body>
+</html>
