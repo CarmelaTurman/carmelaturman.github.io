@@ -12,15 +12,16 @@
 	<style>
 	
         <div# contentBox1:
-        p {
+        p .positioned {
             position: static;
             background-color:white
             float:left
-            padding: 10px;
-            margin: 10px;
-            width: 300px;
-            height: 200px;
-
+            padding:10px;
+            margin:10px;
+            width:300px;
+            height:200px;
+            top:30px;
+            left:30px;
             overflow:hidden    
         } 
         </div>
@@ -41,18 +42,19 @@
         </div>
 
         <div# contentBox3:
-        p {
-            display: block;
+        p .positioned {
             position: static;
             background-color:white
-             float:left
+            float:center
             padding: 10px;
             margin: 10px;
-            width: 100px;
-            height: 100px;
-
+            width: 300px;
+            height: 200px;
+            top: 60px;
+            left: 60px;
             overflow:hidden    
-        }  
+        } 
+        </div>  
 
          <div# contentBox4:{
             display block;
@@ -68,8 +70,7 @@
              } 
 
          <div# contentBox5:
-       p {
-            display: block;
+       p .positioned {
             position: static;
             background-color:white
             float:center
@@ -77,6 +78,8 @@
             margin: 10px;
             width: 300px;
             height: 200px;
+            top: 60px;
+            left: 60px;
             overflow:hidden    
         } 
 
