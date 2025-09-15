@@ -13,14 +13,14 @@
 	
         <div# contentBox1:
         p {
-            display: block;
             position: static;
             background-color:white
-             float:left
+            float:left
             padding: 10px;
             margin: 10px;
-            width: 100px;
-            height: 75px;
+            width: 300px;
+            height: 200px;
+
             overflow:hidden    
         } 
         </div>
@@ -31,9 +31,10 @@
             left: 30px;
             background-color:white
             float:right
+            clear:both
             position:static
-            width:30px;
-            height: 100px;
+            width:30%;
+           
             overflow:hidden    
              } 
         
@@ -49,18 +50,20 @@
             margin: 10px;
             width: 100px;
             height: 100px;
+
             overflow:hidden    
         }  
 
          <div# contentBox4:{
             display block;
-            top:75px;
+            top:100px;
             left: 30px;
             background-color:white
-            float:right
+            float:left
+            clear:both
             position:static
-            width:100px;
-            height: 150px;
+            width:30%;
+           
             overflow:hidden    
              } 
 
@@ -80,17 +83,18 @@
     </div>
 
     <div# contentBox6:{
-            display block;
+           display block;
             top:100px;
             left: 30px;
             background-color:white
             float:right
+            clear:both
             position:static
-            width:100px;
-            height: 200px;
-            overflow:hidden 
-          } 
-          </div>
+            width:30%;
+           
+            overflow:hidden    
+             } 
+    </div>
 
     </style>
 
