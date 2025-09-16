@@ -22,7 +22,6 @@
   padding: 0.5em;
    }
 
-
         .float-left{
             float: auto;
             background-color: white;
@@ -35,7 +34,7 @@
             justify-content: space-between;
             }    
 
-        .float-right{
+        .float-left{
             float: auto;
             background-color: white;
             font-size: 20px;
@@ -45,62 +44,61 @@
             display: flex;
             overflow: auto;
             justify-content: space-between;
-        }
+            }   
 
-        .float-center {
+       .float-left{
             float: auto;
             background-color: white;
-            font-size: 24px;
+            font-size: 20px;
             margin: 0px;
-            margin-left: 10px;
-            width: 400px;
-            height: 400px;
+            width: 600px;
+            height:600px;
             display: flex;
             overflow: auto;
             justify-content: space-between;
-        }
+            }   
 
-        .floatl-eft {
+        .float-left{
             float: auto;
             background-color: white;
-            font-size: 18px;
+            font-size: 20px;
             margin: 0px;
-            margin-left: auto;
-            width: 400px;
-            height: 400px;
+            width: 600px;
+            height:600px;
             display: flex;
             overflow: auto;
             justify-content: space-between;
-         }
+            }   
 
-        .float-right {
+        .float-left{
             float: auto;
             background-color: white;
-            font-size: 24px;
+            font-size: 20px;
             margin: 0px;
-            margin-left: auto;
-            width: 400px;
-            height:400px;
+            width: 600px;
+            height:600px;
             display: flex;
             overflow: auto;
             justify-content: space-between;
-     }
+            }   
 
-        .float-right {
+        .float-left {
             float: auto;
             background-color: white;
-            font-size: 18px;
+            font-size: 20px;
             margin: 0px;
-            margin-left: auto;
-            width: 400px;
-            height: 400px;
+            width: 600px;
+            height:600px;
             display: flex;
             overflow: auto;
             justify-content: space-between;
-     }
+            }   
 
+.box {
+  padding: 0.5em;
+   }
         .callout1 {
-            float: right;
+            float: auto;
             background-color: white;
             font-size: 36px;
             border-radius: 5px;
