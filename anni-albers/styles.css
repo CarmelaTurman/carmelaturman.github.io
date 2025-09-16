@@ -23,20 +23,32 @@
    }
 
 
-        .float1 {
+        .float-left{
             float: auto;
             background-color: white;
             font-size: 20px;
             margin: 0px;
-            width: 400px;
+            width: 600px;
+            height:600px;
+            display: flex;
+            overflow: auto;
+            justify-content: space-between;
+            }    
+
+        .float-right{
+            float: auto;
+            background-color: white;
+            font-size: 20px;
+            margin: 0px;
+            width: 600px;
             height:600px;
             display: flex;
             overflow: auto;
             justify-content: space-between;
         }
 
-        .float2 {
-            float: auto
+        .float-center {
+            float: auto;
             background-color: white;
             font-size: 24px;
             margin: 0px;
@@ -48,7 +60,7 @@
             justify-content: space-between;
         }
 
-        .float3 {
+        .floatl-eft {
             float: auto;
             background-color: white;
             font-size: 18px;
@@ -61,7 +73,7 @@
             justify-content: space-between;
          }
 
-        .float4 {
+        .float-right {
             float: auto;
             background-color: white;
             font-size: 24px;
@@ -74,7 +86,7 @@
             justify-content: space-between;
      }
 
-        .float5 {
+        .float-right {
             float: auto;
             background-color: white;
             font-size: 18px;
