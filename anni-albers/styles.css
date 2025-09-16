@@ -18,7 +18,7 @@
         font-family: "Times New Roman"
     }
 
-    .box {
+.box {
   padding: 0.5em;
    }
 
@@ -38,21 +38,21 @@
             float: right;
             background-color: white;
             font-size: 18px;
-            margin: 10px;
-            margin-left: auto;
+            margin: 0px;
+            margin-left: right;
             width: 200px;
             height:200px;
             display: flex;
             flex-wrap: wrap;
             overflow: auto;
-            justify-content: space-between;
+            justify-content: right;
         }
 
         .float2 {
             float: leftt;
             background-color: white;
             font-size: 18px;
-            margin: 10px;
+            margin: 0px;
             margin-left: auto;
             width: 200px;
             height:200px;
@@ -66,7 +66,7 @@
             float: left;
             background-color: white;
             font-size: 18px;
-            margin: 10px;
+            margin: 0px;
             margin-left: auto;
             width: 400px;
             height: 400px;
@@ -80,7 +80,7 @@
             float: center;
             background-color: white;
             font-size: 18px;
-            margin: 10px;
+            margin: 0px;
             margin-left: auto;
             width: 200px;
             height:200px;
@@ -94,7 +94,7 @@
             float:right;
             background-color: white;
             font-size: 18px;
-            margin: 10px;
+            margin: 0px;
             margin-left: auto;
             width: 400px;
             height: 400px;
@@ -116,11 +116,10 @@
 }
 
         .callout1 {
-            float: auto;
+            float: right;
             background-color: white;
             font-size: 18px;
             border-radius: 5px;
-            float: right; 
             width: 400x;
             margin: 0;
             height: 400px;
@@ -128,13 +127,13 @@
         }    
 
         .callout2 {
-            float: auto;
+            float: center;
             background-color: white;
             font-size: 18px;
             border-radius: 5px;
-            width: 600px;
-            margin: 15px;
-            height: 600px;
+            width: 400px;
+            margin: 0px;
+            height: 400px;
             padding: 1em
         } 
 
@@ -144,7 +143,7 @@
             font-size: 18px;
             border-radius: 5px;
             width: 600px;
-            margin: 15px;
+            margin: 10px;
             height: 600px;
             padding: 1em
         } 
@@ -155,7 +154,7 @@
             border-radius: 5px;
             float: left; 
             width: 600px;
-            margin: 15px;
+            margin: 10px;
             height: 600px;
             padding: 1em
         } 
