@@ -25,11 +25,11 @@
         .float1{
             float: right;
             background-color: white;
-            font-size: 20px;
-            float: left;
             width: 200px; 
             height: 150px; 
-            margin-right: 15px;;
+            margin-right: 15px;
+            overflow: auto;
+            justify-content: space-between;
         }    
 
         .float2{
@@ -65,7 +65,7 @@
         }   
 
         .float5{
-            float: right;
+            float: auto;
             background-color: white;
             font-size: 20px;
             margin: 0px;
@@ -75,8 +75,8 @@
             justify-content: space-between;
         }   
 
-        .float-left {
-            float: left;
+        .float6 {
+            float: auto;
             background-color: white;
             font-size: 20px;
             margin: 0px;
