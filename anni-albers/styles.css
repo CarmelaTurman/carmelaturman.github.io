@@ -30,7 +30,7 @@
             background-color: white;
             font-size:28px;
             margin: 0px;
-            overflow:auto;
+            overflow: hidden;
             width: 50%;
             margin-bottom: 20px;
             padding: 10px;
@@ -43,7 +43,7 @@
             background-color: white;
             font-size: 32px;
             margin: 0px;
-            overflow:auto;
+            overflow: hidden;
             width: 75%;
             margin-bottom: 20px;
             padding: 10px;
@@ -55,7 +55,7 @@
             background-color: white;
             font-size: 28px;
             margin: 0px;
-            overflow:auto;
+            overflow: hidden;
             width: 75%;
             margin-bottom: 20px;
             padding: 10px;
@@ -67,7 +67,7 @@
             background-color: white;
             font-size: 32px;
             margin: 0px;
-            overflow:auto;
+            overflow: hidden;
             width: 50%;
             margin-bottom: 20px;
             padding: 10px;
@@ -79,7 +79,7 @@
             background-color: white;
             font-size: 28px;
             margin: 0px;
-            overflow:auto;
+            overflow: hidden;
             width: 75%;
             margin-bottom: 20px;
             padding: 10px;
