@@ -22,32 +22,25 @@
 .container {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Adds space between columns */
-    padding: 20px;
+    gap: 10px;
+    padding: 10px;
     background-color: white
 }
 
-.column {
+.floating-column {
     flex: 1;
+    min-width: 50%;
     max-width: calc(100% / 6);
 }
 
 
 .callout-box {
     background-color: white;
-    padding: 20px;
+    padding: 5px;
     border: none; 
     border-radius: 8px;
+    font-size: 24;
 
-.callout-box h3 {
-    margin-top: 0;
-    background-color: white
-}
-
-.callout-box p {
-    margin-bottom: 0;
-    background-color: white;
-    font-size: 24px;
 }
 
 
