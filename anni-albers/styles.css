@@ -24,10 +24,10 @@
 
 .float {
     background-color: white;
-    font-size: 24;
+    font-size: 36px;
     margin: 20px;
-    width: 150px;
-    height: 400px;
+    width: 800px;
+    height: 800px;
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
@@ -36,14 +36,18 @@
 
 .column {
     background-color: white;
-    font-size: 28px;
+    font-size: 36px;
     border-radius: 5px;
     float: auto;
-    width: 400;
+    width: 600;
     margin: 15px;
-    height: 350px;
+    height: 600px;
     border-radius: 5px;
     padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    justify-content: space-between;
 }
 
 </body>
