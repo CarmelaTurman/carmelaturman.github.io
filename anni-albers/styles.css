@@ -26,19 +26,17 @@
         .float1 {
             float: auto;
             background-color: white;
-            font-size: 18px;
+            font-size: 20px;
             margin: 0px;
-            margin-left: 10px;
             width: 400px;
             height:600px;
             display: flex;
-            flex-wrap: wrap;
             overflow: auto;
             justify-content: space-between;
         }
 
         .float2 {
-            float: left;
+            float: auto
             background-color: white;
             font-size: 24px;
             margin: 0px;
@@ -46,13 +44,12 @@
             width: 400px;
             height: 400px;
             display: flex;
-            flex-wrap: wrap;
             overflow: auto;
             justify-content: space-between;
         }
 
         .float3 {
-            float: left;
+            float: auto;
             background-color: white;
             font-size: 18px;
             margin: 0px;
@@ -60,27 +57,25 @@
             width: 400px;
             height: 400px;
             display: flex;
-            flex-wrap: wrap;
             overflow: auto;
             justify-content: space-between;
          }
 
         .float4 {
-            float: center;
+            float: auto;
             background-color: white;
             font-size: 24px;
             margin: 0px;
             margin-left: auto;
-            width: 200px;
-            height:200px;
+            width: 400px;
+            height:400px;
             display: flex;
-            flex-wrap: wrap;
             overflow: auto;
             justify-content: space-between;
      }
 
         .float5 {
-            float:right;
+            float: auto;
             background-color: white;
             font-size: 18px;
             margin: 0px;
@@ -88,29 +83,28 @@
             width: 400px;
             height: 400px;
             display: flex;
-            flex-wrap: wrap;
             overflow: auto;
             justify-content: space-between;
      }
 
         .callout1 {
-            float: auto;
+            float: right;
             background-color: white;
             font-size: 36px;
             border-radius: 5px;
-            width: 400x;
-            margin: 0;
+            width: 400px;
+            margin: 5px;
             height: 400px;
             padding: 1em
         }    
 
         .callout2 {
-            float: auto;
+            float:left;
             background-color: white;
             font-size: 24px;
             border-radius: 5px;
             width: 400px;
-            margin: 0px;
+            margin: px;
             height: 400px;
             padding: 1em
         } 
@@ -118,7 +112,7 @@
         .callout3 {
             float: auto;
             background-color: white;
-            font-size: 24px;
+            font-size: 28px;
             border-radius: 5px;
             width: 600px;
             margin: 10px;
@@ -128,7 +122,7 @@
 
         .callout4 {
             background-color: white;
-            font-size: 28px;
+            font-size: 24px;
             border-radius: 5px;
             float: auto; 
             width: 600px;
