@@ -2,53 +2,108 @@
 <html>
 <head>
 
-    <body>
+  body {
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-    <!-- meta tags and title -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<Title> Designing as Visual Organization </Title>
-
-	<!-- external and internal CSS -->
-	<link rel="stylesheet" href="styles.css" media="all">
-
-
-    body
-
-    p{
-        font-family: "Times New Roman"
-    }
-
+/* Center the main container */
 .container {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    padding: 200px;
-    background-color: white
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
 }
 
-.floating-column {
-    flex: 1;
-    min-width: 75%;
-    max-width: calc(100% / 6);
+.content-box {
+    margin-bottom: 40px;
+    overflow: hidden; 
 }
-
 
 .callout-box {
+    float: right;
+    width: 40%;
+    margin: 0 0 1em 1em;
+    padding: 15px;
     background-color: white;
-    padding: 10px;
-    border: none; 
+    border: 1px; hidden;
     border-radius: 8px;
-    font-size: 24;
+    font-size: 20px;
+}
 
+.callout-box h2 {
+    margin-top: 0;
+    background-color: white
+}
+.floating-columns-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.content-box{
+    flex: 1 1 calc(16.666% - 17px); 
+    box-sizing: border-box; hidden;
+    background-color: white;
+    border: 1px; 
+    padding: 15px;
+    border-radius: 5px;
 }
 
 
 
 
- </body>
 
-</head>
 
-</html>
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
