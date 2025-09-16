@@ -25,80 +25,108 @@
   border-radius: 8px;
 }
 
-        .float1{
-            float: right;
+        .floating-column1{
+            float: auto;
             background-color: white;
-            width: 200px; 
-            height: 150px; 
-            margin-right: 15px;
-            overflow: auto;
+            font-size: 24px;
+            margin: 5px;
+            width: 400px;
+            height:400px;
+            overflow:auto;
             justify-content: space-between;
         }    
 
-        .float2{
-            float: left;
+        .floating-column2{
+            float: auto;
             background-color: white;
-            width: 200px; 
-            height: 150px; 
-            margin-right: 15px;
+            font-size: 24px;
+            margin: 5px;
+            width: 400px;
+            height:400px;
             overflow: auto;
             justify-content: space-between;
         }   
 
-       .float3{
+       .floating-column3{
             float: auto;
             background-color: white;
-            font-size: 20px;
-            margin: 10px;
+            font-size: 24px;
+            margin: 5px;
             width: 400px;
             height:400px;
             overflow:auto;
             justify-content: space-between;
         }   
 
-        .float4{
-            float: left;
+        .floating-column4{
+            float: auto;
             background-color: white;
-            font-size: 20px;
-            margin: 0px;
-            width:4600px;
-             height:400px;
-            overflow: auto;
+            font-size: 28px;
+            margin: 5px;
+            width: 400px;
+            height:400px;
+            overflow:auto;
             justify-content: space-between;
         }   
 
-        .float5{
+        .floating-column5{
             float: auto;
             background-color: white;
-            font-size: 20px;
-            margin: 0px;
+            font-size: 28px;
+            margin: 5px;
             width: 400px;
-            height: 400px;
-            overflow: auto;
+            height:400px;
+            overflow:auto;
             justify-content: space-between;
         }   
 
-        .float6 {
-            float: auto;
+        .floating-column6{
+             float: auto;
             background-color: white;
-            font-size: 20px;
-            margin: 0px;
+            font-size: 28px;
+            margin: 5px;
             width: 400px;
-            height:400px:
-            overflow: auto;
+            height:400px;
+            overflow:auto;
             justify-content: space-between;
         }   
 
 .column {
   padding: 0.5em;
    }
-        .callout {
+        .callout1{
                 float: auto; 
                 width: 800px; 
                 padding: 15px;
                 margin: 10px;
                 background-color: white;
-                font-size 28
+                font-size: 28;
+        }    
+
+.clear {
+  clear: both;
+}
+
+        .callout2{
+               float: auto; 
+                width: 800px; 
+                padding: 15px;
+                margin: 10px;
+                background-color: white;
+                font-size: 28;
+        }    
+
+.clear {
+  clear: both;
+}
+
+        .callout3{
+                float: auto; 
+                width: 800px; 
+                padding: 15px;
+                margin: 10px;
+                background-color: white;
+                font-size: 28;
         }    
 
 .clear {
