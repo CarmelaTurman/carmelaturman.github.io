@@ -19,7 +19,6 @@
         font-family: "Times New Roman"
     }
 
-
 .clearfix::after {
   content: "";
   display: table;
@@ -52,8 +51,22 @@
     background-color: white;
     font-size: 28;
     }    
-     
+ 
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+  .author-details {
+     text-align: right; 
+    margin-top: 10px;  
+    padding-top: 15px;
+     margin-top: 30px;
+     display: flex;
+     align-items: baseline;
+    flex-wrap: wrap;
+}
  </body>
 
 </head>
