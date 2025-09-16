@@ -35,11 +35,11 @@
     }
 
         .float1 {
-            float: right;
+            float: auto;
             background-color: white;
             font-size: 18px;
             margin: 0px;
-            margin-left: right;
+            margin-left: 10px;
             width: 200px;
             height:200px;
             display: flex;
@@ -49,13 +49,13 @@
         }
 
         .float2 {
-            float: leftt;
+            float: left;
             background-color: white;
-            font-size: 18px;
+            font-size: 24px;
             margin: 0px;
-            margin-left: auto;
-            width: 200px;
-            height:200px;
+            margin-left: 10px;
+            width: 400px;
+            height: 400px;
             display: flex;
             flex-wrap: wrap;
             overflow: auto;
@@ -79,7 +79,7 @@
         .float4 {
             float: center;
             background-color: white;
-            font-size: 18px;
+            font-size: 24px;
             margin: 0px;
             margin-left: auto;
             width: 200px;
@@ -108,7 +108,7 @@
   background-color: white;
   font-size: 18px;
   border-radius: 5px;
-  float: auto;
+  float: left;
   width: 400px;
   margin: 0;
   height: 400px;
@@ -116,9 +116,9 @@
 }
 
         .callout1 {
-            float: right;
+            float: auto;
             background-color: white;
-            font-size: 18px;
+            font-size: 36px;
             border-radius: 5px;
             width: 400x;
             margin: 0;
@@ -127,9 +127,9 @@
         }    
 
         .callout2 {
-            float: center;
+            float: auto;
             background-color: white;
-            font-size: 18px;
+            font-size: 24px;
             border-radius: 5px;
             width: 400px;
             margin: 0px;
@@ -140,7 +140,7 @@
         .callout3 {
             float: auto;
             background-color: white;
-            font-size: 18px;
+            font-size: 24px;
             border-radius: 5px;
             width: 600px;
             margin: 10px;
@@ -150,9 +150,9 @@
 
         .callout4 {
             background-color: white;
-            font-size: 18px;
+            font-size: 28px;
             border-radius: 5px;
-            float: left; 
+            float: auto; 
             width: 600px;
             margin: 10px;
             height: 600px;
