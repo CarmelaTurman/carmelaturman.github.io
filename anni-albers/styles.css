@@ -22,11 +22,8 @@
             float: auto;
             background-color: white;
             font-size: 32px;
-            margin: 5px;
-            width: 600px;
-            height:600px;
+            margin: 0px;
             overflow:auto;
-
         }    
 
         .floating-column2{
@@ -34,8 +31,6 @@
             background-color: white;
             font-size: 24px;
             margin: 5px;
-            width: 400px;
-            height:400px;
             overflow: auto;
         }   
 
@@ -44,8 +39,6 @@
             background-color: white;
             font-size:32px;
             margin: 5px;
-            width: 400px;
-            height:400px;
             overflow:auto;
         }   
 
@@ -54,8 +47,6 @@
             background-color: white;
             font-size: 28px;
             margin: 5px;
-            width: 400px;
-            height:400px;
             overflow:auto;
         }   
 
@@ -64,25 +55,11 @@
             background-color: white;
             font-size: 28px;
             margin: 5px;
-            width: 400px;
-            height:400px;
-            overflow:auto;
-        }   
-
-        .floating-column6{
-             float: auto;
-            background-color: white;
-            font-size: 28px;
-            margin: 5px;
-            width: 400px;
-            height:400px;
             overflow:auto;
         }   
 
         .callout1{
                 float: auto; 
-                width: 600px; 
-                height: 600px;
                 padding: 15px;
                 margin: 10px;
                 background-color: white;
@@ -91,23 +68,27 @@
 
         .callout2{
                float: auto; 
-                width: 600px; 
-                height: 600px;
                 padding: 15px;
                 margin: 10px;
                 background-color: white;
-                font-size: 28
+                font-size: 36
         }
 
         .callout3{
                 float: auto; 
-                width: 800px; 
                 padding: 15px;
                 margin: 10px;
                 background-color: white;
                 font-size: 28;
         }    
 
+        .callout3{
+                float: auto; 
+                padding: 15px;
+                margin: 10px;
+                background-color: white;
+                font-size: 32;
+        }        
      
 
 
