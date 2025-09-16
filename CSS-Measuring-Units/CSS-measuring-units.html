@@ -55,18 +55,18 @@
 					reference point for other absolute units and is calibrated to look roughly the same size across
 					different devices and viewing distances.
 					It is still the most commonly used unit for web design elements that require fixed, precise control,
-
+			</ul>
 			<p>Points</p>
-					<ul>
-						<li> pt (points): Defined as 1/72 of an inch and is primarily used for print stylesheets.
-							in (inches), cm (centimeters), mm (millimeters): Represent their physical counterparts
-							and are useful for styling content intended for print </li>
+			<ul>
+				<li> pt (points): Defined as 1/72 of an inch and is primarily used for print stylesheets.
+					in (inches), cm (centimeters), mm (millimeters): Represent their physical counterparts
+					and are useful for styling content intended for print </li>
 
-						<li> pt (Points): Defined as 1/72 of an inch and is an absolute unit of measurement inherited
-							from traditional print typography. It should be avoided for screen layouts due to its fixed,
-							non-scaling nature and is only suitable for print-specific stylesheets. </li>
+				<li> pt (Points): Defined as 1/72 of an inch and is an absolute unit of measurement inherited
+					from traditional print typography. It should be avoided for screen layouts due to its fixed,
+					non-scaling nature and is only suitable for print-specific stylesheets. </li>
 
-					</ul>
+			</ul>
 		</section>
 
 		<section>
@@ -93,35 +93,36 @@
 					accessibility, using rem for font sizes allows users to scale text by changing their browser's
 					default font settings, while
 					rem values for margins and padding will scale proportionally. </li>
-
+			</ul>
+			<ul>
 				<p>rem</p>
-				<ul>
-					<li>The rem unit, which stands for "root em," creates a sizing reference in relation to the root
-						HTML element's font size.
-						Because each rem unit is linked to a single base value, this uniformity guarantees
-						consistent scaling throughout a webpage.
-						This feature generally streamlines scaling procedures and is very beneficial for responsive
-						typography. Because rem is used
-						for font sizes, users can change the default font settings in their browser to change the
-						size of text. Moreover, rem values
-						help ensure that padding and margins scale proportionately.</li>
 
-					<li> Unlike em units, which are relative to the font-size of their parent element, rem units
-						consistently refer to the font-size
-						of the <html> element. By default, browsers set the <html> element's font-size to 16px,
-						meaning 1rem typically equals 16px unless altered.
-						This consistent reference point makes rem units highly effective for scalable and accessible
-						layouts. Changing the <html> element's font-size
-						will proportionally scale all elements defined with rem units across the document. This is
-						particularly beneficial for responsive design,
-						enabling typography and spacing adjustments for different screen sizes via media queries and
-						root font size changes, and for accessibility,
-						allowing users to control website scale through their browser's default font size settings,
-						which rem units will honor. The rem unit can be
-						applied to various CSS properties, including font-size, padding, margin, width, and height,
-						ensuring uniform scaling relative to the root font size. </li>
+				<li>The rem unit, which stands for "root em," creates a sizing reference in relation to the root
+					HTML element's font size.
+					Because each rem unit is linked to a single base value, this uniformity guarantees
+					consistent scaling throughout a webpage.
+					This feature generally streamlines scaling procedures and is very beneficial for responsive
+					typography. Because rem is used
+					for font sizes, users can change the default font settings in their browser to change the
+					size of text. Moreover, rem values
+					help ensure that padding and margins scale proportionately.</li>
 
-				</ul>
+				<li> Unlike em units, which are relative to the font-size of their parent element, rem units
+					consistently refer to the font-size
+					of the <html> element. By default, browsers set the <html> element's font-size to 16px,
+					meaning 1rem typically equals 16px unless altered.
+					This consistent reference point makes rem units highly effective for scalable and accessible
+					layouts. Changing the <html> element's font-size
+					will proportionally scale all elements defined with rem units across the document. This is
+					particularly beneficial for responsive design,
+					enabling typography and spacing adjustments for different screen sizes via media queries and
+					root font size changes, and for accessibility,
+					allowing users to control website scale through their browser's default font size settings,
+					which rem units will honor. The rem unit can be
+					applied to various CSS properties, including font-size, padding, margin, width, and height,
+					ensuring uniform scaling relative to the root font size. </li>
+
+			</ul>
 		</section>
 
 		<section>
@@ -135,42 +136,42 @@
 
 
 			<p>vmin (Viewport Minimum) </p>
-			<ul>
-				<li> The CSS unit 'vmin', which is 1%, represents the viewport's smaller dimension (width or
-					height).
-					Adaptive sizing is made easier by this unit, which ensures that elements scale proportionately
-					within
-					viewport constraints. For instance, the width of a viewport that is 700 pixels wide by 900
-					pixels tall
-					shows that 1vmin is equivalent to 7 pixels. Vmin is especially helpful for mobile-first designs
-					and for
-					elements like headers and footers that require consistent relative sizing to prevent excessive
-					negative
-					space on smaller screens.represents 1% of the viewport's smaller dimensions, which can be either
-					width or
-					height.It is helpful for producing a square element that, even when the viewport is resized,
-					remains visible
-					on the screen at all times without spilling over.
-				</li>
 
-				<p>vmax (Viewport Maximum)</p>
+			<li> The CSS unit 'vmin', which is 1%, represents the viewport's smaller dimension (width or
+				height).
+				Adaptive sizing is made easier by this unit, which ensures that elements scale proportionately
+				within
+				viewport constraints. For instance, the width of a viewport that is 700 pixels wide by 900
+				pixels tall
+				shows that 1vmin is equivalent to 7 pixels. Vmin is especially helpful for mobile-first designs
+				and for
+				elements like headers and footers that require consistent relative sizing to prevent excessive
+				negative
+				space on smaller screens.represents 1% of the viewport's smaller dimensions, which can be either
+				width or
+				height.It is helpful for producing a square element that, even when the viewport is resized,
+				remains visible
+				on the screen at all times without spilling over.
+			</li>
+
+			<p>vmax (Viewport Maximum)</p>
 
 
-				<li> The context-dependent term "max (Viewport Maximum)" can refer to either the `maximum-scale`
-					attribute
-					in an
-					HTML viewport meta tag or the CSS unit `vmax`. A relative CSS measurement, the `vmax` unit is
-					1/100th of
-					the browser's
-					viewport's larger dimension; for instance, 10vmax in a 1000px by 1200px viewport is 120px. With
-					values
-					like `maximum-scale=2.0`
-					permitting twofold zoom and `maximum-scale=1.0` prohibiting any zoom, the `maximum-scale` attribute,
-					on
-					the other hand, restricts user zoom on a webpage.
-					In order to differentiate between CSS styling and mobile device interaction controls, context is
-					essential.
-				</li>
+			<li> The context-dependent term "max (Viewport Maximum)" can refer to either the `maximum-scale`
+				attribute
+				in an
+				HTML viewport meta tag or the CSS unit `vmax`. A relative CSS measurement, the `vmax` unit is
+				1/100th of
+				the browser's
+				viewport's larger dimension; for instance, 10vmax in a 1000px by 1200px viewport is 120px. With
+				values
+				like `maximum-scale=2.0`
+				permitting twofold zoom and `maximum-scale=1.0` prohibiting any zoom, the `maximum-scale` attribute,
+				on
+				the other hand, restricts user zoom on a webpage.
+				In order to differentiate between CSS styling and mobile device interaction controls, context is
+				essential.
+			</li>
 			</ul>
 		</section>
 	</main>
