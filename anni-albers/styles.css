@@ -19,105 +19,42 @@
         font-family: "Times New Roman"
     }
 
-   .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    } 
 
-        .floating-column1 {
-            float: auto;
-            background-color: white;
-            font-size:28px;
-            margin: 0px;
-            overflow: hidden;
-            width: 50%;
-            margin-bottom: 20px;
-            padding: 10px;
-            box-sizing: border-box
-           
-        }   
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-        .floating-column2 {
-            float: auto;
-            background-color: white;
-            font-size: 32px;
-            margin: 0px;
-            overflow: hidden;
-            width: 75%;
-            margin-bottom: 20px;
-            padding: 10px;
-            box-sizing: border-box
-        }   
+.column-container {
+  width: 100%;
+  box-sizing: border-box;
+}
 
-       .floating-column3 {
-            float: left;
-            background-color: white;
-            font-size: 28px;
-            margin: 0px;
-            overflow: hidden;
-            width: 75%;
-            margin-bottom: 20px;
-            padding: 10px;
-            box-sizing: border-box
-        }   
+.column {
+    float: left; 
+    width: 16.6666%; 
+    box-sizing: border-box;
+    padding: 15px; 
+    border: 1px; 
+    min-height: 150px; 
+    background-color: white;
+    font-size:28px;
+    margin: 10px;
+    overflow: hidden;
+    padding: 10px;
+    }   
 
-        .floating-column4 {
-            float: right;
-            background-color: white;
-            font-size: 32px;
-            margin: 0px;
-            overflow: hidden;
-            width: 50%;
-            margin-bottom: 20px;
-            padding: 10px;
-            box-sizing: border-box
-        }   
-
-        .floating-column5 {
-            float: auto;
-            background-color: white;
-            font-size: 28px;
-            margin: 0px;
-            overflow: hidden;
-            width: 75%;
-            margin-bottom: 20px;
-            padding: 10px;
-            box-sizing: border-box
-        }   
-
-        .callout1 {
-                padding: 15px;
-                margin: 10px;
-                background-color: white;
-                font-size: 28;
-        }    
-
-        .callout2 {
-                padding: 15px;
-                margin: 10px;
-                background-color: white;
-                font-size: 36
-        }
-
-        .callout3 {
-                padding: 15px;
-                margin: 10px;
-                background-color: white;
-                font-size: 28;
-        }    
-
-        .callout4 {
-                padding: 15px;
-                margin: 10px;
-                background-color: white;
-                font-size: 32;
-        }        
+.callout-box {
+    border: 1px;
+    padding: 15px;
+    margin: 10px;
+    background-color: white;
+    font-size: 28;
+    }    
      
 
-
-
-    </body>
+ </body>
 
 </head>
 
