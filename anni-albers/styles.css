@@ -29,18 +29,18 @@
             margin: 0px;
             width: 600px;
             height:600px;
-            overflow: hidden;
+            overflow:auto;
             justify-content: space-between;
             }    
 
         .float-left{
-            float: auto;
+            float: right;
             background-color: white;
             font-size: 20px;
             margin: 0px;
             width: 600px;
             height:600px;
-            overflow: hidden;
+            overflow:auto;
             justify-content: space-between;
             }   
 
@@ -51,7 +51,7 @@
             margin: 0px;
             width: 600px;
             height:600px;
-            overflow: auto;
+            overflow:auto;
             justify-content: space-between;
             }   
 
@@ -62,7 +62,7 @@
             margin: 0px;
             width: 600px;
             height:600px;
-            overflow: hidden;
+            overflow:auto;
             justify-content: space-between;
             }   
 
@@ -73,7 +73,7 @@
             margin: 0px;
             width: 600px;
             height:600px;
-            overflow: hidden;
+            overflow:auto;
             justify-content: space-between;
             }   
 
@@ -82,9 +82,8 @@
             background-color: white;
             font-size: 20px;
             margin: 0px;
-            width: 600px;
-            height:600px;
-            overflow: hidden;
+            width: 400px;
+            height:400: hidden;
             justify-content: space-between;
             }   
 
@@ -92,7 +91,7 @@
   padding: 0.5em;
    }
         .callout1 {
-            float: auto;
+            float: right;
             background-color: white;
             font-size: 36px;
             border-radius: 5px;
@@ -104,7 +103,7 @@
         }    
 
         .callout2 {
-            float: auto;
+            float: left;
             background-color: white;
             font-size: 36px;
             border-radius: 5px;
@@ -116,7 +115,7 @@
         } 
 
         .callout3 {
-            float: auto;
+            float: left;
             background-color: white;
             font-size: 36px;
             border-radius: 5px;
