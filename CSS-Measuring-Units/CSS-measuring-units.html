@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- meta tags and title -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Measuring Units</title>
+</head>
+
+<body>
+
+	<header>
+		<h1>CSS Measuring Units</h1>
+	</header>
+
+	<textarea cols="50" row="3">
+	I'm imagining myself in the Bahamas instead of coding.
+	</textarea>
+
+	<main>
+		<section>
+			<p> Question: Explain the difference between absolute and relative CSS length units</p>
+			<p>Answer:</p>
+			<ul>
+				<li>Non-semantic tags don't inherently describe the content they contain.
+					They provide no information about the meaning or structure of the content enclosed within them.</li>
+
+				<li>Semantic tags clearly define the content’s purpose and structure.
+					They provide meaning to the content enclosed, both to the browser and to developers.</li>
+
+				<li> Relative length units specify a length in relation to another length
+					property, which makes them ideal for building responsive and accessible websites. </li>
+			</ul>
+		</section>
+
+		<h2> Description of units </h2>
+
+<h3>Pixels </h3>
+			<ul>
+				<li> Pixels, which are short for "picture element," are the smallest units seen in digital displays or
+					images. One point of color is represented by a small square or dot.
+					Together with other pixels, they create the pictures we see on devices like televisions, cellphones,
+					and computer monitors. </li>
+
+				<li> px (pixels): Represents a single dot on the screen, but is only "absolute" in a technical sense.
+					Its size varies depending on
+					the device's DPI and resolution, allowing it to adapt somewhat. </li>
+
+				<li> px (Pixels): Historically, a pixel was a single dot on a computer screen. In modern web design, a
+					CSS pixel (px) is an abstract unit that serves as a
+					reference point for other absolute units and is calibrated to look roughly the same size across
+					different devices and viewing distances.
+					It is still the most commonly used unit for web design elements that require fixed, precise control,
+		<h3> Points</h3>
+			<ul>
+				<li> pt (points): Defined as 1/72 of an inch and is primarily used for print stylesheets.
+					in (inches), cm (centimeters), mm (millimeters): Represent their physical counterparts
+					and are useful for styling content intended for print </li>
+
+				<li> pt (Points): Defined as 1/72 of an inch and is an absolute unit of measurement inherited
+					from traditional print typography. It should be avoided for screen layouts due to its fixed,
+					non-scaling nature and is only suitable for print-specific stylesheets. </li>
+
+			</ul>			such as borders or small icons. </li>
+
+					<h2> Points</h2>
+			<ul>
+				<li> pt (points): Defined as 1/72 of an inch and is primarily used for print stylesheets.
+					in (inches), cm (centimeters), mm (millimeters): Represent their physical counterparts
+					and are useful for styling content intended for print </li>
+
+				<li> pt (Points): Defined as 1/72 of an inch and is an absolute unit of measurement inherited
+					from traditional print typography. It should be avoided for screen layouts due to its fixed,
+					non-scaling nature and is only suitable for print-specific stylesheets. </li>
+
+			</ul>
+			</ul>
+
+		<h3> em and rem </h3>
+		<p>em and rem are font-relative units frequently used to create scalable and accessible layouts. </p>
+		<ul>
+			<l1> em: This unit is relative to the font size of its nearest parent element. If you have nested elements
+				and apply em units,
+				the effect can compound, which can be difficult to predict. For example, a nested <div> with font-size:
+				1.5em will inherit a size that is 150% of its parent's font size.
+				This behavior is useful for scaling components proportionally. </l1>
+
+			<li> Standing for "root em," this unit is relative to the font size of the document's root element (the
+				html tag).
+				This provides consistent sizing throughout a webpage, as all rem units refer to the same base value.
+				This predictability is highly beneficial for responsive typography and simplifies scaling. For
+				accessibility, using rem for font sizes allows users to scale text by changing their browser's default font settings, while
+				rem values for margins and padding will scale proportionally. </li>
+
+		</ul>
+
+		<h3>vmin; vmax </h3>
+		<p></p> These units are relative to the size of the viewport (the browser window) and are essential for creating
+		designs that adapt to different screen sizes. </h2>
+
+
+		<ul>
+			<li> vmin (Viewport Minimum): Represents 1% of the smaller dimension of the viewport (either height or
+				width).
+				It is useful for creating a square element that is always visible on the screen without overflowing,
+				even when the viewport is resized. </li>
+
+			<li>vmax (Viewport Maximum): Represents 1% of the larger dimension of the viewport. </li>
+		</ul>
+	
+
+	</main>
+
+
+	<footer>
+
+		<p>©Carmela Turman</p>
+
+	</footer>
+
+
+
+</body>
+
+</html>
+
+
+
+</body>
+
+</html>
