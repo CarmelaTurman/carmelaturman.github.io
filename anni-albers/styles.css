@@ -22,17 +22,6 @@
   padding: 0.5em;
    }
 
-.float {
-    background-color: white;
-    font-size: 18px;
-    margin: 10px;
-    width: 400px;
-    height: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: auto;
-    justify-content: space-between;
-    }
 
         .float1 {
             float: auto;
@@ -40,12 +29,12 @@
             font-size: 18px;
             margin: 0px;
             margin-left: 10px;
-            width: 200px;
-            height:200px;
+            width: 400px;
+            height:600px;
             display: flex;
             flex-wrap: wrap;
             overflow: auto;
-            justify-content: right;
+            justify-content: space-between;
         }
 
         .float2 {
@@ -103,17 +92,6 @@
             overflow: auto;
             justify-content: space-between;
      }
-
-.callout {
-  background-color: white;
-  font-size: 18px;
-  border-radius: 5px;
-  float: left;
-  width: 400px;
-  margin: 0;
-  height: 400px;
-  padding: 1em;
-}
 
         .callout1 {
             float: auto;
