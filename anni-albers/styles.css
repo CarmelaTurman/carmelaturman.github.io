@@ -36,12 +36,12 @@
 
 .callout-box h2 {
     margin-top: 0;
-    background-color: white
+    background-color: white 
 }
-.floating-columns-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+
+.callout-box h3 {
+    margin-top: 0;
+    background-color: white 
 }
 
 .content-box{
