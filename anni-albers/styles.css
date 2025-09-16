@@ -18,22 +18,15 @@
         font-family: "Times New Roman"
     }
 
-.floating-column {
-  flex: 1;
-  padding: 20px;
-  background-color:white;
-  border-radius: 8px;
-}
-
-        .floating-column1{
+        .floating-column1 {
             float: auto;
             background-color: white;
-            font-size: 24px;
+            font-size: 32px;
             margin: 5px;
-            width: 400px;
-            height:400px;
+            width: 600px;
+            height:600px;
             overflow:auto;
-            justify-content: space-between;
+
         }    
 
         .floating-column2{
@@ -44,40 +37,36 @@
             width: 400px;
             height:400px;
             overflow: auto;
-            justify-content: space-between;
         }   
 
        .floating-column3{
             float: auto;
             background-color: white;
-            font-size: 24px;
+            font-size:32px;
             margin: 5px;
             width: 400px;
             height:400px;
             overflow:auto;
-            justify-content: space-between;
         }   
 
         .floating-column4{
-            float: auto;
+            float: left;
             background-color: white;
             font-size: 28px;
             margin: 5px;
             width: 400px;
             height:400px;
             overflow:auto;
-            justify-content: space-between;
         }   
 
         .floating-column5{
-            float: auto;
+            float: right;
             background-color: white;
             font-size: 28px;
             margin: 5px;
             width: 400px;
             height:400px;
             overflow:auto;
-            justify-content: space-between;
         }   
 
         .floating-column6{
@@ -88,37 +77,27 @@
             width: 400px;
             height:400px;
             overflow:auto;
-            justify-content: space-between;
         }   
 
-.column {
-  padding: 0.5em;
-   }
         .callout1{
                 float: auto; 
-                width: 800px; 
+                width: 600px; 
+                height: 600px;
                 padding: 15px;
                 margin: 10px;
                 background-color: white;
                 font-size: 28;
         }    
-
-.clear {
-  clear: both;
-}
 
         .callout2{
                float: auto; 
-                width: 800px; 
+                width: 600px; 
+                height: 600px;
                 padding: 15px;
                 margin: 10px;
                 background-color: white;
-                font-size: 28;
-        }    
-
-.clear {
-  clear: both;
-}
+                font-size: 28
+        }
 
         .callout3{
                 float: auto; 
@@ -129,13 +108,11 @@
                 font-size: 28;
         }    
 
-.clear {
-  clear: both;
-}
      
 
 
 
 </body>
 </head>
-</html>
+</html>;
+ 
