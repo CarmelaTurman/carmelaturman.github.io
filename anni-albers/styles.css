@@ -25,9 +25,9 @@
 .float {
     background-color: white;
     font-size: 18px;
-    margin: 20px;
-    width: 800px;
-    height: 800px;
+    margin: 10px;
+    width: 400px;
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
@@ -35,70 +35,73 @@
     }
 
         .float1 {
-        background-color: white;
-        font-size: 18px;
-        margin: 20px;
-        margin-left: auto;
-        width: 800px;
-        height: 800px;
-        isplay: flex;
-        flex-wrap: wrap;
-        overflow: auto;
-        justify-content: space-between;
+            float: right;
+            background-color: white;
+            font-size: 18px;
+            margin: 10px;
+            margin-left: auto;
+            width: 400px;
+            height:400px;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: auto;
+            justify-content: space-between;
         }
 
         .float2 {
-        float: right;
-        background-color: white;
-        font-size: 18px;
-        margin: 20px;
-        margin-left: auto;
-        width: 800px;
-        height: 800px;
-        display: flex;
-        flex-wrap: wrap;
-        overflow: auto;
-        justify-content: space-between;
+            float: leftt;
+            background-color: white;
+            font-size: 18px;
+            margin: 10px;
+            margin-left: auto;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: auto;
+            justify-content: space-between;
         }
 
-    .float3 {
-        float: right;
-        background-color: white;
-        font-size: 18px;
-        margin: 20px;
-        margin-left: auto;
-        width: 800px;
-        height: 800px;
-        isplay: flex;
-        flex-wrap: wrap;
-        overflow: auto;
-        justify-content: space-between;
-     }
+        .float3 {
+            float: left;
+            background-color: white;
+            font-size: 18px;
+            margin: 10px;
+            margin-left: auto;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: auto;
+            justify-content: space-between;
+         }
 
-    .float4 {
-        background-color: white;
-        font-size: 18px;
-        margin: 20px;
-        margin-left: auto;
-        width: 800px;
-        height: 800px;
-        display: flex;
-        flex-wrap: wrap;
-        overflow: auto;
-        justify-content: space-between;
+        .float4 {
+            float: center;
+            background-color: white;
+            font-size: 18px;
+            margin: 10px;
+            margin-left: auto;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: auto;
+            justify-content: space-between;
      }
 
     .float5 {
-        background-color: white;
-        font-size: 18px;
-        margin: 20px;
-        margin-left: auto;
-        idth: 800px;
-        height: 800px;
-        display: flex;
-        flex-wrap: wrap;
-        overflow: auto;
-        justify-content: space-between;
+            float:right;
+            background-color: white;
+            font-size: 18px;
+            margin: 10px;
+            margin-left: auto;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: auto;
+            justify-content: space-between;
      }
 
 .callout {
@@ -109,10 +112,11 @@
   width: 600px;
   margin: 15px;
   height: 600px;
-  padding: 2em;
+  padding: 1em;
 }
 
         .callout1 {
+            float: auto;
             background-color: white;
             font-size: 18px;
             border-radius: 5px;
@@ -120,25 +124,25 @@
             width: 600px;
             margin: 15px;
             height: 600px;
-            padding: 2em
+            padding: 1em
         }    
 
         .callout2 {
+            float: auto;
             background-color: white;
             font-size: 18px;
             border-radius: 5px;
-            float: right; 
             width: 600px;
             margin: 15px;
             height: 600px;
-            padding: 2em
+            padding: 1em
         } 
 
         .callout3 {
+            float: auto;
             background-color: white;
             font-size: 18px;
             border-radius: 5px;
-            float: auto; 
             width: 600px;
             margin: 15px;
             height: 600px;
@@ -153,7 +157,7 @@
             width: 600px;
             margin: 15px;
             height: 600px;
-            padding: 2em
+            padding: 1em
         } 
 
 
