@@ -15,57 +15,78 @@
 
     body
 
-    p {
-        font-family: "Times New Roman";
+    p{
+        font-family: "Times New Roman"
     }
 
-    {
-        box-sizing: border-box;
-            margin: 10px;
-            padding: 5px;
-    }
+   .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    } 
+
         .floating-column1 {
+            float: auto;
+            background-color: white;
+            font-size:28px;
+            margin: 0px;
+            overflow:auto;
+            width: 50%;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-sizing: border-box
+           
+        }   
+
+        .floating-column2 {
             float: auto;
             background-color: white;
             font-size: 32px;
             margin: 0px;
             overflow:auto;
-        }    
-
-        .floating-column2 {
-            float: auto;
-            background-color: white;
-            font-size: 24px;
-            margin: 5px;
-            overflow: auto;
+            width: 75%;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-sizing: border-box
         }   
 
        .floating-column3 {
             float: left;
             background-color: white;
-            font-size:32px;
-            margin: 5px;
+            font-size: 28px;
+            margin: 0px;
             overflow:auto;
+            width: 75%;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-sizing: border-box
         }   
 
         .floating-column4 {
             float: right;
             background-color: white;
-            font-size: 28px;
-            margin: 5px;
+            font-size: 32px;
+            margin: 0px;
             overflow:auto;
+            width: 50%;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-sizing: border-box
         }   
 
         .floating-column5 {
             float: auto;
             background-color: white;
             font-size: 28px;
-            margin: 5px;
+            margin: 0px;
             overflow:auto;
+            width: 75%;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-sizing: border-box
         }   
 
         .callout1 {
-                float: auto; 
                 padding: 15px;
                 margin: 10px;
                 background-color: white;
@@ -73,7 +94,6 @@
         }    
 
         .callout2 {
-               float: auto; 
                 padding: 15px;
                 margin: 10px;
                 background-color: white;
@@ -81,7 +101,6 @@
         }
 
         .callout3 {
-                float: auto; 
                 padding: 15px;
                 margin: 10px;
                 background-color: white;
@@ -89,7 +108,6 @@
         }    
 
         .callout4 {
-                float: auto; 
                 padding: 15px;
                 margin: 10px;
                 background-color: white;
