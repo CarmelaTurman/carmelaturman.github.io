@@ -29,7 +29,7 @@
 
 .floating-column {
     flex: 1;
-    min-width: 25%;
+    min-width: 75%;
     max-width: calc(100% / 6);
 }
 
