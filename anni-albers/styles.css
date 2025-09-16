@@ -32,7 +32,7 @@
 
 .column {
     float: left; 
-    width: 16.6666%; 
+    width: 100%
     box-sizing: border-box;
     padding: 15px; 
     border: 1px; 
@@ -40,7 +40,7 @@
     background-color: white;
     font-size:28px;
     margin: 10px;
-    overflow: hidden;
+    overflow: auto;
     padding: 10px;
     }   
 
