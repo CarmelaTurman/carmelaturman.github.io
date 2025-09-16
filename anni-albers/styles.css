@@ -40,8 +40,8 @@
             font-size: 18px;
             margin: 10px;
             margin-left: auto;
-            width: 400px;
-            height:400px;
+            width: 200px;
+            height:200px;
             display: flex;
             flex-wrap: wrap;
             overflow: auto;
@@ -54,8 +54,8 @@
             font-size: 18px;
             margin: 10px;
             margin-left: auto;
-            width: 400px;
-            height: 400px;
+            width: 200px;
+            height:200px;
             display: flex;
             flex-wrap: wrap;
             overflow: auto;
@@ -82,15 +82,15 @@
             font-size: 18px;
             margin: 10px;
             margin-left: auto;
-            width: 400px;
-            height: 400px;
+            width: 200px;
+            height:200px;
             display: flex;
             flex-wrap: wrap;
             overflow: auto;
             justify-content: space-between;
      }
 
-    .float5 {
+        .float5 {
             float:right;
             background-color: white;
             font-size: 18px;
@@ -109,9 +109,9 @@
   font-size: 18px;
   border-radius: 5px;
   float: auto;
-  width: 600px;
-  margin: 15px;
-  height: 600px;
+  width: 400px;
+  margin: 0;
+  height: 400px;
   padding: 1em;
 }
 
@@ -121,9 +121,9 @@
             font-size: 18px;
             border-radius: 5px;
             float: right; 
-            width: 600px;
-            margin: 15px;
-            height: 600px;
+            width: 400x;
+            margin: 0;
+            height: 400px;
             padding: 1em
         }    
 
@@ -146,7 +146,7 @@
             width: 600px;
             margin: 15px;
             height: 600px;
-            padding: 2em
+            padding: 1em
         } 
 
         .callout4 {
