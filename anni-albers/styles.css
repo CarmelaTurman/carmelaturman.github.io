@@ -89,32 +89,14 @@
 .column {
   padding: 0.5em;
    }
-        .callout1 {
+        .callout {
                 float: auto; 
-                width: 300px; 
+                width: 500px; 
                 padding: 15px;
                 margin: 10px;
                 background-color: white;
-                font-size: 28px;
         }    
 
-        .callout2 {
-                  float: auto; 
-                width: 300px; 
-                padding: 15px;
-                margin: 10px;
-                background-color: white;
-                font-size: 24px
-        } 
-
-        .callout3 {
-                  float: left; 
-                width: 300px; 
-                padding: 15px;
-                margin: 10px;
-                background-color: white;
-                font-size: 24px;
-        } 
 
      
 
