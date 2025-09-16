@@ -24,7 +24,7 @@
 
 .float {
     background-color: white;
-    font-size: 36px;
+    font-size: 24px;
     margin: 20px;
     width: 800px;
     height: 800px;
@@ -34,21 +34,130 @@
     justify-content: space-between;
     }
 
-.column {
-    background-color: white;
-    font-size: 36px;
-    border-radius: 5px;
-    float: auto;
-    width: 600;
-    margin: 15px;
-    height: 600px;
-    border-radius: 5px;
-    padding: 2em;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: auto;
-    justify-content: space-between;
+        .float1 {
+        background-color: white;
+        font-size: 24px;
+        margin: 20px;
+        margin-left: auto;
+        width: 800px;
+        height: 800px;
+        isplay: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+        justify-content: space-between;
+        }
+
+        .float2 {
+        float: right;
+        background-color: white;
+        font-size: 24px;
+        margin: 20px;
+        margin-left: auto;
+        width: 800px;
+        height: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+        justify-content: space-between;
+        }
+
+    .float3 {
+        float: right;
+        background-color: white;
+        font-size: 24px;
+        margin: 20px;
+        margin-left: auto;
+        width: 800px;
+        height: 800px;
+        isplay: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+        justify-content: space-between;
+     }
+
+    .float4 {
+        background-color: white;
+        font-size: 24px;
+        margin: 20px;
+        margin-left: auto;
+        width: 800px;
+        height: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+        justify-content: space-between;
+     }
+
+    .float5 {
+        background-color: white;
+        font-size: 24px;
+        margin: 20px;
+        margin-left: auto;
+        idth: 800px;
+        height: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+        justify-content: space-between;
+     }
+
+.callout {
+  background-color: white;
+  font-size: 36px;
+  border-radius: 5px;
+  float: auto;
+  width: 600px;
+  margin: 15px;
+  height: 600px;
+  padding: 2em;
 }
 
+        .callout1 {
+            background-color: white;
+            font-size: 36px;
+            border-radius: 5px;
+            float: right; 
+            width: 600px;
+            margin: 15px;
+            height: 600px;
+            padding: 2em
+        }    
+
+        .callout2 {
+            background-color: white;
+            font-size: 36px;
+            border-radius: 5px;
+            float: right; 
+            width: 600px;
+            margin: 15px;
+            height: 600px;
+            padding: 2em
+        } 
+
+        .callout3 {
+            background-color: white;
+            font-size: 36px;
+            border-radius: 5px;
+            float: auto; 
+            width: 600px;
+            margin: 15px;
+            height: 600px;
+            padding: 2em
+        } 
+
+        .callout4 {
+            background-color: white;
+            font-size: 36px;
+            border-radius: 5px;
+            float: left; 
+            width: 600px;
+            margin: 15px;
+            height: 600px;
+            padding: 2em
+        } 
+
+
+
 </body>
+</head>
 </html>
