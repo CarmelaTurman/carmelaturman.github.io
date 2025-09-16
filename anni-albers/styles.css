@@ -18,9 +18,12 @@
         font-family: "Times New Roman"
     }
 
-.box {
-  padding: 0.5em;
-   }
+.floating-column {
+  flex: 1;
+  padding: 20px;
+  background-color:white;
+  border-radius: 8px;
+}
 
         .float1{
             float: right;
@@ -91,13 +94,16 @@
    }
         .callout {
                 float: auto; 
-                width: 500px; 
+                width: 800px; 
                 padding: 15px;
                 margin: 10px;
                 background-color: white;
+                font-size 28
         }    
 
-
+.clear {
+  clear: both;
+}
      
 
 
