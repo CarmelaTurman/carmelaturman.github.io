@@ -22,14 +22,14 @@
 .container {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 5px;
     padding: 10px;
     background-color: white
 }
 
 .floating-column {
     flex: 1;
-    min-width: 50%;
+    min-width: 25%;
     max-width: calc(100% / 6);
 }
 
