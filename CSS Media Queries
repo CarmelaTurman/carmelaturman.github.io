@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Media Queries</h1>
+    </header>
+
+    <section>
+        <h2>How does a CSS media query work, and why is it useful?</h2>
+        <p>
+            A CSS media query is a technique used to apply CSS styles conditionally, based on certain features of the user’s device or browser.  
+            Media queries allow developers to create responsive designs that adapt to different screen sizes, resolutions, orientations, or other properties.  
+            This makes websites work well on desktops, tablets, and smartphones without requiring separate code for each device.
+        </p>
+    </section>
+
+    <section>
+        <h2>Supported Media Features and Examples</h2>
+        <p>Here are four common media features and their uses:</p>
+        <ul>
+            <li>
+                <strong>max-width:</strong> Applies styles only if the viewport width is less than or equal to a specified value.  
+                Example: <code>@media (max-width: 600px)</code> will apply styles for screens narrower than 600px, such as smartphones.
+            </li>
+            <li>
+                <strong>min-width:</strong> Applies styles only if the viewport width is greater than or equal to a specified value.  
+                Example: <code>@media (min-width: 1024px)</code> targets larger devices like desktops.
+            </li>
+            <li>
+                <strong>orientation:</strong> Targets the orientation of the device, either <code>portrait</code> or <code>landscape</code>.  
+                Example: <code>@media (orientation: portrait)</code> applies styles when the device is held vertically.
+            </li>
+            <li>
+                <strong>prefers-color-scheme:</strong> Allows developers to detect if the user prefers a light or dark color theme.  
+                Example: <code>@media (prefers-color-scheme: dark)</code> applies styles for dark mode.
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy Carmela Turman</p>
+    </footer>
+</body>
+</html>
 
