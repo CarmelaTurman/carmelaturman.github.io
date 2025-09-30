@@ -1,0 +1,61 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #a8324a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.info-section {
+    margin-top: 1rem;
+}
+
+.info-section h2, .info-section h3 {
+    color: #a8324a;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.sources-section {
+    margin-top: 2rem;
+}
+
+.sources-section ul {
+    padding-left: 1rem;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
