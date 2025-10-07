@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* You can keep this inline for demo purposes */
+        body {
+            font-family: 'Times New Roman'
+                background-color: #f5f5f5;
+            margin: 40px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #0066cc;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .example-box {
+            border: 2px solid #333;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        .named {
+            color: white;
+            background-color: tomato;
+        }
+
+        .hex {
+            color: #ffffff;
+            background-color: #1e90ff;
+        }
+
+        .rgb {
+            color: rgb(255, 255, 255);
+            background-color: rgb(60, 179, 113);
+        }
+
+        .hsl {
+            color: hsl(0, 0%, 100%);
+            background-color: hsl(300, 50%, 40%);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Code Log: CSS Color</h1>
+    <p><strong>Topic:</strong> How CSS uses color in design</p>
+
+    <h2>How CSS Uses Color</h2>
+    <p>CSS lets us add color to almost anything on a web page — text, backgrounds, borders, and more. Using color
+        correctly can make a site look professional, readable, and visually balanced. Here’s how some key color-related
+        properties work:</p>
+
+    <ul>
+        <li><strong><code>color</code></strong> — changes the text color inside an element.</li>
+        <li><strong><code>background-color</code></strong> — fills the background of an element with a chosen color.
+        </li>
+        <li><strong><code>border-color</code></strong> — sets the color of the border around an element (you’ll only see
+            it if a border is defined).</li>
+    </ul>
+
+    <h2>Ways to Set Color Values</h2>
+    <p>CSS can describe colors in several ways. Here are four common formats:</p>
+
+    <h3>1. Named Colors</h3>
+    <p>CSS includes over 140 named colors like <code>red</code>, <code>blue</code>, <code>tomato</code>, or
+        <code>lightgray</code>.</p>
+    <div class="example-box named">
+        Example: <code>background-color: tomato;</code>
+    </div>
+
+    <h3>2. Hexadecimal Colors</h3>
+    <p>Hex codes use numbers and letters to describe colors, starting with a <code>#</code>. For example,
+        <code>#1e90ff</code> represents a bright blue. Each pair of characters represents the amount of red, green, and
+        blue (RRGGBB).</p>
+    <div class="example-box hex">
+        Example: <code>background-color: #1e90ff;</code>
+    </div>
+
+    <h3>3. RGB Colors</h3>
+    <p>The <code>rgb()</code> function lets you specify exact amounts of red, green, and blue as numbers between 0 and
+        255. You can also use <code>rgba()</code> to add transparency (the “a” stands for alpha).</p>
+    <div class="example-box rgb">
+        Example: <code>background-color: rgb(60, 179, 113);</code>
+    </div>
+
+    <h3>4. HSL Colors</h3>
+    <p><code>hsl()</code> stands for hue, saturation, and lightness. It’s easier for humans to tweak, since you can
+        think in terms of how intense or bright a color is.</p>
+    <div class="example-box hsl">
+        Example: <code>background-color: hsl(300, 50%, 40%);</code>
+    </div>
+
+    <h2>Summary</h2>
+    <p>CSS color options are flexible and powerful. You can express the same color in multiple ways, depending
+        on what’s easiest for your workflow. Whether you use named colors for simplicity, hex codes for precision, or
+        RGB/HSL for control — CSS gives you all the tools to make your website visually stand out.</p>
+
+
+</body>
+
+</html>
