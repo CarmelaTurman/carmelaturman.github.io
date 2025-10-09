@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Images</h1>
+
+    <section>
+        <h2>Using Images in HTML and CSS</h2>
+        <p>Images can be presented in HTML either with an <code>&lt;img&gt;</code> tag or as a background image using
+            CSS.</p>
+
+        <h3>HTML <code>&lt;img&gt;</code> tag</h3>
+        <p>The <code>&lt;img&gt;</code> tag directly embeds an image into the HTML content. This image is part of the
+            document structure, meaning it can have alt text, captions, and semantic meaning.</p>
+        <div class="example">
+            <img src="https://via.placeholder.com/300x200" alt="Example image" width="300" height="200">
+        </div>
+
+        <h3>CSS <code>background-image</code></h3>
+        <p>A background image is applied to an element via CSS, and is not part of the document’s content flow. It is
+            purely decorative, and does not have semantic meaning.</p>
+        <div class="example background-example">Background Image</div>
+
+        <p><strong>Key differences:</strong></p>
+        <ul>
+            <li><strong>HTML &lt;img&gt;:</strong> part of content, semantic meaning, supports alt text for
+                accessibility, affects layout directly.</li>
+            <li><strong>CSS background-image:</strong> purely decorative, does not add to document semantics, can be
+                positioned, repeated, sized independently of element content.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>CSS Properties for Background Images</h2>
+        <p>Besides <code>background-image</code>, CSS provides other properties to control background image display. Two
+            important ones are:</p>
+        <ul>
+            <li><code>background-size</code>: controls the size of the background image. For example, <code>cover</code>
+                scales it to fill the element while preserving aspect ratio; <code>contain</code> scales it to fit
+                entirely within the element.</li>
+            <li><code>background-position</code>: determines the starting position of the background image within the
+                element (example <code>center</code>, <code>top left</code>, or coordinates like <code>50% 50%</code>).
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Dimensions vs. Resolution in Bitmap Images</h2>
+        <p><strong>In one sentence:</strong> Dimensions refer to the width and height of an image in pixels, while
+            resolution refers to the pixel density (pixels per inch) that affects image clarity.</p>
+    </section>
+
+    <section>
+        <h2>Image File Formats</h2>
+        <p><strong>GIF:</strong> Supports animation, limited to 256 colors, good for simple graphics and icons, not
+            ideal for detailed photos.</p>
+        <p><strong>PNG:</strong> Supports transparency, lossless compression, ideal for graphics with sharp edges and
+            transparent backgrounds.</p>
+        <p><strong>JPG/JPEG:</strong> Lossy compression, good for photographs, smaller file sizes but quality decreases
+            with compression.</p>
+        <p><strong>WebP:</strong> Supports both lossless and lossy compression, smaller file sizes with high quality,
+            supports transparency and animation.</p>
+        <p><strong>SVG:</strong> Vector format, scalable without losing quality, ideal for icons and logos, not suitable
+            for complex photographic images.</p>
+    </section>
+
+    <footer>
+        <h2>Resources</h2>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_images"
+                    target="_blank">HTML Images - MDN</a></li>
+            <li><a href="https://www.w3schools.com/html/html_images.asp" target="_blank">HTML Images - W3Schools</a>
+            </li>
+            <li><a href="https://www.w3schools.com/cssref/css3_pr_background.php" target="_blank">CSS Background
+                    Property - W3Schools</a></li>
+            <li><a href="https://css-tricks.com/almanac/properties/b/background/background-image/"
+                    target="_blank">background-image - CSS Tricks</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types"
+                    target="_blank">Image File Types and Formats Guide - MDN</a></li>
+            <li><a href="https://designpowers.com/blog/image-file-formats" target="_blank">How to Choose the Best Image
+                    File Format - Design Powers</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
