@@ -1,3 +1,4 @@
+/* === Reset & Base Styles === */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman", Times, serif, Arial, sans-serif;
   background-color: #fffaf4;
   color: #2e2b29;
   line-height: 1.6;
@@ -21,6 +22,7 @@ ul, ol {
   margin-left: 1.5rem;
 }
 
+/* === Header === */
 .site-header {
   text-align: center;
   background-color: #f2d3ab;
@@ -37,6 +39,7 @@ ul, ol {
   color: #4b2c20;
 }
 
+/* === Recipe Image === */
 .recipe-image {
   margin-top: 1rem;
 }
@@ -48,6 +51,7 @@ ul, ol {
   display: block;
 }
 
+/* === Recipe Container === */
 .recipe-container {
   max-width: 1200px;
   margin: 2rem auto;
@@ -57,6 +61,7 @@ ul, ol {
   gap: 2rem;
 }
 
+/* === Ingredients & Instructions === */
 .ingredients-instructions {
   display: flex;
   flex-direction: column;
@@ -71,6 +76,7 @@ ul, ol {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
+/* === Card Styles === */
 .card {
   background-color: #fff;
   padding: 1rem;
@@ -89,12 +95,14 @@ ul, ol {
   margin-bottom: 0.5rem;
 }
 
+/* === Tips Container === */
 .tips-container {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
+/* === Footer === */
 .site-footer {
   text-align: center;
   background-color: #f2d3ab;
@@ -107,6 +115,7 @@ ul, ol {
   text-decoration: underline;
 }
 
+/* === Instructions List Styling === */
 .instructions ol {
   counter-reset: step;
   padding-left: 1.2rem;
@@ -143,14 +152,15 @@ ul, ol {
   color: #4b2c20;
 }
 
-@media (min-width: 600px) {
-  .ingredients-instructions {
-    flex-direction: row;
-  }
-}
-
+/* === Media Queries === */
 @media (max-width: 780px) {
   .ingredients, .instructions {
     padding: 1rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .ingredients-instructions {
+    flex-direction: row;
   }
 }
