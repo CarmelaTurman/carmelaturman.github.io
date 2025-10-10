@@ -1,17 +1,25 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html, body {
+body {
   font-family: "Times New Roman", Times, serif;
-  background-color: #fffaf4;
+  background: #fffaf4;
   color: #2e2b29;
   line-height: 1.6;
+  padding: 0;
+  margin: 0;
 }
 
+h1, h2, h3 {
+  margin-bottom: 0.5rem;
+}
+
+ul, ol {
+  margin-left: 1.5rem;
+}
 
 .site-header {
   text-align: center;
@@ -22,7 +30,6 @@ html, body {
 
 .site-header h1 {
   font-size: 2rem;
-  margin-bottom: 0.3rem;
 }
 
 .site-header p {
@@ -30,6 +37,23 @@ html, body {
   color: #4b2c20;
 }
 
+.recipe-image {
+  margin-top: 1rem;
+}
+
+.recipe-image img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.recipe-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 
 .ingredients-instructions {
   display: flex;
@@ -37,46 +61,8 @@ html, body {
   gap: 2rem;
 }
 
-.ingredients,
-.instructions {
+.ingredients, .instructions {
   flex: 1;
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-}
-
-/* Large screens: side-by-side */
-@media (min-width: 800px) {
-  .ingredients-instructions {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-}
-
-.recipe-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 1rem;
-}
-
-.recipe-image img {
-  width: 100%;
-  max-width: 800px;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.recipe-image img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 10px 28px rgba(0,0,0,0.15);
-}
-
-.card {
   background: #ffffff;
   padding: 1.5rem;
   border-radius: 12px;
@@ -84,90 +70,27 @@ html, body {
 }
 
 .card h2 {
-  color: #4b2c20;
   border-bottom: 2px solid #f2d3ab;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
-}
-
-.card h3 {
-  color: #4b2c20;
-  margin-top: 1rem;
-}
-
-.instructions ol {
-  counter-reset: step;
-  list-style: none;
-}
-
-.instructions ol li {
-  counter-increment: step;
-  margin-bottom: 1rem;
-  padding-left: 3rem;
-  position: relative;
-  transition: background 0.3s ease;
-  cursor: pointer;
-}
-
-.instructions ol li:hover {
-  background: #fdf6e3;
-}
-
-.instructions ol li::before {
-  content: counter(step);
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background: #4b2c20;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.pro-tips {
-  border-left: 6px solid #d19b6d;
-}
-
-.pro-tips h3 {
-  margin-bottom: 0.5rem;
-}
-
-.pro-tips ul {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-}
-
-.notes {
-  border-left: 6px solid #c28b4a;
-}
-
-.notes p {
-  font-size: 1rem;
-}
-
-.nutrition {
-  border-left: 6px solid #a86b3b;
-}
-
-.nutrition ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.nutrition ul li {
-  margin-bottom: 0.4rem;
 }
 
 .tips-container {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.card h3 {
+  color: #4b2c20;
+  margin-bottom: 0.5rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .site-footer {
@@ -182,34 +105,49 @@ html, body {
   text-decoration: underline;
 }
 
-@media (max-width: 799px) {
-  .recipe-container {
-    padding: 1rem;
-  }
-
-  .site-header h1 {
-    font-size: 1.6rem;
+@media (min-width: 800px) {
+  .ingredients-instructions {
+    flex-direction: row;
   }
 }
 
-@media (min-width: 800px) {
-  .recipe-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 2rem;
-  }
+.instructions ol {
+  counter-reset: step;
+}
 
-  .recipe-image {
-    grid-column: 1 / 2;
-  }
+.instructions ol li {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
 
-  .instructions, .pro-tips, .notes, .nutrition {
-    grid-column: 2 / 3;
-  }
+.instructions ol li:hover {
+  background-color: #fdf6e3;
+}
 
-  .tips-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+.instructions ol li .step-content {
+  display: none;
+  padding-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.instructions ol li.active .step-content {
+  display: block;
+}
+
+.instructions ol li::before {
+  counter-increment: step;
+  content: counter(step) ".";
+  font-weight: bold;
+  margin-right: 8px;
+  color: #4b2c20;
+}
+
+@media (max-width: 799px) {
+  .ingredients, .instructions {
+    padding: 1rem;
   }
 }
