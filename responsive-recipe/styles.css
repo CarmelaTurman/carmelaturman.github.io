@@ -6,7 +6,7 @@
 
 body {
   font-family: "Times New Roman", Times, serif;
-  background: #fffaf4;
+  background-color: #fffaf4;
   color: #2e2b29;
   line-height: 1.6;
   padding: 0;
@@ -23,9 +23,9 @@ ul, ol {
 
 .site-header {
   text-align: center;
-  background: #f2d3ab;
+  background-color: #f2d3ab;
   padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .site-header h1 {
@@ -43,7 +43,9 @@ ul, ol {
 
 .recipe-image img {
   max-width: 100%;
+  height: auto;
   border-radius: 12px;
+  display: block;
 }
 
 .recipe-container {
@@ -63,10 +65,17 @@ ul, ol {
 
 .ingredients, .instructions {
   flex: 1;
-  background: #ffffff;
+  background-color: #ffffff;
   padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .card h2 {
@@ -75,27 +84,20 @@ ul, ol {
   margin-bottom: 1rem;
 }
 
+.card h3 {
+  color: #4b2c20;
+  margin-bottom: 0.5rem;
+}
+
 .tips-container {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.card h3 {
-  color: #4b2c20;
-  margin-bottom: 0.5rem;
-}
-
-.card {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
 .site-footer {
   text-align: center;
-  background: #f2d3ab;
+  background-color: #f2d3ab;
   padding: 1rem;
   margin-top: 2rem;
 }
@@ -105,14 +107,9 @@ ul, ol {
   text-decoration: underline;
 }
 
-@media (min-width: 600px) {
-  .ingredients-instructions {
-    flex-direction: row;
-  }
-}
-
 .instructions ol {
   counter-reset: step;
+  padding-left: 1.2rem;
 }
 
 .instructions ol li {
@@ -120,7 +117,7 @@ ul, ol {
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 6px;
-  transition: background 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 
 .instructions ol li:hover {
@@ -144,6 +141,12 @@ ul, ol {
   font-weight: bold;
   margin-right: 8px;
   color: #4b2c20;
+}
+
+@media (min-width: 600px) {
+  .ingredients-instructions {
+    flex-direction: row;
+  }
 }
 
 @media (max-width: 780px) {
