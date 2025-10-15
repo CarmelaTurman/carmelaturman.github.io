@@ -1,12 +1,15 @@
+
+
+
 :root {
   --chocolate: #4E342E;
   --light-chocolate: #6D4C41;
   --caramel: #D7A86E;
   --cream: #FFF3E0;
-  --mint: #A5D6A7;
   --accent: #F57C00;
   --text-dark: #3E2723;
 }
+
 
 body {
   font-family: 'Poppins', Arial, sans-serif;
@@ -22,6 +25,7 @@ header, main {
   text-align: center;
 }
 
+
 .hero-img {
   width: 100%;
   height: auto;
@@ -34,6 +38,7 @@ h1, h2, h3 {
   color: var(--chocolate);
   text-shadow: 1px 1px 0 #fff;
 }
+
 
 .recipe-links {
   margin-top: 2rem;
@@ -112,5 +117,19 @@ nav ul.menu > li > a:hover {
   color: #fff;
 }
 
+
+nav ul.submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--light-chocolate);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0 0 8px 8px;
+  min-width: 200px;
+  z-index: 100;
+}
 
 nav
