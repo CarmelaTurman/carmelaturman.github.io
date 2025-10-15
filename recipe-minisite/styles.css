@@ -1,0 +1,116 @@
+:root {
+  --chocolate: #4E342E;
+  --light-chocolate: #6D4C41;
+  --caramel: #D7A86E;
+  --cream: #FFF3E0;
+  --mint: #A5D6A7;
+  --accent: #F57C00;
+  --text-dark: #3E2723;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--cream);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+header, main {
+  padding: 1rem;
+  text-align: center;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(78, 52, 46, 0.3);
+  margin-top: 1rem;
+}
+
+h1, h2, h3 {
+  color: var(--chocolate);
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.recipe-links {
+  margin-top: 2rem;
+}
+
+.recipe-links h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.recipe-links .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.recipe-links .card {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 500px;
+  width: 90%;
+}
+
+.recipe-links .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(78, 52, 46, 0.3);
+}
+
+.recipe-links .card img {
+  width: 100%;
+  display: block;
+}
+
+.recipe-links .card h3 {
+  margin: 0;
+  padding: 1rem;
+  background-color: var(--caramel);
+  color: white;
+  font-size: 1.2rem;
+}
+
+
+nav {
+  background: linear-gradient(90deg, var(--chocolate), var(--light-chocolate));
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav ul.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul.menu > li {
+  position: relative;
+}
+
+nav ul.menu > li > a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 0.9rem 1rem;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul.menu > li > a:hover {
+  background-color: var(--caramel);
+  color: #fff;
+}
+
+
+nav
