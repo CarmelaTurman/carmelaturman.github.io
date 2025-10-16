@@ -32,6 +32,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
+const recipeImages = document.querySelectorAll('.recipe-hero-img, .recipe-card img');
+
+recipeImages.forEach(image => {
+    image.addEventListener('click', () => {
+        image.classList.toggle('active');
+    });
+});
+
   document.addEventListener("click", function (e) {
     const nav = document.querySelector("nav");
     if (!nav.contains(e.target)) {

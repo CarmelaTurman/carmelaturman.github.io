@@ -122,13 +122,29 @@ nav ul.menu li:hover > ul.submenu {
 
 
 .nutrition-card {
-    background: #fad7a0; /* soft orange */
+    background: #fad7a0; 
     border-radius: 12px;
     padding: 1rem;
     margin-bottom: 2rem;
     text-align: left;
 }
 
+
+.recipe-hero-img,
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.recipe-hero-img:hover,
+.recipe-card img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); 
+    filter: brightness(1.1); 
+    cursor: pointer; 
+}
 
 footer {
     background: #8e44ad;
