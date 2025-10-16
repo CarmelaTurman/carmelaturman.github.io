@@ -1,4 +1,28 @@
-/* Reset some default styles */
+
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fff2e6; 
+        text-align: center;
+    }
+
+    h1 {
+        font-family: 'Pacifico', cursive;
+        font-size: 3rem;
+        color: #d35400;
+        margin: 2rem 0 1rem 0;
+        text-shadow: 2px 2px #f9e79f;
+    }
+
+    h2 {
+        font-family: 'Fredoka One', cursive;
+        font-size: 2rem;
+        color: #8e44ad;
+        margin-bottom: 2rem;
+        text-shadow: 1px 1px #f5cba7;
+    }
+
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +30,14 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Body */
+
 body {
     background: linear-gradient(to right, #fefcea, #f1da36);
     color: #333;
     line-height: 1.6;
 }
 
-/* Navigation Menu */
+
 nav {
     background: #8b0000;
     padding: 10px 20px;
@@ -73,7 +97,7 @@ nav ul.menu li:hover ul.submenu {
     display: flex;
 }
 
-/* Header */
+
 header {
     text-align: center;
     padding: 40px 20px;
@@ -105,7 +129,7 @@ header p {
     transform: scale(1.05);
 }
 
-/* Main Section */
+
 .recipe-links {
     padding: 40px 20px;
     text-align: center;
@@ -118,7 +142,7 @@ header p {
     color: #d2691e;
 }
 
-/* Cards */
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -166,7 +190,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsive */
+
 @media (max-width: 900px) {
     .cards {
         flex-direction: column;
