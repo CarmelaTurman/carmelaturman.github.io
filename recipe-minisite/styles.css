@@ -1,75 +1,59 @@
 
-    body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        background: #fff2e6; 
-        text-align: center;
-    }
-
-    h1 {
-        font-family: 'Pacifico', cursive;
-        font-size: 3rem;
-        color: #d35400;
-        margin: 2rem 0 1rem 0;
-        text-shadow: 2px 2px #f9e79f;
-    }
-
-    h2 {
-        font-family: 'Fredoka One', cursive;
-        font-size: 2rem;
-        color: #8e44ad;
-        margin-bottom: 2rem;
-        text-shadow: 1px 1px #f5cba7;
-    }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Pacifico&display=swap');
 
 
 body {
-    background: linear-gradient(to right, #fefcea, #f1da36);
+    font-family: 'Fredoka One', cursive; 
+    margin: 0;
+    padding: 0;
+    background: #fff2e6; 
     color: #333;
-    line-height: 1.6;
+    text-align: center;
 }
 
-
-nav {
-    background: #8b0000;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+h1, h2 {
+    font-family: 'Pacifico', cursive; 
+    margin: 1rem 0;
+    text-shadow: 1px 1px #f9e79f; 
 }
+
+h1 {
+    font-size: 3rem;
+    color: #d35400;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #8e44ad; 
+}
+
 
 nav ul.menu {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #8e44ad; 
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: flex-start;
 }
 
-nav ul.menu li {
+nav ul.menu > li {
     position: relative;
-    margin-right: 20px;
 }
 
-nav ul.menu li a {
+nav ul.menu > li > a {
+    display: block;
     color: #fff;
     text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-    border-radius: 5px;
-    transition: 0.3s;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    transition: background 0.3s;
 }
 
-nav ul.menu li a:hover {
-    background: #ff4500;
-    transform: scale(1.05);
+nav ul.menu > li:hover > a {
+    background-color: #d35400; 
+    color: #fff;
 }
 
 nav ul.submenu {
@@ -77,150 +61,105 @@ nav ul.submenu {
     position: absolute;
     top: 100%;
     left: 0;
-    background: #ff6347;
-    border-radius: 5px;
-    overflow: hidden;
-    min-width: 200px;
-    z-index: 1000;
-    flex-direction: column;
-}
-
-nav ul.submenu li {
+    background-color: #f5b041; 
+    list-style: none;
+    padding: 0;
     margin: 0;
+    min-width: 220px;
+    border-radius: 0 0 8px 8px;
+    z-index: 10;
 }
 
 nav ul.submenu li a {
-    padding: 10px;
-}
-
-nav ul.menu li:hover ul.submenu {
-    display: flex;
-}
-
-
-header {
-    text-align: center;
-    padding: 40px 20px;
-    background: linear-gradient(to right, #ffecd2, #fcb69f);
-}
-
-header h1 {
-    font-size: 2.5rem;
-    color: #8b0000;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px #fff;
-}
-
-header p {
-    font-size: 1.2rem;
-    color: #333;
-    margin-top: 10px;
-}
-
-.hero-img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 15px;
-    margin: 20px 0;
-    transition: transform 0.3s;
-}
-
-.hero-img:hover {
-    transform: scale(1.05);
-}
-
-
-.recipe-links {
-    padding: 40px 20px;
-    text-align: center;
-    background: #fffaf0;
-}
-
-.recipe-links h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #d2691e;
-}
-
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card {
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    overflow: hidden;
-    width: 300px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
-
-.card img {
-    width: 100%;
-    border-bottom: 5px solid #ff6347;
-}
-
-.card h3 {
-    padding: 15px;
-    color: #8b0000;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-}
-
-.card h3:hover {
-    color: #ff4500;
-}
-
-/* Footer */
-footer {
-    background: #8b0000;
+    padding: 0.75rem 1rem;
     color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    font-size: 0.9rem;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+}
+
+nav ul.menu li:hover > ul.submenu {
+    display: block;
 }
 
 
-@media (max-width: 900px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
+.recipe-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
 
+.recipe-hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.recipe-card {
+    background: #f9e79f; 
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.recipe-card h3 {
+    color: #d35400;
+    margin-bottom: 0.5rem;
+}
+
+.recipe-card ul, .recipe-card ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.recipe-card li {
+    margin-bottom: 0.5rem;
+}
+
+
+.nutrition-card {
+    background: #fad7a0; /* soft orange */
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+
+footer {
+    background: #8e44ad;
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-top: 5px solid #d35400;
+}
+
+footer a {
+    color: #f9e79f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media(min-width: 768px) {
     nav ul.menu {
+        justify-content: flex-start;
+    }
+
+    .recipe-card {
+        padding: 2rem;
+    }
+
+    .recipe-container {
+        display: flex;
         flex-direction: column;
-    }
-
-    nav ul.menu li {
-        margin-bottom: 10px;
-    }
-
-    nav ul.submenu {
-        position: static;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 500px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    header p {
-        font-size: 1rem;
-    }
-
-    .card {
-        width: 90%;
+        gap: 2rem;
     }
 }
