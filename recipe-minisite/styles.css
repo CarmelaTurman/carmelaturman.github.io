@@ -3,18 +3,18 @@
 
 
 body {
-    font-family: 'Fredoka One', cursive; 
+    font-family: 'Fredoka One', cursive;
     margin: 0;
     padding: 0;
-    background: #fff2e6; 
+    background: #fff2e6;
     color: #333;
     text-align: center;
 }
 
 h1, h2 {
-    font-family: 'Pacifico', cursive; 
+    font-family: 'Pacifico', cursive;
     margin: 1rem 0;
-    text-shadow: 1px 1px #f9e79f; 
+    text-shadow: 1px 1px #f9e79f;
 }
 
 h1 {
@@ -24,7 +24,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    color: #8e44ad; 
+    color: #8e44ad;
 }
 
 
@@ -32,7 +32,7 @@ nav ul.menu {
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #8e44ad; 
+    background-color: #8e44ad;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -52,7 +52,7 @@ nav ul.menu > li > a {
 }
 
 nav ul.menu > li:hover > a {
-    background-color: #d35400; 
+    background-color: #d35400;
 }
 
 nav ul.submenu {
@@ -60,7 +60,7 @@ nav ul.submenu {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #f5b041; 
+    background-color: #f5b041;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -82,6 +82,26 @@ nav ul.menu li:hover > ul.submenu {
 }
 
 
+.recipe-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin: 1rem auto 2rem;
+    max-width: 1000px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.recipe-info-grid a {
+    color: #d35400;
+    text-decoration: none;
+}
+
+.recipe-info-grid a:hover {
+    text-decoration: underline;
+}
+
+
 .recipe-container {
     max-width: 1200px;
     margin: 2rem auto;
@@ -97,8 +117,16 @@ nav ul.menu li:hover > ul.submenu {
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
 }
 
+.recipe-hero-img:hover,
+.recipe-hero-img.active {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
 .recipe-card {
-    background: #f9e79f; 
+    background: #f9e79f;
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 2rem;
@@ -111,8 +139,7 @@ nav ul.menu li:hover > ul.submenu {
     margin-bottom: 0.5rem;
 }
 
-.recipe-card ul, 
-.recipe-card ol {
+.recipe-card ul, .recipe-card ol {
     margin-left: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -121,9 +148,8 @@ nav ul.menu li:hover > ul.submenu {
     margin-bottom: 0.5rem;
 }
 
-
 .nutrition-card {
-    background: #fad7a0; 
+    background: #fad7a0;
     border-radius: 12px;
     padding: 1rem;
     margin-bottom: 2rem;
@@ -131,14 +157,19 @@ nav ul.menu li:hover > ul.submenu {
 }
 
 
-.recipe-hero-img:hover,
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
 .recipe-card img:hover,
-.recipe-hero-img.active,
 .recipe-card img.active {
-    transform: scale(1.05); 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); 
-    filter: brightness(1.1); 
-    cursor: pointer; 
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    filter: brightness(1.1);
+    cursor: pointer;
 }
 
 
@@ -160,7 +191,7 @@ footer a:hover {
 }
 
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
     nav ul.menu {
         justify-content: flex-start;
     }
