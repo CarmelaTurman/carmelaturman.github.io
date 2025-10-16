@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
 
 
 :root {
@@ -12,10 +12,10 @@
 
 
 body {
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--cream);
+  background: linear-gradient(120deg, #FFF3E0, #FFE0B2);
   color: var(--text-dark);
   line-height: 1.6;
 }
@@ -25,6 +25,18 @@ header, main {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Pacifico', cursive;
+  color: var(--chocolate);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  margin-bottom: 0.5rem;
+}
+
 
 .hero-img {
   width: 100%;
@@ -32,11 +44,6 @@ header, main {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(78, 52, 46, 0.3);
   margin-top: 1rem;
-}
-
-h1, h2, h3 {
-  color: var(--chocolate);
-  text-shadow: 1px 1px 0 #fff;
 }
 
 
@@ -58,18 +65,19 @@ h1, h2, h3 {
 }
 
 .recipe-links .card {
-  background-color: white;
+  background: linear-gradient(135deg, #FFF3E0, #FFE0B2);
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   max-width: 500px;
   width: 90%;
 }
 
 .recipe-links .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(78, 52, 46, 0.3);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(78, 52, 46, 0.3);
+  background: linear-gradient(135deg, #FFE0B2, #FFD54F);
 }
 
 .recipe-links .card img {
@@ -83,12 +91,13 @@ h1, h2, h3 {
   background-color: var(--caramel);
   color: white;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 
 nav {
   background: linear-gradient(90deg, var(--chocolate), var(--light-chocolate));
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
 nav ul.menu {
@@ -104,17 +113,21 @@ nav ul.menu > li {
 }
 
 nav ul.menu > li > a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   display: block;
   color: white;
-  text-decoration: none;
   padding: 0.9rem 1rem;
-  font-weight: 500;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: background 0.3s, transform 0.3s;
+  border-radius: 6px;
+  margin: 0.2rem;
+  text-align: center;
 }
 
 nav ul.menu > li > a:hover {
   background-color: var(--caramel);
-  color: #fff;
+  color: var(--chocolate);
+  transform: scale(1.05);
 }
 
 
@@ -132,4 +145,54 @@ nav ul.submenu {
   z-index: 100;
 }
 
-nav
+nav ul.submenu li a {
+  padding: 0.5rem 1rem;
+  color: #FFF3E0;
+  display: block;
+  border-radius: 4px;
+  margin: 0.2rem;
+}
+
+nav ul.submenu li a:hover {
+  background-color: var(--caramel);
+  color: var(--chocolate);
+}
+
+
+@media(min-width: 768px) {
+  nav ul.menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  nav ul.submenu {
+    display: none;
+  }
+
+  nav ul.menu li:hover > ul.submenu {
+    display: block;
+  }
+}
+
+
+@media(min-width: 768px) {
+  .recipe-links .cards {
+    flex-direction: row;
+  }
+  
+  .recipe-links .card {
+    flex: 1;
+  }
+}
+
+
+footer {
+  font-family: 'Roboto', sans-serif;
+  background: var(--chocolate);
+  color: var(--cream);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  border-top: 4px solid var(--accent);
+}
