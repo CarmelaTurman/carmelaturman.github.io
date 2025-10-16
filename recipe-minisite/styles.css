@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
 
 
@@ -8,6 +9,10 @@
   --cream: #FFF3E0;
   --accent: #F57C00;
   --text-dark: #3E2723;
+  --card-bg: #FFE0B2;
+  --hover-bg: #FFD54F;
+  --link-color: #6D4C41;
+  --link-hover: #F57C00;
 }
 
 
@@ -15,173 +20,125 @@ body {
   font-family: 'Roboto', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(120deg, #FFF3E0, #FFE0B2);
+  background: linear-gradient(135deg, #FFF3E0, #FFE0B2);
   color: var(--text-dark);
   line-height: 1.6;
 }
 
 header, main {
-  padding: 1rem;
+  padding: 1rem 2rem;
   text-align: center;
 }
 
-a {
-  text-decoration: none;
-}
 
-
-h1, h2, h3 {
+h1.recipe-title {
   font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
   color: var(--chocolate);
   text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-  margin-bottom: 0.5rem;
-}
-
-
-.hero-img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(78, 52, 46, 0.3);
-  margin-top: 1rem;
-}
-
-
-.recipe-links {
-  margin-top: 2rem;
-}
-
-.recipe-links h2 {
-  font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: var(--accent);
 }
 
-.recipe-links .cards {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  align-items: center;
+
+.recipe-hero-img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 16px;
+  margin: 1rem auto;
+  display: block;
+  box-shadow: 0 6px 15px rgba(78, 52, 46, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.recipe-links .card {
+.recipe-hero-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 20px rgba(78, 52, 46, 0.5);
+}
+
+
+.recipe-card {
   background: linear-gradient(135deg, #FFF3E0, #FFE0B2);
   border-radius: 16px;
-  overflow: hidden;
+  padding: 1.5rem;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-  max-width: 500px;
-  width: 90%;
+  margin: 1rem auto;
+  max-width: 700px;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
 }
 
-.recipe-links .card:hover {
+.recipe-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 20px rgba(78, 52, 46, 0.3);
-  background: linear-gradient(135deg, #FFE0B2, #FFD54F);
-}
-
-.recipe-links .card img {
-  width: 100%;
-  display: block;
-}
-
-.recipe-links .card h3 {
-  margin: 0;
-  padding: 1rem;
-  background-color: var(--caramel);
+  background: linear-gradient(135deg, var(--hover-bg), var(--caramel));
   color: white;
-  font-size: 1.2rem;
+}
+
+
+.recipe-card h2 {
+  font-family: 'Pacifico', cursive;
+  color: var(--accent);
+  margin-bottom: 1rem;
   text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  transition: transform 0.3s, color 0.3s;
 }
 
-
-nav {
-  background: linear-gradient(90deg, var(--chocolate), var(--light-chocolate));
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-}
-
-nav ul.menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-nav ul.menu > li {
-  position: relative;
-}
-
-nav ul.menu > li > a {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  display: block;
-  color: white;
-  padding: 0.9rem 1rem;
-  transition: background 0.3s, transform 0.3s;
-  border-radius: 6px;
-  margin: 0.2rem;
-  text-align: center;
-}
-
-nav ul.menu > li > a:hover {
-  background-color: var(--caramel);
+.recipe-card h2:hover {
   color: var(--chocolate);
   transform: scale(1.05);
 }
 
 
-nav ul.submenu {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  background-color: var(--light-chocolate);
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border-radius: 0 0 8px 8px;
-  min-width: 200px;
-  z-index: 100;
+.recipe-card ul,
+.recipe-card ol {
+  text-align: left;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
-nav ul.submenu li a {
-  padding: 0.5rem 1rem;
-  color: #FFF3E0;
-  display: block;
-  border-radius: 4px;
-  margin: 0.2rem;
+.recipe-card li {
+  margin-bottom: 0.5rem;
 }
 
-nav ul.submenu li a:hover {
-  background-color: var(--caramel);
-  color: var(--chocolate);
+
+.recipe-card a {
+  color: var(--link-color);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.recipe-card a:hover {
+  color: var(--link-hover);
+}
+
+
+.nutrition-card {
+  background: linear-gradient(135deg, #FFE0B2, #FFF3E0);
+  border-radius: 16px;
+  padding: 1rem;
+  max-width: 400px;
+  margin: 1rem auto;
+  box-shadow: 0 4px 10px rgba(78, 52, 46, 0.2);
+}
+
+.nutrition-card ul {
+  padding-left: 1rem;
 }
 
 
 @media(min-width: 768px) {
-  nav ul.menu {
+  .recipe-container {
+    display: flex;
     flex-direction: row;
     justify-content: center;
-  }
-  
-  nav ul.submenu {
-    display: none;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
 
-  nav ul.menu li:hover > ul.submenu {
-    display: block;
-  }
-}
-
-
-@media(min-width: 768px) {
-  .recipe-links .cards {
-    flex-direction: row;
-  }
-  
-  .recipe-links .card {
+  .recipe-card,
+  .nutrition-card {
     flex: 1;
+    min-width: 300px;
   }
 }
 
