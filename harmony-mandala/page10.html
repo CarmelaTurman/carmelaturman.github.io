@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Harmony Circle Mandala</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.accordion {
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+.active, .accordion:hover { background-color: #dcdcdc; }
+.panel {
+  padding: 0 15px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.panel img { max-width: 100%; height: auto; margin: 10px 0; }
+</style>
+</head>
+
+<body>
+<header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="page1.html">Materials</a>
+  <a href="page2.html">Color Planning</a>
+  <a href="page3.html">Rounds 1–5</a>
+  <a href="page4.html">Rounds 6–10</a>
+  <a href="page5.html">Rounds 11–15</a>
+  <a href="page6.html">Rounds 16–30</a>
+  <a href="page7.html">Rounds 31–45</a>
+  <a href="page8.html">Rounds 46–60</a>
+  <a href="page9.html">Resources</a>
+  <a href="page10.html">About</a>
+</nav>
+</header>
+
+<main>
+<h1>About the Harmony Circle Mandala</h1>
+
+<p>The <strong>Harmony Circle Mandala Blanket</strong> is a hand-crafted crochet project designed to guide makers through a colorful and meditative journey. Each round introduces unique stitches, textures, and colors, building a vibrant circular design that can expand into a full blanket.</p>
+
+<p>Designed by <strong>Carmela Turman</strong>, this project is intended for crocheters of all skill levels. The pattern combines traditional crochet techniques with creative colorwork to produce a visually striking and satisfying finished piece.</p>
+
+<button class="accordion">About the Designer</button>
+<div class="panel">
+<p>Carmela Turman is a passionate fiber artist and designer, dedicated to creating projects that inspire relaxation, mindfulness, and creativity. Her work focuses on vibrant color palettes, intricate stitch patterns, and accessible tutorials for makers everywhere.</p>
+</div>
+
+<button class="accordion">Project Goals</button>
+<div class="panel">
+<ul>
+  <li>Introduce a variety of crochet stitches in a step-by-step format</li>
+  <li>Provide a meditative and enjoyable crafting experience</li>
+  <li>Create a visually stunning finished blanket suitable for display or gifting</li>
+  <li>Offer a complete set of resources for both beginners and experienced crocheters</li>
+</ul>
+</div>
+
+<button class="accordion">How to Use This Site</button>
+<div class="panel">
+<ul>
+  <li>Start with the Materials and Color Planning pages</li>
+  <li>Follow each Rounds page in order to complete the blanket</li>
+  <li>Use the Resources page for extra guidance on stitches, colors, and techniques</li>
+  <li>Refer back to About to learn more about the project and designer inspiration</li>
+</ul>
+</div>
+
+</main>
+
+<footer>
+<p>&copy; 2025 Harmony Mandala Blanket by Carmela Turman</p>
+</footer>
+
+<script>
+const accordions = document.querySelectorAll(".accordion");
+accordions.forEach(acc => {
+  acc.addEventListener("click", () => {
+    acc.classList.toggle("active");
+    const panel = acc.nextElementSibling;
+    panel.style.display = panel.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+</body>
+</html>

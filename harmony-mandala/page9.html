@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resources | Harmony Circle Mandala</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.accordion {
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+.active, .accordion:hover { background-color: #dcdcdc; }
+.panel {
+  padding: 0 15px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.panel img { max-width: 100%; height: auto; margin: 10px 0; }
+.swatch {
+  width: 120px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-bottom: 10px;
+}
+ul { margin-left: 20px; }
+</style>
+</head>
+
+<body>
+<header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="page1.html">Materials</a>
+  <a href="page2.html">Color Planning</a>
+  <a href="page3.html">Rounds 1–5</a>
+  <a href="page4.html">Rounds 6–10</a>
+  <a href="page5.html">Rounds 11–15</a>
+  <a href="page6.html">Rounds 16–30</a>
+  <a href="page7.html">Rounds 31–45</a>
+  <a href="page8.html">Rounds 46–60</a>
+  <a href="page9.html">Resources</a>
+  <a href="page10.html">About</a>
+</nav>
+</header>
+
+<main>
+<h1>Resources</h1>
+<p>Here are helpful resources to guide you through the Harmony Circle Mandala project:</p>
+
+<button class="accordion">Stitch Guides</button>
+<div class="panel">
+<ul>
+  <li><a href="https://www.craftsy.com/post/basic-crochet-stitches/" target="_blank">Basic Crochet Stitches</a></li>
+  <li><a href="https://www.interweave.com/article/crochet/crochet-stitch-dictionary/" target="_blank">Crochet Stitch Dictionary</a></li>
+  <li><a href="https://www.allfreeknitting.com/Crochet-Tutorials" target="_blank">All Free Crochet Tutorials</a></li>
+</ul>
+</div>
+
+<button class="accordion">Color Inspiration</button>
+<div class="panel">
+<ul>
+  <li><a href="https://www.pinterest.com/search/pins/?q=mandala%20crochet%20color%20palette" target="_blank">Mandala Crochet Color Palettes</a></li>
+  <li><a href="https://www.design-seeds.com/" target="_blank">Design Seeds – Color Inspiration</a></li>
+</ul>
+</div>
+
+<button class="accordion">Video Tutorials</button>
+<div class="panel">
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=H7V5_xDkq-8" target="_blank">Crochet Popcorn Stitch Tutorial</a></li>
+  <li><a href="https://www.youtube.com/watch?v=GcFJ1r7ezA8" target="_blank">Crochet Shell Stitch Tutorial</a></li>
+  <li><a href="https://www.youtube.com/watch?v=pL5U6hZ_3F4" target="_blank">Crochet Lace Techniques</a></li>
+</ul>
+</div>
+
+<button class="accordion">Books & Patterns</button>
+<div class="panel">
+<ul>
+  <li><a href="https://www.ravelry.com/" target="_blank">Ravelry – Crochet Patterns</a></li>
+  <li><a href="https://www.amazon.com/Crochet-Crafts-Books/b?ie=UTF8&node=1063278" target="_blank">Amazon Crochet Books</a></li>
+</ul>
+</div>
+
+</main>
+
+<footer>
+<p>&copy; 2025 Harmony Mandala Blanket by Carmela Turman</p>
+</footer>
+
+<script>
+const accordions = document.querySelectorAll(".accordion");
+accordions.forEach(acc => {
+  acc.addEventListener("click", () => {
+    acc.classList.toggle("active");
+    const panel = acc.nextElementSibling;
+    panel.style.display = panel.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+</body>
+</html>
