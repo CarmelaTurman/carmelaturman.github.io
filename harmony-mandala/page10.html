@@ -5,8 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About | Harmony Circle Mandala</title>
 <link rel="stylesheet" href="css/style.css">
+
 <style>
-.accordion {
+body { 
+  background: linear-gradient(-45deg,#fff8e1,#fff0b2,#ffe0b2,#fff3e0); 
+  background-size:400% 400%; 
+  animation:gradientBG 15s ease infinite;
+  font-family: Arial, sans-serif;
+}
+@keyframes gradientBG {0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+
+.accordion { 
   background-color: #f0f0f0;
   color: #333;
   cursor: pointer;
@@ -15,21 +24,53 @@
   text-align: left;
   border: none;
   outline: none;
-  transition: 0.3s;
   font-weight: bold;
   margin-top: 10px;
   border-radius: 6px;
+  transition: 0.3s;
 }
-.active, .accordion:hover { background-color: #dcdcdc; }
+.accordion:hover { background-color: #ffe0b2; transform:scale(1.02); color:#ff8c00; }
+.accordion.active { background-color:#ff8c00; color:#fff; animation:bounce 0.3s; }
+@keyframes bounce {0%{transform:scale(1);}50%{transform:scale(1.05);}100%{transform:scale(1);}}
+
 .panel {
-  padding: 0 15px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-  border-radius: 6px;
-  margin-bottom: 10px;
+  max-height:0; 
+  overflow:hidden; 
+  background-color:white; 
+  border-radius:6px; 
+  margin-bottom:10px; 
+  transition:max-height 0.5s ease, opacity 0.5s ease, padding 0.3s ease; 
+  opacity:0; 
+  padding:0 15px;
 }
-.panel img { max-width: 100%; height: auto; margin: 10px 0; }
+.panel.open { opacity:1; }
+.panel img { max-width:100%; margin:10px 0; transition: transform 0.3s, box-shadow 0.3s; }
+.panel img:hover { transform:scale(1.05) rotate(2deg); box-shadow:0 5px 20px rgba(0,0,0,0.3); }
+
+.swatch {
+  width:120px;
+  height:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-weight:bold;
+  border-radius:8px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom:10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.swatch:hover { transform:scale(1.1); box-shadow:0 0 20px rgba(255,140,0,0.6); animation:pulse 1s infinite; }
+@keyframes pulse {0%{box-shadow:0 0 15px rgba(255,140,0,0.5);}50%{box-shadow:0 0 25px rgba(255,140,0,0.9);}100%{box-shadow:0 0 15px rgba(255,140,0,0.5);}}
+
+#scrollTopBtn { 
+  position:fixed; bottom:30px; right:30px; 
+  background-color:#ff8c00; color:white; border:none; 
+  padding:12px 18px; border-radius:50%; font-size:18px; 
+  cursor:pointer; display:none; z-index:1000; 
+  transition:background-color 0.3s, transform 0.3s;
+}
+#scrollTopBtn:hover { background-color:#e67300; transform:scale(1.1);}
 </style>
 </head>
 
@@ -53,32 +94,26 @@
 <main>
 <h1>About the Harmony Circle Mandala</h1>
 
-<p>The <strong>Harmony Circle Mandala Blanket</strong> is a hand-crafted crochet project designed to guide makers through a colorful and meditative journey. Each round introduces unique stitches, textures, and colors, building a vibrant circular design that can expand into a full blanket.</p>
+<div class="swatch" style="background-color:#ff8c00;">About</div>
 
-<p>Designed by <strong>Carmela Turman</strong>, this project is intended for crocheters of all skill levels. The pattern combines traditional crochet techniques with creative colorwork to produce a visually striking and satisfying finished piece.</p>
-
-<button class="accordion">About the Designer</button>
+<button class="accordion">About the Project</button>
 <div class="panel">
-<p>Carmela Turman is a passionate fiber artist and designer, dedicated to creating projects that inspire relaxation, mindfulness, and creativity. Her work focuses on vibrant color palettes, intricate stitch patterns, and accessible tutorials for makers everywhere.</p>
+<p>The Harmony Circle Mandala project is a 60-round crochet blanket designed to teach intricate stitch patterns while exploring a harmonious color palette. Each round combines texture and color for a visually captivating mandala that grows with your skill.</p>
+<img src="images/mandala-project.jpg" alt="Mandala Project">
 </div>
 
-<button class="accordion">Project Goals</button>
+<button class="accordion">Designer Bio</button>
 <div class="panel">
-<ul>
-  <li>Introduce a variety of crochet stitches in a step-by-step format</li>
-  <li>Provide a meditative and enjoyable crafting experience</li>
-  <li>Create a visually stunning finished blanket suitable for display or gifting</li>
-  <li>Offer a complete set of resources for both beginners and experienced crocheters</li>
-</ul>
+<p>Carmela Turman is a crochet designer and textile artist passionate about color theory and pattern design. She combines modern and traditional techniques to create projects that inspire creativity and mindfulness.</p>
+<img src="images/designer.jpg" alt="Carmela Turman">
 </div>
 
-<button class="accordion">How to Use This Site</button>
+<button class="accordion">Credits & Acknowledgements</button>
 <div class="panel">
 <ul>
-  <li>Start with the Materials and Color Planning pages</li>
-  <li>Follow each Rounds page in order to complete the blanket</li>
-  <li>Use the Resources page for extra guidance on stitches, colors, and techniques</li>
-  <li>Refer back to About to learn more about the project and designer inspiration</li>
+  <li>Yarn and materials: Various suppliers</li>
+  <li>Photo references: Original project images</li>
+  <li>Technical support: HTML, CSS & JavaScript resources from online tutorials</li>
 </ul>
 </div>
 
@@ -89,13 +124,33 @@
 </footer>
 
 <script>
+
+
 const accordions = document.querySelectorAll(".accordion");
 accordions.forEach(acc => {
   acc.addEventListener("click", () => {
     acc.classList.toggle("active");
     const panel = acc.nextElementSibling;
-    panel.style.display = panel.style.display === "block" ? "none" : "block";
+    if(panel.style.maxHeight){
+      panel.style.maxHeight = null;
+      panel.classList.remove("open");
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.classList.add("open");
+    }
   });
+});
+
+
+const scrollBtn = document.createElement('button');
+scrollBtn.id = 'scrollTopBtn';
+scrollBtn.textContent = '↑';
+document.body.appendChild(scrollBtn);
+window.onscroll = function() {
+  scrollBtn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? 'block' : 'none';
+};
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 </script>
 </body>
