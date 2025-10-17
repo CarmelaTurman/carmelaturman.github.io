@@ -1,203 +1,166 @@
 
 body {
-  font-family: 'Montserrat', 'Arial', sans-serif; 
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #fff5f8, #e1f7ff);
+  color: #222;
   margin: 0;
   padding: 0;
-  background: linear-gradient(45deg, #f6e6e1, #f0d1c9, #f6e6e1, #f0d1c9);
-  background-size: 400% 400%;
-  animation: bgAnimate 15s ease infinite;
-  color: #1a1a1a;
+  transition: background 0.5s ease;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Dancing Script', cursive; 
-  color: #b03060; 
-  margin-bottom: 15px;
-}
-
-@keyframes bgAnimate {
-  0% {background-position:0% 50%;}
-  50% {background-position:100% 50%;}
-  100% {background-position:0% 50%;}
+h1, h2, h3 {
+  font-family: 'Dancing Script', cursive;
+  color: #c2185b; 
+  text-shadow: 2px 2px 5px rgba(255, 192, 203, 0.3);
 }
 
 
-header nav {
+nav {
+  background-color: #ffd700; 
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  background-color: #f6e6e1;
   padding: 10px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  border-bottom: 4px solid #c2185b;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-header nav a {
-  margin: 5px 10px;
+
+nav a {
   text-decoration: none;
-  color: #1a1a1a;
+  color: #000;
+  background-color: #fff;
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 8px;
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  transition: 0.3s;
-  border-radius: 6px;
-  padding: 6px 10px;
+  transition: all 0.3s ease;
 }
-header nav a:hover {
+
+nav a:hover {
+  background-color: #c2185b;
   color: #fff;
-  background-color: #b03060;
   transform: scale(1.05);
 }
 
 
-main {
-  max-width: 1000px;
-  margin: 20px auto;
-  padding: 20px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-
-.swatch {
-  width: 120px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.swatch:hover {
-  transform: scale(1.15) rotate(-2deg);
-  box-shadow: 0 0 25px rgba(176,48,96,0.8);
-  animation: pulse 1s infinite;
-}
-@keyframes pulse {
-  0%, 100% { box-shadow: 0 0 15px rgba(176,48,96,0.5); }
-  50% { box-shadow: 0 0 25px rgba(176,48,96,0.9); }
-}
-
-
 .accordion {
-  background-color: #fff;
-  color: #1a1a1a;
+  background-color: #fffaf0;
+  color: #222;
   cursor: pointer;
   padding: 15px;
   width: 100%;
   text-align: left;
-  border: 2px solid #b03060;
+  border: 2px solid #ffd700;
+  border-radius: 8px;
   outline: none;
   font-weight: bold;
+  transition: all 0.3s ease;
   margin-top: 10px;
-  border-radius: 10px;
-  transition: 0.3s;
-  position: relative;
-  font-family: 'Dancing Script', cursive; 
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
+
 .accordion:hover {
-  background-color: #b03060;
-  color: #ffd700;
-  transform: scale(1.02);
+  background-color: #ffecb3;
+  color: #c2185b;
+  transform: scale(1.03);
 }
+
 .accordion.active {
-  background-color: #ffd700;
-  color: #1a1a1a;
-  animation: bounce 0.3s;
+  background-color: #c2185b;
+  color: #fff;
 }
-
-@keyframes bounce {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-
-
-.accordion::after {
-  content: "▼";
-  float: right;
-  transition: transform 0.3s;
-}
-.accordion.active::after { transform: rotate(180deg); }
 
 
 .panel {
-  max-height: 0;
-  overflow: hidden;
-  background-color: #fff;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.3s ease;
-  opacity: 0;
   padding: 0 15px;
-  font-family: 'Montserrat', sans-serif; 
-}
-.panel.open { opacity: 1; }
-
-
-.panel img {
-  max-width: 100%;
-  margin: 10px 0;
-  transition: transform 0.3s, box-shadow 0.3s;
-  border-radius: 10px;
-}
-.panel img:hover {
-  transform: scale(1.05) rotate(-2deg);
-  box-shadow: 0 5px 20px rgba(176,48,96,0.5);
-}
-
-
-#scrollTopBtn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #b03060;
-  color: #ffd700;
-  border: none;
-  padding: 12px 18px;
-  border-radius: 50%;
-  font-size: 20px;
-  cursor: pointer;
   display: none;
-  z-index: 1000;
-  transition: background-color 0.3s, transform 0.3s;
+  background-color: #fff;
+  border-left: 4px solid #ffd700;
+  overflow: hidden;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 10px;
+  transition: all 0.4s ease;
+  position: relative;
 }
-#scrollTopBtn:hover {
-  background-color: #ffd700;
-  color: #b03060;
-  transform: scale(1.2);
+
+.panel.open {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #fff;
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+.swatch {
+  width: 140px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  margin: 10px 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.swatch:hover {
+  transform: scale(1.15) rotate(3deg);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
 }
 
 
 .sparkle {
   position: absolute;
-  width: 6px;
-  height: 6px;
-  background-color: gold;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  opacity: 0.9;
+  background-color: gold;
   pointer-events: none;
   animation: sparkleAnim 1s ease-out forwards;
+  opacity: 0.9;
+}
+@keyframes sparkleAnim {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.9; }
+  100% { transform: translate(var(--x), var(--y)) scale(0); opacity: 0; }
 }
 
-@keyframes sparkleAnim {
-  0% {
-    transform: translate(0,0) scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: translate(var(--x), var(--y)) scale(1.5);
-    opacity: 0.8;
-  }
-  100% {
-    transform: translate(var(--x), var(--y)) scale(0);
-    opacity: 0;
-  }
+
+footer {
+  background-color: #c2185b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  display: none;
+  transition: all 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #c2185b;
+  color: #fff;
+  transform: scale(1.1);
 }
