@@ -1,165 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resources | Harmony Circle Mandala</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resources | Harmony Circle Mandala</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
 
-  <style>
-    .accordion {
-      background-color: #f0f0f0;
-      color: #333;
-      cursor: pointer;
-      padding: 15px;
-      width: 100%;
-      text-align: left;
-      border: none;
-      outline: none;
-      transition: 0.3s;
-      font-weight: bold;
-      margin-top: 10px;
-      border-radius: 6px;
-    }
 
-    .active,
-    .accordion:hover {
-      background-color: #dcdcdc;
-    }
+body { 
+  background: linear-gradient(-45deg,#fff8e1,#fff0b2,#ffe0b2,#fff3e0); 
+  background-size:400% 400%; 
+  animation:gradientBG 15s ease infinite;
+  font-family: Arial, sans-serif;
+}
+@keyframes gradientBG {0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
 
-    .panel {
-      padding: 0 15px;
-      display: none;
-      background-color: white;
-      overflow: hidden;
-      border-radius: 6px;
-      margin-bottom: 10px;
-    }
+.accordion { 
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.accordion:hover { background-color: #ffe0b2; transform:scale(1.02); color:#ff8c00; }
+.accordion.active { background-color:#ff8c00; color:#fff; animation:bounce 0.3s; }
+@keyframes bounce {0%{transform:scale(1);}50%{transform:scale(1.05);}100%{transform:scale(1);}}
 
-    .panel img {
-      max-width: 100%;
-      height: auto;
-      margin: 10px 0;
-    }
+.panel {
+  max-height:0; 
+  overflow:hidden; 
+  background-color:white; 
+  border-radius:6px; 
+  margin-bottom:10px; 
+  transition:max-height 0.5s ease, opacity 0.5s ease, padding 0.3s ease; 
+  opacity:0; 
+  padding:0 15px;
+}
+.panel.open { opacity:1; }
+.panel img { max-width:100%; margin:10px 0; transition: transform 0.3s, box-shadow 0.3s; }
+.panel img:hover { transform:scale(1.05) rotate(2deg); box-shadow:0 5px 20px rgba(0,0,0,0.3); }
 
-    .swatch {
-      width: 120px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-weight: bold;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      margin-bottom: 10px;
-    }
+.swatch {
+  width:120px;
+  height:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-weight:bold;
+  border-radius:8px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom:10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.swatch:hover { transform:scale(1.1); box-shadow:0 0 20px rgba(255,140,0,0.6); animation:pulse 1s infinite; }
+@keyframes pulse {0%{box-shadow:0 0 15px rgba(255,140,0,0.5);}50%{box-shadow:0 0 25px rgba(255,140,0,0.9);}100%{box-shadow:0 0 15px rgba(255,140,0,0.5);}}
 
-    ul {
-      margin-left: 20px;
-    }
+ul { margin-left:20px; }
 
-    body {
-      background: linear-gradient(-45deg, #fff8e1, #fff0b2, #ffe0b2, #fff3e0);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-    }
-
-    @keyframes gradientBG {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-  </style>
+#scrollTopBtn { 
+  position:fixed; bottom:30px; right:30px; 
+  background-color:#ff8c00; color:white; border:none; 
+  padding:12px 18px; border-radius:50%; font-size:18px; 
+  cursor:pointer; display:none; z-index:1000; 
+  transition:background-color 0.3s, transform 0.3s;
+}
+#scrollTopBtn:hover { background-color:#e67300; transform:scale(1.1);}
+</style>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="page1.html">Materials</a>
-      <a href="page2.html">Color Planning</a>
-      <a href="page3.html">Rounds 1–5</a>
-      <a href="page4.html">Rounds 6–10</a>
-      <a href="page5.html">Rounds 11–15</a>
-      <a href="page6.html">Rounds 16–30</a>
-      <a href="page7.html">Rounds 31–45</a>
-      <a href="page8.html">Rounds 46–60</a>
-      <a href="page9.html">Resources</a>
-      <a href="page10.html">About</a>
-    </nav>
-  </header>
+<header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="page1.html">Materials</a>
+  <a href="page2.html">Color Planning</a>
+  <a href="page3.html">Rounds 1–5</a>
+  <a href="page4.html">Rounds 6–10</a>
+  <a href="page5.html">Rounds 11–15</a>
+  <a href="page6.html">Rounds 16–30</a>
+  <a href="page7.html">Rounds 31–45</a>
+  <a href="page8.html">Rounds 46–60</a>
+  <a href="page9.html">Resources</a>
+  <a href="page10.html">About</a>
+</nav>
+</header>
 
-  <main>
-    <h1>Resources</h1>
-    <p>Here are helpful resources to guide you through the Harmony Circle Mandala project:</p>
+<main>
+<h1>Resources</h1>
+<p>Here are helpful resources to guide you through the Harmony Circle Mandala project:</p>
 
-    <button class="accordion">Stitch Guides</button>
-    <div class="panel">
-      <ul>
-        <li><a href="https://www.craftsy.com/post/basic-crochet-stitches/" target="_blank">Basic Crochet Stitches</a>
-        </li>
-        <li><a href="https://www.interweave.com/article/crochet/crochet-stitch-dictionary/" target="_blank">Crochet
-            Stitch Dictionary</a></li>
-        <li><a href="https://www.allfreeknitting.com/Crochet-Tutorials" target="_blank">All Free Crochet Tutorials</a>
-        </li>
-      </ul>
-    </div>
+<div class="swatch" style="background-color:#ff8c00;">Resources</div>
 
-    <button class="accordion">Color Inspiration</button>
-    <div class="panel">
-      <ul>
-        <li><a href="https://www.pinterest.com/search/pins/?q=mandala%20crochet%20color%20palette"
-            target="_blank">Mandala Crochet Color Palettes</a></li>
-        <li><a href="https://www.design-seeds.com/" target="_blank">Design Seeds – Color Inspiration</a></li>
-      </ul>
-    </div>
+<button class="accordion">Stitch Guides</button>
+<div class="panel">
+<ul>
+  <li><a href="https://www.craftsy.com/post/basic-crochet-stitches/" target="_blank">Basic Crochet Stitches</a></li>
+  <li><a href="https://www.interweave.com/article/crochet/crochet-stitch-dictionary/" target="_blank">Crochet Stitch Dictionary</a></li>
+  <li><a href="https://www.allfreeknitting.com/Crochet-Tutorials" target="_blank">All Free Crochet Tutorials</a></li>
+</ul>
+</div>
 
-    <button class="accordion">Video Tutorials</button>
-    <div class="panel">
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=H7V5_xDkq-8" target="_blank">Crochet Popcorn Stitch Tutorial</a>
-        </li>
-        <li><a href="https://www.youtube.com/watch?v=GcFJ1r7ezA8" target="_blank">Crochet Shell Stitch Tutorial</a></li>
-        <li><a href="https://www.youtube.com/watch?v=pL5U6hZ_3F4" target="_blank">Crochet Lace Techniques</a></li>
-      </ul>
-    </div>
+<button class="accordion">Color Inspiration</button>
+<div class="panel">
+<ul>
+  <li><a href="https://www.pinterest.com/search/pins/?q=mandala%20crochet%20color%20palette" target="_blank">Mandala Crochet Color Palettes</a></li>
+  <li><a href="https://www.design-seeds.com/" target="_blank">Design Seeds – Color Inspiration</a></li>
+</ul>
+</div>
 
-    <button class="accordion">Books & Patterns</button>
-    <div class="panel">
-      <ul>
-        <li><a href="https://www.ravelry.com/" target="_blank">Ravelry – Crochet Patterns</a></li>
-        <li><a href="https://www.amazon.com/Crochet-Crafts-Books/b?ie=UTF8&node=1063278" target="_blank">Amazon Crochet
-            Books</a></li>
-      </ul>
-    </div>
+<button class="accordion">Video Tutorials</button>
+<div class="panel">
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=H7V5_xDkq-8" target="_blank">Crochet Popcorn Stitch Tutorial</a></li>
+  <li><a href="https://www.youtube.com/watch?v=GcFJ1r7ezA8" target="_blank">Crochet Shell Stitch Tutorial</a></li>
+  <li><a href="https://www.youtube.com/watch?v=pL5U6hZ_3F4" target="_blank">Crochet Lace Techniques</a></li>
+</ul>
+</div>
 
-  </main>
+<button class="accordion">Books & Patterns</button>
+<div class="panel">
+<ul>
+  <li><a href="https://www.ravelry.com/" target="_blank">Ravelry – Crochet Patterns</a></li>
+  <li><a href="https://www.amazon.com/Crochet-Crafts-Books/b?ie=UTF8&node=1063278" target="_blank">Amazon Crochet Books</a></li>
+</ul>
+</div>
 
-  <footer>
-    <p>&copy; 2025 Harmony Mandala Blanket by Carmela Turman</p>
-  </footer>
+</main>
 
-  <script>
-    const accordions = document.querySelectorAll(".accordion");
-    accordions.forEach(acc => {
-      acc.addEventListener("click", () => {
-        acc.classList.toggle("active");
-        const panel = acc.nextElementSibling;
-        panel.style.display = panel.style.display === "block" ? "none" : "block";
-      });
-    });
-  </script>
+<footer>
+<p>&copy; 2025 Harmony Mandala Blanket by Carmela Turman</p>
+</footer>
+
+<script>
+
+
+const accordions = document.querySelectorAll(".accordion");
+accordions.forEach(acc => {
+  acc.addEventListener("click", () => {
+    acc.classList.toggle("active");
+    const panel = acc.nextElementSibling;
+    if(panel.style.maxHeight){
+      panel.style.maxHeight = null;
+      panel.classList.remove("open");
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.classList.add("open");
+    }
+  });
+});
+
+
+const scrollBtn = document.createElement('button');
+scrollBtn.id = 'scrollTopBtn';
+scrollBtn.textContent = '↑';
+document.body.appendChild(scrollBtn);
+window.onscroll = function() {
+  scrollBtn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? 'block' : 'none';
+};
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
 </body>
-
 </html>
