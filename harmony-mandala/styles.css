@@ -1,26 +1,45 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(135deg, #fff5f8, #fffde7);
   color: #222;
   margin: 0;
   padding: 0;
-  transition: background 0.5s ease;
   overflow-x: hidden;
+  background: linear-gradient(135deg, #fff5f8, #fffde7);
+  transition: background 0.5s ease;
+  position: relative;
+}
+
+
+body::before {
+  content: '';
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 20% 30%, rgba(255, 215, 0, 0.1) 0%, transparent 40%),
+              radial-gradient(circle at 70% 80%, rgba(198, 24, 91, 0.1) 0%, transparent 40%),
+              radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 30%);
+  background-repeat: repeat;
+  z-index: -1;
+  animation: swirl 60s linear infinite;
+  pointer-events: none;
+}
+@keyframes swirl {
+  0% { transform: rotate(0deg) translate(0,0); }
+  50% { transform: rotate(180deg) translate(50px, -50px); }
+  100% { transform: rotate(360deg) translate(0,0); }
 }
 
 
 h1, h2, h3 {
   font-family: 'Dancing Script', cursive;
-  color: #a60045; 
+  color: #a60045;
   text-shadow: 2px 2px 6px rgba(255, 215, 0, 0.4);
   transition: color 0.3s ease;
 }
-
-h1:hover {
-  color: #ffd700;
-  transform: scale(1.05);
-}
+h1:hover { color: #ffd700; transform: scale(1.05); }
 
 
 nav {
@@ -35,7 +54,6 @@ nav {
   top: 0;
   z-index: 1000;
 }
-
 nav a {
   text-decoration: none;
   color: #000;
@@ -48,7 +66,6 @@ nav a {
   transition: all 0.3s ease;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
-
 nav a:hover {
   background: #a60045;
   color: #fff;
@@ -72,19 +89,16 @@ nav a:hover {
   margin-top: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-
 .accordion:hover {
   background-color: #ffecb3;
   color: #a60045;
   transform: scale(1.04);
 }
-
 .accordion.active {
   background-color: #a60045;
   color: #fff;
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
 }
-
 .panel {
   padding: 0 15px;
   display: none;
@@ -95,12 +109,10 @@ nav a:hover {
   margin-bottom: 10px;
   transition: all 0.4s ease;
 }
-
 .panel.open {
   display: block;
   animation: fadeIn 0.6s ease;
 }
-
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
@@ -120,7 +132,6 @@ nav a:hover {
   box-shadow: 0 5px 12px rgba(0,0,0,0.15);
   transition: transform 0.4s, box-shadow 0.4s;
 }
-
 .swatch:hover {
   transform: scale(1.2) rotate(3deg);
   box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
@@ -156,7 +167,6 @@ nav a:hover {
   animation: floatBox 4s ease-in-out infinite alternate;
   text-align: center;
 }
-
 @keyframes floatBox {
   from { transform: translateY(0px); }
   to { transform: translateY(-8px); }
@@ -190,7 +200,6 @@ footer {
   display: none;
   transition: all 0.3s ease;
 }
-
 #scrollTopBtn:hover {
   background-color: #a60045;
   color: #fff;
@@ -212,6 +221,4 @@ a::after {
   background: #ffd700;
   transition: left 0.3s ease;
 }
-a:hover::after {
-  left: 0;
-}
+a:hover::after { left: 0; }
