@@ -4,114 +4,117 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rounds 6–10 | Harmony Circle Mandala</title>
- 
 <link rel="stylesheet" href="css/style.css">
 <style>
 
-.accordion {
-  background-color: #f0f0f0;
-  color: #333;
-  cursor: pointer;
-  padding: 15px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.3s;
-  font-weight: bold;
-  margin-top: 10px;
-  border-radius: 6px;
-}
-.active, .accordion:hover {
-  background-color: #dcdcdc;
-}
-.panel {
-  padding: 0 15px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-  border-radius: 6px;
-  margin-bottom: 10px;
-}
-.panel img {
-  max-width: 100%;
-  height: auto;
-  margin: 10px 0;
-}
+
+.accordion { background-color:#f0f0f0;color:#333;cursor:pointer;padding:15px;width:100%;text-align:left;border:none;outline:none;font-weight:bold;margin-top:10px;border-radius:6px;transition:0.3s; }
+.accordion:hover { background-color:#e0fff0; transform:scale(1.02); color:#008080; }
+.accordion.active { background-color:#00bfa5; color:#fff; animation:bounce 0.3s; }
+.panel { max-height:0; overflow:hidden; background-color:#fff; border-radius:6px; margin-bottom:10px; transition:max-height 0.5s ease, opacity 0.5s ease, padding 0.3s ease; opacity:0; }
+.panel.open { opacity:1; }
+@keyframes bounce {0%{transform:scale(1);}50%{transform:scale(1.05);}100%{transform:scale(1);}}
+.swatch { width:120px;height:50px; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:bold; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); margin-bottom:10px; transition:transform 0.3s,box-shadow 0.3s; }
+.swatch:hover { transform:scale(1.1); box-shadow:0 0 20px rgba(0,128,128,0.6); animation:pulse 1s infinite;}
+@keyframes pulse {0%{box-shadow:0 0 15px rgba(0,128,128,0.5);}50%{box-shadow:0 0 25px rgba(0,128,128,0.9);}100%{box-shadow:0 0 15px rgba(0,128,128,0.5);}}
+.panel img { max-width:100%; height:auto; margin:10px 0; transition:transform 0.3s,box-shadow 0.3s;}
+.panel img:hover { transform:scale(1.05) rotate(2deg); box-shadow:0 5px 20px rgba(0,0,0,0.3);}
+#scrollTopBtn { position:fixed; bottom:30px; right:30px; background-color:#008080; color:white; border:none; padding:12px 18px; border-radius:50%; font-size:18px; cursor:pointer; display:none; z-index:1000; transition:background-color 0.3s, transform 0.3s;}
+#scrollTopBtn:hover { background-color:#005f5f; transform:scale(1.1);}
+body { background: linear-gradient(-45deg,#e0fff0,#c0f0ff,#d0c0ff,#fff0c0); background-size:400% 400%; animation:gradientBG 15s ease infinite;}
+@keyframes gradientBG {0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
 </style>
 </head>
 <body>
-
 <header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="page1.html">Materials</a>
-    <a href="page2.html">Color Planning</a>
-    <a href="page3.html">Rounds 1–5</a>
-    <a href="page4.html">Rounds 6–10</a>
-    <a href="page5.html">Rounds 11–15</a>
-    <a href="page6.html">Rounds 16–20</a>
-    <a href="page7.html">Rounds 21–30</a>
-    <a href="page8.html">Rounds 31–45</a>
-    <a href="page9.html">Rounds 46–60</a>
-    <a href="page10.html">Resources</a>
-  </nav>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="page1.html">Materials</a>
+  <a href="page2.html">Color Planning</a>
+  <a href="page3.html">Rounds 1–5</a>
+  <a href="page4.html">Rounds 6–10</a>
+  <a href="page5.html">Rounds 11–15</a>
+  <a href="page6.html">Rounds 16–30</a>
+  <a href="page7.html">Rounds 31–45</a>
+  <a href="page8.html">Rounds 46–60</a>
+  <a href="page9.html">Resources</a>
+  <a href="page10.html">About</a>
+</nav>
 </header>
 
 <main>
-  <h1>Rounds 6–10: Harmony Circle Mandala</h1>
-  <p>Follow these instructions to complete Rounds 6–10 of your mandala. Each round builds texture and dimension in your design.</p>
+<h1>Rounds 6–10: Growing Circles</h1>
+<div class="swatch" style="background-color:#008080;">Rounds 6–10: Teal & Aqua</div>
 
 
-  <button class="accordion">Round 6 – Mesh Ring (Gold)</button>
-  <div class="panel">
-    <p>Join Gold in any st. Ch 2 (counts as hdc), ch 1, skip 1, hdc in next st; rep around. Join. (54 total: 27 hdc, 27 ch-1 sps)</p>
-    <img src="images/round6.jpg" alt="Round 6 Image Placeholder">
-  </div>
+<button class="accordion">Round 6 – Increase</button>
+<div class="panel">
+<p>2 dc in each st around; join (~48 dc)</p>
+<img src="images/round06.jpg" alt="Round 6">
+</div>
 
 
-  <button class="accordion">Round 7 – Tiny Mesh Lace</button>
-  <div class="panel">
-    <p>Ch 1, sc in same st, ch 2, sc in next hdc; rep around. Join. (54 sc, 54 ch-2 sps)</p>
-    <img src="images/round7.jpg" alt="Round 7 Image Placeholder">
-  </div>
-
- 
-  <button class="accordion">Round 8 – Smooth Increase</button>
-  <div class="panel">
-    <p>Ch 3, dc in same st, dc in next 2 sts. 2 dc in next st, dc in next 2 sts; rep around. Join. (72 dc)</p>
-    <img src="images/round8.jpg" alt="Round 8 Image Placeholder">
-  </div>
+<button class="accordion">Round 7 – Shells</button>
+<div class="panel">
+<p>Ch 3, 2 dc in same st, skip 1, 3 dc in next st; rep around (~16 shells)</p>
+<img src="images/round07.jpg" alt="Round 7">
+</div>
 
 
-  <button class="accordion">Round 9 – Puff Texture</button>
-  <div class="panel">
-    <p>Ch 1, Puff st (yo, insert hook, pull up loop) 4 times total, yo, pull through all, ch 1 to close) in next st, skip next st; rep around. Join to top of first puff. (~36 puff sts)</p>
-    <img src="images/round9.jpg" alt="Round 9 Image Placeholder">
-  </div>
+<button class="accordion">Round 8 – Popcorns</button>
+<div class="panel">
+<p>Popcorn stitch in each shell; join (~16 popcorns)</p>
+<img src="images/round08.jpg" alt="Round 8">
+</div>
 
 
-  <button class="accordion">Round 10 – Frame for Puffs</button>
-  <div class="panel">
-    <p>Ch 1, sc between puffs, ch 3; rep around. Join. (36 sc, 36 ch-3 sps)</p>
-    <img src="images/round10.jpg" alt="Round 10 Image Placeholder">
-  </div>
+<button class="accordion">Round 9 – Lace Band</button>
+<div class="panel">
+<p>Ch 4, tr in next; rep around (~48 tr)</p>
+<img src="images/round09.jpg" alt="Round 9">
+</div>
+
+
+<button class="accordion">Round 10 – Stabilize</button>
+<div class="panel">
+<p>Sc in each st around; join (~48 sc)</p>
+<img src="images/round10.jpg" alt="Round 10">
+</div>
 
 </main>
 
 <footer>
-  <p>&copy; 2025 Harmony Mandala Blanket by Carmela Turman</p>
+<p>&copy; 2025 Harmony Mandala Blanket by Carmela Turman</p>
 </footer>
 
 <script>
+
 
 const accordions = document.querySelectorAll(".accordion");
 accordions.forEach(acc => {
   acc.addEventListener("click", () => {
     acc.classList.toggle("active");
     const panel = acc.nextElementSibling;
-    panel.style.display = panel.style.display === "block" ? "none" : "block";
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+      panel.classList.remove("open");
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.classList.add("open");
+    }
   });
+});
+
+
+const scrollBtn = document.createElement('button');
+scrollBtn.id = 'scrollTopBtn';
+scrollBtn.textContent = '↑';
+document.body.appendChild(scrollBtn);
+window.onscroll = function() {
+  scrollBtn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? 'block' : 'none';
+};
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 </script>
 </body>
