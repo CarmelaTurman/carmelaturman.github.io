@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rounds 6–10 | Harmony Circle Mandala</title>
+ 
+<link rel="stylesheet" href="css/style.css">
+<style>
+
+.accordion {
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+.active, .accordion:hover {
+  background-color: #dcdcdc;
+}
+.panel {
+  padding: 0 15px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.panel img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="page1.html">Materials</a>
+    <a href="page2.html">Color Planning</a>
+    <a href="page3.html">Rounds 1–5</a>
+    <a href="page4.html">Rounds 6–10</a>
+    <a href="page5.html">Rounds 11–15</a>
+    <a href="page6.html">Rounds 16–20</a>
+    <a href="page7.html">Rounds 21–30</a>
+    <a href="page8.html">Rounds 31–45</a>
+    <a href="page9.html">Rounds 46–60</a>
+    <a href="page10.html">Resources</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Rounds 6–10: Harmony Circle Mandala</h1>
+  <p>Follow these instructions to complete Rounds 6–10 of your mandala. Each round builds texture and dimension in your design.</p>
+
+
+  <button class="accordion">Round 6 – Mesh Ring (Gold)</button>
+  <div class="panel">
+    <p>Join Gold in any st. Ch 2 (counts as hdc), ch 1, skip 1, hdc in next st; rep around. Join. (54 total: 27 hdc, 27 ch-1 sps)</p>
+    <img src="images/round6.jpg" alt="Round 6 Image Placeholder">
+  </div>
+
+
+  <button class="accordion">Round 7 – Tiny Mesh Lace</button>
+  <div class="panel">
+    <p>Ch 1, sc in same st, ch 2, sc in next hdc; rep around. Join. (54 sc, 54 ch-2 sps)</p>
+    <img src="images/round7.jpg" alt="Round 7 Image Placeholder">
+  </div>
+
+ 
+  <button class="accordion">Round 8 – Smooth Increase</button>
+  <div class="panel">
+    <p>Ch 3, dc in same st, dc in next 2 sts. 2 dc in next st, dc in next 2 sts; rep around. Join. (72 dc)</p>
+    <img src="images/round8.jpg" alt="Round 8 Image Placeholder">
+  </div>
+
+
+  <button class="accordion">Round 9 – Puff Texture</button>
+  <div class="panel">
+    <p>Ch 1, Puff st (yo, insert hook, pull up loop) 4 times total, yo, pull through all, ch 1 to close) in next st, skip next st; rep around. Join to top of first puff. (~36 puff sts)</p>
+    <img src="images/round9.jpg" alt="Round 9 Image Placeholder">
+  </div>
+
+
+  <button class="accordion">Round 10 – Frame for Puffs</button>
+  <div class="panel">
+    <p>Ch 1, sc between puffs, ch 3; rep around. Join. (36 sc, 36 ch-3 sps)</p>
+    <img src="images/round10.jpg" alt="Round 10 Image Placeholder">
+  </div>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Harmony Mandala Blanket by Carmela Turman</p>
+</footer>
+
+<script>
+
+const accordions = document.querySelectorAll(".accordion");
+accordions.forEach(acc => {
+  acc.addEventListener("click", () => {
+    acc.classList.toggle("active");
+    const panel = acc.nextElementSibling;
+    panel.style.display = panel.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+</body>
+</html>

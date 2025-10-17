@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rounds 11–15 | Harmony Circle Mandala</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+.accordion {background-color:#f0f0f0;color:#333;cursor:pointer;padding:15px;width:100%;text-align:left;border:none;outline:none;transition:0.3s;font-weight:bold;margin-top:10px;border-radius:6px;}
+.active,.accordion:hover {background-color:#dcdcdc;}
+.panel {padding:0 15px;display:none;background-color:white;overflow:hidden;border-radius:6px;margin-bottom:10px;}
+.panel img {max-width:100%;height:auto;margin:10px 0;}
+.swatch {width:120px;height:50px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:bold;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,0.1);text-align:center;margin-bottom:10px;}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="page1.html">Materials</a>
+  <a href="page2.html">Color Planning</a>
+  <a href="page3.html">Rounds 1–5</a>
+  <a href="page4.html">Rounds 6–10</a>
+  <a href="page5.html">Rounds 11–15</a>
+  <a href="page6.html">Rounds 16–30</a>
+  <a href="page7.html">Rounds 31–45</a>
+  <a href="page8.html">Rounds 46–60</a>
+  <a href="page9.html">Resources</a>
+  <a href="page10.html">About</a>
+</nav>
+</header>
+
+<main>
+<h1>Rounds 11–15: Coral Section</h1>
+<div class="swatch" style="background-color:#FF7F50;">Rounds 11–15: Coral</div>
+
+
+<button class="accordion">Round 11 – Flatten Base</button>
+<div class="panel">
+<p>Join Coral in any ch-3 sp. Ch 3, 2 dc in same sp. 3 dc in next ch-3 sp; rep around. Join. (108 dc)</p>
+<img src="images/round11.jpg" alt="Round 11 Placeholder">
+</div>
+
+
+<button class="accordion">Round 12 – Small Petal Band</button>
+<div class="panel">
+<p>Ch 3, 2 dc in next st, ch 1, skip 1, dc in next 2 sts; rep around. Join. (~120 sts)</p>
+<img src="images/round12.jpg" alt="Round 12 Placeholder">
+</div>
+
+
+<button class="accordion">Round 13 – Lace Spokes</button>
+<div class="panel">
+<p>Ch 1, sc in same st, ch 5, skip 2 sts, sc in next st; rep around. Join. (~40 ch-5 sps)</p>
+<img src="images/round13.jpg" alt="Round 13 Placeholder">
+</div>
+
+
+<button class="accordion">Round 14 – Fan Petals</button>
+<div class="panel">
+<p>Sl st into first ch-5 sp, ch 3, 4 dc in same sp (5 dc total = shell). Sc in next ch-5 sp, 5 dc in next sp; rep around. Join. (20 shells)</p>
+<img src="images/round14.jpg" alt="Round 14 Placeholder">
+</div>
+
+
+<button class="accordion">Round 15 – Tighten & Frame</button>
+<div class="panel">
+<p>Ch 1, sc between shells, ch 3; rep around. Join. (20 sc, 20 ch-3 sps)</p>
+<img src="images/round15.jpg" alt="Round 15 Placeholder">
+</div>
+
+</main>
+
+<footer>
+<p>&copy; 2025 Harmony Mandala Blanket by Carmela Turman</p>
+</footer>
+
+<script>
+const accordions = document.querySelectorAll(".accordion");
+accordions.forEach(acc => {
+acc.addEventListener("click", () => {
+  acc.classList.toggle("active");
+  const panel = acc.nextElementSibling;
+  panel.style.display = panel.style.display === "block" ? "none" : "block";
+});
+});
+</script>
+</body>
+</html>
