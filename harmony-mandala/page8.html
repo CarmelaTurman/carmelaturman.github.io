@@ -6,46 +6,24 @@
 <title>Rounds 46–60 | Harmony Circle Mandala</title>
 <link rel="stylesheet" href="css/style.css">
 <style>
-.accordion {
-  background-color: #f0f0f0;
-  color: #333;
-  cursor: pointer;
-  padding: 15px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.3s;
-  font-weight: bold;
-  margin-top: 10px;
-  border-radius: 6px;
-}
-.active, .accordion:hover { background-color: #dcdcdc; }
-.panel {
-  padding: 0 15px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-  border-radius: 6px;
-  margin-bottom: 10px;
-}
-.panel img { max-width: 100%; height: auto; margin: 10px 0; }
-.swatch {
-  width: 120px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: center;
-  margin-bottom: 10px;
-}
+
+.accordion { background-color:#f0f0f0;color:#333;cursor:pointer;padding:15px;width:100%;text-align:left;border:none;outline:none;font-weight:bold;margin-top:10px;border-radius:6px;transition:0.3s; }
+.accordion:hover { background-color:#f0ffe0; transform:scale(1.02); color:#32cd32; }
+.accordion.active { background-color:#32cd32; color:#fff; animation:bounce 0.3s; }
+.panel { max-height:0; overflow:hidden; background-color:#fff; border-radius:6px; margin-bottom:10px; transition:max-height 0.5s ease, opacity 0.5s ease, padding 0.3s ease; opacity:0; }
+.panel.open { opacity:1; }
+@keyframes bounce {0%{transform:scale(1);}50%{transform:scale(1.05);}100%{transform:scale(1);}}
+.swatch { width:120px;height:50px; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:bold; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); margin-bottom:10px; transition:transform 0.3s,box-shadow 0.3s; }
+.swatch:hover { transform:scale(1.1); box-shadow:0 0 20px rgba(50,205,50,0.6); animation:pulse 1s infinite;}
+@keyframes pulse {0%{box-shadow:0 0 15px rgba(50,205,50,0.5);}50%{box-shadow:0 0 25px rgba(50,205,50,0.9);}100%{box-shadow:0 0 15px rgba(50,205,50,0.5);}}
+.panel img { max-width:100%; height:auto; margin:10px 0; transition:transform 0.3s,box-shadow 0.3s;}
+.panel img:hover { transform:scale(1.05) rotate(2deg); box-shadow:0 5px 20px rgba(0,0,0,0.3);}
+#scrollTopBtn { position:fixed; bottom:30px; right:30px; background-color:#32cd32; color:white; border:none; padding:12px 18px; border-radius:50%; font-size:18px; cursor:pointer; display:none; z-index:1000; transition:background-color 0.3s, transform 0.3s;}
+#scrollTopBtn:hover { background-color:#228b22; transform:scale(1.1);}
+body { background: linear-gradient(-45deg,#f0ffe0,#e0ffd0,#c0ffc0,#f0fff0); background-size:400% 400%; animation:gradientBG 15s ease infinite;}
+@keyframes gradientBG {0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
 </style>
 </head>
-
 <body>
 <header>
 <nav>
@@ -64,99 +42,100 @@
 </header>
 
 <main>
-<h1>Rounds 46–60: Lavender → Aqua → Cream</h1>
-<div class="swatch" style="background-color:#CBA0E3;">Rounds 46–50: Lavender</div>
-<div class="swatch" style="background-color:#7FFFD4; color:#333;">Rounds 51–55: Aqua</div>
-<div class="swatch" style="background-color:#FFFDD0; color:#333;">Rounds 56–60: Cream</div>
+<h1>Rounds 46–60: Final Flourishes</h1>
+<div class="swatch" style="background-color:#32cd32;">Rounds 46–50: Lime Green</div>
+<div class="swatch" style="background-color:#20b2aa;">Rounds 51–55: Teal Blue</div>
+<div class="swatch" style="background-color:#ff4500;">Rounds 56–60: Coral Accent</div>
 
-<button class="accordion">Round 46 – Lattice Frame</button>
+
+<button class="accordion">Round 46 – Outer Shells</button>
 <div class="panel">
-<p>Join Lavender. Ch 4, skip next st, dc in next, ch 2, skip 1; rep around. Join. (≈400 dc)</p>
-<img src="images/round46.jpg" alt="Round 46 Placeholder">
+<p>Ch 3, 9 dc in next st; rep around (~20 shells)</p>
+<img src="images/round46.jpg" alt="Round 46">
 </div>
 
-<button class="accordion">Round 47 – Weave Band</button>
+<button class="accordion">Round 47 – Popcorn Highlights</button>
 <div class="panel">
-<p>Ch 1, sc in next dc, ch 3, sc in next dc; rep around. Join. (≈200 ch-3 sps)</p>
-<img src="images/round47.jpg" alt="Round 47 Placeholder">
+<p>Popcorn stitch in each shell tip (~20 popcorns)</p>
+<img src="images/round47.jpg" alt="Round 47">
 </div>
 
-<button class="accordion">Round 48 – Petal Expansion</button>
+<button class="accordion">Round 48 – Lace Band</button>
 <div class="panel">
-<p>Ch 3, 2 dc in next ch-3 sp, ch 1, 3 dc in next sp; rep around. Join. (~600 dc)</p>
-<img src="images/round48.jpg" alt="Round 48 Placeholder">
+<p>Ch 4, tr in next st; rep around (~120 tr)</p>
+<img src="images/round48.jpg" alt="Round 48">
 </div>
 
-<button class="accordion">Round 49 – Surface Ridge</button>
+<button class="accordion">Round 49 – Shell Expansion</button>
 <div class="panel">
-<p>Ch 1, sc blo around. Join. (~400 sc)</p>
-<img src="images/round49.jpg" alt="Round 49 Placeholder">
+<p>Ch 3, 11 dc in next st; rep around (~20 shells)</p>
+<img src="images/round49.jpg" alt="Round 49">
 </div>
 
-<button class="accordion">Round 50 – Edge Popcorn</button>
+<button class="accordion">Round 50 – Stabilize Round</button>
 <div class="panel">
-<p>Ch 3, popcorn in next st, ch 2, skip 1; rep around. Join. (~200 popcorns)</p>
-<img src="images/round50.jpg" alt="Round 50 Placeholder">
+<p>Sc in each st around (~160 sc)</p>
+<img src="images/round50.jpg" alt="Round 50">
 </div>
 
-<button class="accordion">Round 51 – Join Aqua (Smooth Band)</button>
+<button class="accordion">Round 51 – Petal Definition</button>
 <div class="panel">
-<p>Join Aqua. Ch 2, hdc in each st around. Join. (~400 hdc)</p>
-<img src="images/round51.jpg" alt="Round 51 Placeholder">
+<p>Ch 3, 9 dc in next st; rep around (~20 petals)</p>
+<img src="images/round51.jpg" alt="Round 51">
 </div>
 
-<button class="accordion">Round 52 – Gentle Wave Row</button>
+<button class="accordion">Round 52 – Popcorn Detail</button>
 <div class="panel">
-<p>Ch 3, dc in next 2 sts, skip 1, sc, skip 1, dc in next 3; rep around. Join.</p>
-<img src="images/round52.jpg" alt="Round 52 Placeholder">
+<p>Popcorn stitch in each petal tip (~20 popcorns)</p>
+<img src="images/round52.jpg" alt="Round 52">
 </div>
 
-<button class="accordion">Round 53 – Lacy Breeze</button>
+<button class="accordion">Round 53 – Lace Band</button>
 <div class="panel">
-<p>Ch 4, skip next 2 sts, sc in next, ch 4; rep around. Join. (~200 ch-4 sps)</p>
-<img src="images/round53.jpg" alt="Round 53 Placeholder">
+<p>Ch 4, tr in next st; rep around (~140 tr)</p>
+<img src="images/round53.jpg" alt="Round 53">
 </div>
 
-<button class="accordion">Round 54 – Fill Lace</button>
+<button class="accordion">Round 54 – Grand Shells</button>
 <div class="panel">
-<p>Ch 3, 3 dc in each ch-4 sp; rep around. Join. (~600 dc)</p>
-<img src="images/round54.jpg" alt="Round 54 Placeholder">
+<p>Ch 3, 13 dc in next st; rep around (~20 shells)</p>
+<img src="images/round54.jpg" alt="Round 54">
 </div>
 
-<button class="accordion">Round 55 – Aqua Texture Finish</button>
+<button class="accordion">Round 55 – Stabilize Round</button>
 <div class="panel">
-<p>Ch 1, sc in each dc blo; rep around. Join. (~600 sc)</p>
-<img src="images/round55.jpg" alt="Round 55 Placeholder">
+<p>Sc in each st around (~180 sc)</p>
+<img src="images/round55.jpg" alt="Round 55">
 </div>
 
-<button class="accordion">Round 56 – Cream Border Base</button>
+<button class="accordion">Round 56 – Outer Petals</button>
 <div class="panel">
-<p>Join Cream. Ch 2, hdc in each st around. Join. (~600 hdc)</p>
-<img src="images/round56.jpg" alt="Round 56 Placeholder">
+<p>Ch 3, 15 dc in next st; rep around (~20 petals)</p>
+<img src="images/round56.jpg" alt="Round 56">
 </div>
 
-<button class="accordion">Round 57 – Final Petal Ridge</button>
+<button class="accordion">Round 57 – Popcorn Accent</button>
 <div class="panel">
-<p>Ch 3, skip 1, 5 dc in next, skip 1, sc in next; rep around. Join. (~100 petals)</p>
-<img src="images/round57.jpg" alt="Round 57 Placeholder">
+<p>Popcorn stitch in each petal tip (~20 popcorns)</p>
+<img src="images/round57.jpg" alt="Round 57">
 </div>
 
-<button class="accordion">Round 58 – Smooth Overlap</button>
+<button class="accordion">Round 58 – Lace Overlay</button>
 <div class="panel">
-<p>Ch 1, sc between petals, ch 2; rep around. Join. (~100 ch-2 sps)</p>
-<img src="images/round58.jpg" alt="Round 58 Placeholder">
+<p>Ch 4, tr in next st; rep around (~160 tr)</p>
+<img src="images/round58.jpg" alt="Round 58">
 </div>
 
-<button class="accordion">Round 59 – Ribbed Border</button>
+<button class="accordion">Round 59 – Shell Finishing</button>
 <div class="panel">
-<p>Ch 2, FPDC around next dc, BPDC around next; rep around. Join. (~400 sts)</p>
-<img src="images/round59.jpg" alt="Round 59 Placeholder">
+<p>Ch 3, 15 dc in next st; rep around (~20 shells)</p>
+<img src="images/round59.jpg" alt="Round 59">
 </div>
 
-<button class="accordion">Round 60 – Picot Edge Finish</button>
+<button class="accordion">Round 60 – Final Stabilize</button>
 <div class="panel">
-<p>Ch 1, sc in next 2 sts, picot (ch 3, sl st in first ch), sc in next 2; rep around. Fasten off, weave ends.</p>
-<img src="images/round60.jpg" alt="Round 60 Placeholder">
+<p>Sc in each st around (~200 sc) – Finished!</p>
+<img src="images/round60.jpg" alt="Round 60">
 </div>
 
 </main>
@@ -166,13 +145,33 @@
 </footer>
 
 <script>
+
+
 const accordions = document.querySelectorAll(".accordion");
 accordions.forEach(acc => {
   acc.addEventListener("click", () => {
     acc.classList.toggle("active");
     const panel = acc.nextElementSibling;
-    panel.style.display = panel.style.display === "block" ? "none" : "block";
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+      panel.classList.remove("open");
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.classList.add("open");
+    }
   });
+});
+
+
+const scrollBtn = document.createElement('button');
+scrollBtn.id = 'scrollTopBtn';
+scrollBtn.textContent = '↑';
+document.body.appendChild(scrollBtn);
+window.onscroll = function() {
+  scrollBtn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? 'block' : 'none';
+};
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 </script>
 </body>
