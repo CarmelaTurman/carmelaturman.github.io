@@ -5,19 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rounds 16–30 | Harmony Circle Mandala</title>
 <link rel="stylesheet" href="css/style.css">
-
 <style>
-.accordion {background-color:#f0f0f0;color:#333;cursor:pointer;padding:15px;width:100%;text-align:left;border:none;outline:none;transition:0.3s;font-weight:bold;margin-top:10px;border-radius:6px;}
-.active,.accordion:hover {background-color:#dcdcdc;}
-.panel {padding:0 15px;display:none;background-color:white;overflow:hidden;border-radius:6px;margin-bottom:10px;}
-.panel img {max-width:100%;height:auto;margin:10px 0;}
-.swatch {width:120px;height:50px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:bold;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,0.1);text-align:center;margin-bottom:10px;}
-</style>
 
+.accordion { background-color:#f0f0f0;color:#333;cursor:pointer;padding:15px;width:100%;text-align:left;border:none;outline:none;font-weight:bold;margin-top:10px;border-radius:6px;transition:0.3s; }
+.accordion:hover { background-color:#e0f0ff; transform:scale(1.02); color:#1e90ff; }
+.accordion.active { background-color:#1e90ff; color:#fff; animation:bounce 0.3s; }
+.panel { max-height:0; overflow:hidden; background-color:#fff; border-radius:6px; margin-bottom:10px; transition:max-height 0.5s ease, opacity 0.5s ease, padding 0.3s ease; opacity:0; }
+.panel.open { opacity:1; }
+@keyframes bounce {0%{transform:scale(1);}50%{transform:scale(1.05);}100%{transform:scale(1);}}
+.swatch { width:120px;height:50px; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:bold; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); margin-bottom:10px; transition:transform 0.3s,box-shadow 0.3s; }
+.swatch:hover { transform:scale(1.1); box-shadow:0 0 20px rgba(30,144,255,0.6); animation:pulse 1s infinite;}
+@keyframes pulse {0%{box-shadow:0 0 15px rgba(30,144,255,0.5);}50%{box-shadow:0 0 25px rgba(30,144,255,0.9);}100%{box-shadow:0 0 15px rgba(30,144,255,0.5);}}
+.panel img { max-width:100%; height:auto; margin:10px 0; transition:transform 0.3s,box-shadow 0.3s;}
+.panel img:hover { transform:scale(1.05) rotate(2deg); box-shadow:0 5px 20px rgba(0,0,0,0.3);}
+#scrollTopBtn { position:fixed; bottom:30px; right:30px; background-color:#1e90ff; color:white; border:none; padding:12px 18px; border-radius:50%; font-size:18px; cursor:pointer; display:none; z-index:1000; transition:background-color 0.3s, transform 0.3s;}
+#scrollTopBtn:hover { background-color:#006bb3; transform:scale(1.1);}
+body { background: linear-gradient(-45deg,#e0f0ff,#d0ffff,#c0c0ff,#f0f0ff); background-size:400% 400%; animation:gradientBG 15s ease infinite;}
+@keyframes gradientBG {0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+</style>
 </head>
 <body>
 <header>
-    
 <nav>
   <a href="index.html">Home</a>
   <a href="page1.html">Materials</a>
@@ -34,115 +42,54 @@
 </header>
 
 <main>
-<h1>Rounds 16–30: Aqua → Lavender → Mint</h1>
-<div class="swatch" style="background-color:#00CED1;">Rounds 16–20: Aqua</div>
-<div class="swatch" style="background-color:#E6E6FA;">Rounds 21–25: Lavender</div>
-<div class="swatch" style="background-color:#98FB98;">Rounds 26–30: Mint</div>
+<h1>Rounds 16–30: Expanding Layers</h1>
+<div class="swatch" style="background-color:#1e90ff;">Rounds 16–30: Blue & Aqua</div>
 
 
-<button class="accordion">Round 16 – Cluster Texture Band</button>
-<div class="panel">
-<p>Join Aqua in any ch-3 space. Ch 3 (counts as dc), 3dc cluster in same sp, ch 2, 3dc cluster in next ch-3 sp; rep around. Join. (40 clusters)</p>
-<img src="images/round16.jpg" alt="Round 16 Placeholder">
-</div>
+<button class="accordion">Round 16 – Base Shells</button>
+<div class="panel"><p>Ch 3, 5 dc in next st; rep around (~20 shells)</p><img src="images/round16.jpg" alt="Round 16"></div>
 
+<button class="accordion">Round 17 – Popcorn Accent</button>
+<div class="panel"><p>Popcorn stitch in each shell tip (~20 popcorns)</p><img src="images/round17.jpg" alt="Round 17"></div>
 
-<button class="accordion">Round 17 – Picot Edge Trim</button>
-<div class="panel">
-<p>Ch 1, sc in same st, ch 3, sl st in 1st ch (picot made), sc in next cluster top; rep around. Join. (40 picots)</p>
-<img src="images/round17.jpg" alt="Round 17 Placeholder">
-</div>
+<button class="accordion">Round 18 – Lace Band</button>
+<div class="panel"><p>Ch 4, tr in next st; rep around (~60 tr)</p><img src="images/round18.jpg" alt="Round 18"></div>
 
+<button class="accordion">Round 19 – Shell Layer</button>
+<div class="panel"><p>Ch 3, 5 dc in next st; rep around (~20 shells)</p><img src="images/round19.jpg" alt="Round 19"></div>
 
-<button class="accordion">Round 18 – Shape Control (HDC Increase)</button>
-<div class="panel">
-<p>Ch 2 (counts as hdc), hdc in next 5 sts, 2 hdc in next; rep around. Join. (~280 hdc)</p>
-<img src="images/round18.jpg" alt="Round 18 Placeholder">
-</div>
+<button class="accordion">Round 20 – Stabilize</button>
+<div class="panel"><p>Sc in each st around (~100 sc)</p><img src="images/round20.jpg" alt="Round 20"></div>
 
+<button class="accordion">Round 21 – Petal Formation</button>
+<div class="panel"><p>Ch 3, 7 dc in next st; rep around (~20 petals)</p><img src="images/round21.jpg" alt="Round 21"></div>
 
-<button class="accordion">Round 19 – Lace Height</button>
-<div class="panel">
-<p>Ch 4 (counts as tr), ch 1, skip 1 st, tr in next; rep around. Join. (~140 tr, 140 ch-1 sps)</p>
-<img src="images/round19.jpg" alt="Round 19 Placeholder">
-</div>
+<button class="accordion">Round 22 – Popcorn Detail</button>
+<div class="panel"><p>Popcorn stitch in each petal tip (~20 popcorns)</p><img src="images/round22.jpg" alt="Round 22"></div>
 
+<button class="accordion">Round 23 – Lace Band</button>
+<div class="panel"><p>Ch 4, tr in next st; rep around (~80 tr)</p><img src="images/round23.jpg" alt="Round 23"></div>
 
-<button class="accordion">Round 20 – Mini “V” Stitch Band</button>
-<div class="panel">
-<p>Ch 3, dc in same st, ch 2, dc in next st, dc in same st (V), skip 2, (2 dc, ch 2, 2 dc) in next st; rep around. (~94 V sts)</p>
-<img src="images/round20.jpg" alt="Round 20 Placeholder">
-</div>
+<button class="accordion">Round 24 – Shell Expansion</button>
+<div class="panel"><p>Ch 3, 7 dc in next st; rep around (~20 shells)</p><img src="images/round24.jpg" alt="Round 24"></div>
 
+<button class="accordion">Round 25 – Stabilize</button>
+<div class="panel"><p>Sc in each st around (~120 sc)</p><img src="images/round25.jpg" alt="Round 25"></div>
 
-<button class="accordion">Round 21 – Compact Single Crochet Band (Lavender)</button>
-<div class="panel">
-<p>Ch 1, sc in each dc (skip ch spaces). Join. (≈376 sc)</p>
-<img src="images/round21.jpg" alt="Round 21 Placeholder">
-</div>
+<button class="accordion">Round 26 – Grand Shells</button>
+<div class="panel"><p>Ch 3, 9 dc in next st; rep around (~20 shells)</p><img src="images/round26.jpg" alt="Round 26"></div>
 
+<button class="accordion">Round 27 – Popcorn Accent</button>
+<div class="panel"><p>Popcorn stitch in each shell tip (~20 popcorns)</p><img src="images/round27.jpg" alt="Round 27"></div>
 
-<button class="accordion">Round 22 – Crossed Double Crochet Texture</button>
-<div class="panel">
-<p>Ch 3, skip next st, dc in next, dc in skipped st; rep around. Join. (≈376 dc)</p>
-<img src="images/round22.jpg" alt="Round 22 Placeholder">
-</div>
+<button class="accordion">Round 28 – Lace Band</button>
+<div class="panel"><p>Ch 4, tr in next st; rep around (~100 tr)</p><img src="images/round28.jpg" alt="Round 28"></div>
 
+<button class="accordion">Round 29 – Shell Layer</button>
+<div class="panel"><p>Ch 3, 9 dc in next st; rep around (~20 shells)</p><img src="images/round29.jpg" alt="Round 29"></div>
 
-<button class="accordion">Round 23 – Puff Dots Band</button>
-<div class="panel">
-<p>Ch 1, sc in next st, ch 1, puff st in next st, ch 1; rep around. Join. (~188 puff sts)</p>
-<img src="images/round23.jpg" alt="Round 23 Placeholder">
-</div>
-
-
-<button class="accordion">Round 24 – Shape Round</button>
-<div class="panel">
-<p>Ch 2 (counts as hdc), hdc in each st, 2 hdc every 18 sts; rep around. Join.</p>
-<img src="images/round24.jpg" alt="Round 24 Placeholder">
-</div>
-
-
-<button class="accordion">Round 25 – Shell Layer</button>
-<div class="panel">
-<p>Ch 3, skip 2, 5 dc in next, skip 2, sc in next; rep around. Join. (~63 shells)</p>
-<img src="images/round25.jpg" alt="Round 25 Placeholder">
-</div>
-
-
-<button class="accordion">Round 26 – Outline Between Shells (Mint)</button>
-<div class="panel">
-<p>Join Mint in sc between shells. Ch 1, sc in same, ch 2, sc between next shells; rep around. Join. (~63 sc, 63 ch-2 sps)</p>
-<img src="images/round26.jpg" alt="Round 26 Placeholder">
-</div>
-
-
-<button class="accordion">Round 27 – Open V Band</button>
-<div class="panel">
-<p>Ch 3, V-st (dc, ch 1, dc) in each ch-2 space; rep around. (~126 dc)</p>
-<img src="images/round27.jpg" alt="Round 27 Placeholder">
-</div>
-
-
-<button class="accordion">Round 28 – Framed Lace</button>
-<div class="panel">
-<p>Ch 1, sc in V-space, ch 3, sc in next V-space; rep around. Join. (63 sc, 63 ch-3 sps)</p>
-<img src="images/round28.jpg" alt="Round 28 Placeholder">
-</div>
-
-
-<button class="accordion">Round 29 – Transition Ridge</button>
-<div class="panel">
-<p>Ch 3, dc in back loop only of each st around. Join. (~315 dc)</p>
-<img src="images/round29.jpg" alt="Round 29 Placeholder">
-</div>
-
-
-<button class="accordion">Round 30 – Growth Control (HDC Inc Row)</button>
-<div class="panel">
-<p>Ch 2, hdc in next 9 sts, 2 hdc in next; rep around. Join. (~350 hdc)</p>
-<img src="images/round30.jpg" alt="Round 30 Placeholder">
-</div>
+<button class="accordion">Round 30 – Stabilize Round</button>
+<div class="panel"><p>Sc in each st around (~140 sc)</p><img src="images/round30.jpg" alt="Round 30"></div>
 
 </main>
 
@@ -151,13 +98,33 @@
 </footer>
 
 <script>
+
+
 const accordions = document.querySelectorAll(".accordion");
 accordions.forEach(acc => {
-acc.addEventListener("click", () => {
-  acc.classList.toggle("active");
-  const panel = acc.nextElementSibling;
-  panel.style.display = panel.style.display === "block" ? "none" : "block";
+  acc.addEventListener("click", () => {
+    acc.classList.toggle("active");
+    const panel = acc.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+      panel.classList.remove("open");
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.classList.add("open");
+    }
+  });
 });
+
+
+const scrollBtn = document.createElement('button');
+scrollBtn.id = 'scrollTopBtn';
+scrollBtn.textContent = '↑';
+document.body.appendChild(scrollBtn);
+window.onscroll = function() {
+  scrollBtn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? 'block' : 'none';
+};
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 </script>
 </body>
