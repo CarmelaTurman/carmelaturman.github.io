@@ -1,0 +1,137 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+header {
+    background: #a8324a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-section {
+    margin-top: 1rem;
+}
+
+.info-section h2, 
+.info-section h3 {
+    color: #a8324a;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.sources-section {
+    margin-top: 2rem;
+}
+
+.sources-section ul {
+    padding-left: 1rem;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+#darkModeToggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: white;
+    color: #a8324a;
+    border: 2px solid #a8324a;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    background-color: #a8324a;
+    color: white;
+}
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e4e4e4;
+}
+
+body.dark-mode header {
+    background: #5c1d2a;
+    color: #f0f0f0;
+}
+
+body.dark-mode footer {
+    background: #1f1f1f;
+    color: #ddd;
+}
+
+body.dark-mode .info-section h2,
+body.dark-mode .info-section h3 {
+    color: #ff6699;
+}
+
+body.dark-mode a {
+    color: #ff80bf;
+}
+
+body.dark-mode img {
+    filter: brightness(0.8);
+}
+
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .image-section {
+        flex: 1;
+        max-width: 40%;
+    }
+
+    .info-section {
+        flex: 2;
+    }
+
+    .sources-section {
+        flex-basis: 100%;
+    }
+}
