@@ -147,6 +147,19 @@ footer {
 }
 footer p { margin:5px 0; text-shadow:1px1px3px rgba(255,255,255,0.5); }
 
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+
+footer ul li {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-shadow: 1px1px3px rgba(255,255,255,0.5);
+}
+
+
  
 @media (max-width: 768px) {
   .text-box { max-width: 90%; padding: 15px 20px; }
