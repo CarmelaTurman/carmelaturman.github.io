@@ -7,29 +7,25 @@
 }
 
 .step {
-  position: relative;
-  height: 120vh;
+  height: 120vh; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
   overflow: hidden;
   padding: 2rem;
 }
 
-.bg-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  
-}
+.intro { background: url('long-story/four seasons.jpg') no-repeat center/cover; }
+.spring { background: url('long-story/joanna-huang-k7lM-KTlke4-unsplash.jpg') no-repeat center/cover; }
+.summer { background: url('long-story/saiph-muhammad-CSs8aiN_LkI-unsplash.jpg') no-repeat center/cover; }
+.autumn { background: url('long-story/michael-hamments-77t8IqvAUBU-unsplash.jpg') no-repeat center/cover; }
+.winter { background: url('long-story/ian-keefe-OgcJIKRnRC8-unsplash.jpg') no-repeat center/cover; }
 
- 
 h1 { font-family: 'Pacifico', cursive; font-size: 4rem; text-shadow: 3px 3px 15px rgba(0,0,0,0.6); margin-bottom: 1rem; }
 p { font-size: 1.3rem; line-height: 1.8; max-width: 750px; background: rgba(0,0,0,0.4); padding: 2rem; border-radius: 20px; }
 
@@ -38,37 +34,13 @@ p { font-size: 1.3rem; line-height: 1.8; max-width: 750px; background: rgba(0,0,
 .autumn-font { font-family: 'Shadows Into Light', cursive; font-size: 3.5rem; color: #ffb347; }
 .winter-font { font-family: 'Pacifico', cursive; font-size: 3.5rem; color: #aeefff; }
 
- 
-.petals::before, .petals::after {
-  content: "🌸"; position: absolute; top: -10%; font-size: 2rem; opacity: 0.8;
-  animation: fall 12s infinite linear;
+footer {
+  background: #111;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #eee;
 }
-.petals::after { left: 40%; animation-delay: 3s; }
-@keyframes fall { 0% { transform: translateY(0) rotate(0deg); opacity: 1; } 100% { transform: translateY(130vh) rotate(360deg); opacity: 0; } }
-
-.sunshine::before, .sunshine::after {
-  content: "☀️"; position: absolute; top: 10%; left: 20%; font-size: 2.5rem;
-  animation: sparkle 4s infinite alternate;
-}
-.sunshine::after { left: 60%; animation-delay: 2s; }
-@keyframes sparkle { 0% { transform: scale(1) rotate(0deg); opacity: 0.5; } 50% { transform: scale(1.3) rotate(180deg); opacity: 1; } 100% { transform: scale(1) rotate(360deg); opacity: 0.5; } }
-
-.leaves::before, .leaves::after {
-  content: "🍁"; position: absolute; top: -10%; font-size: 2.5rem;
-  animation: leafFall 10s infinite linear;
-}
-.leaves::after { left: 50%; animation-delay: 4s; }
-@keyframes leafFall { 0% { transform: translateY(0) rotate(0deg); opacity: 1; } 100% { transform: translateY(120vh) rotate(720deg); opacity: 0; } }
-
-.snow::before, .snow::after {
-  content: "❄️"; position: absolute; top: -10%; font-size: 1.8rem;
-  animation: snowFall 8s infinite linear;
-}
-.snow::after { left: 60%; animation-delay: 3s; }
-@keyframes snowFall { 0% { transform: translateY(0) rotate(0deg); opacity: 1; } 100% { transform: translateY(120vh) rotate(360deg); opacity: 0; } }
-
- 
-footer { background: #111; text-align: center; padding: 2rem 1rem; font-size: 0.9rem; color: #eee; }
 footer a { color: #9cf; text-decoration: none; }
 footer a:hover { text-decoration: underline; }
 .references { margin-top: 1rem; }
