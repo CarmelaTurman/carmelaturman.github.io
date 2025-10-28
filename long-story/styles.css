@@ -1,157 +1,73 @@
-body {
+* {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  color: #fff;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-section {
+body, html {
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.panel {
+  position: relative;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2rem;
   background-size: cover;
   background-position: center;
-  position: relative;
-  overflow: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.intro {
-  background: url('four-seasons.jpg') no-repeat center/cover;
-}
-.spring {
-  background: url('joanna-huang-k7lM-KTlke4-unsplash.jpg') no-repeat center/cover;
-}
-.summer {
-  background: url('saiph-muhammad-CSs8aiN_LkI-unsplash.jpg') no-repeat center/cover;
-}
-.autumn {
-  background: url('michael-hamments-77t8IqvAUBU-unsplash.jpg') no-repeat center/cover;
-}
-.winter {
-  background: url('ian-keefe-OgcJIKRnRC8-unsplash.jpg') no-repeat center/cover;
+.content {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 h1, h2 {
-  font-size: 4rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
   margin-bottom: 1rem;
-  text-shadow: 3px 3px 15px rgba(0,0,0,0.6);
 }
 
 p {
-  font-size: 1.5rem;
-  max-width: 700px;
-  background-color: rgba(0,0,0,0.4);
-  padding: 1.5rem 2rem;
-  border-radius: 20px;
-  line-height: 1.7;
-  text-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 
-
-section::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  z-index: 0;
-  opacity: 0.3;
-  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(0,0,0,0.3));
-}
-section * { position: relative; z-index: 1; }
-
-.spring::before {
-  background: linear-gradient(135deg, rgba(120,255,170,0.4), rgba(70,170,255,0.3));
-}
-.summer::before {
-  background: linear-gradient(135deg, rgba(255,230,120,0.4), rgba(255,120,100,0.3));
-}
-.autumn::before {
-  background: linear-gradient(135deg, rgba(255,170,80,0.5), rgba(190,50,20,0.3));
-}
-.winter::before {
-  background: linear-gradient(135deg, rgba(180,220,255,0.5), rgba(60,100,200,0.3));
+.intro {
+  background-image: url('long-story/four seasons.jpg');
 }
 
+.spring {
+  background-image: url('long-story/joanna-huang-k7lM-KTlke4-unsplash.jpg');
+}
+
+.summer {
+  background-image: url('long-story/saiph-muhammad-CSs8aiN_LkI-unsplash.jpg');
+}
+
+.autumn {
+  background-image: url('long-story/michael-hamments-77t8IqvAUBU-unsplash.jpg');
+}
+
+.winter {
+  background-image: url('long-story/ian-keefe-OgcJIKRnRC8-unsplash.jpg');
+}
 
 footer {
-  background: linear-gradient(135deg, #222, #444);
-  color: #f8f8f8;
+  background-color: #111;
+  color: #eee;
   text-align: center;
-  padding: 2rem 1rem;
-}
-footer p {
-  margin: 0;
-  font-weight: 500;
-  font-size: 1.2rem;
-}
-
-
-.petals::before, .petals::after {
-  content: "";
-  position: absolute;
-  top: -10%;
-  width: 20px; height: 20px;
-  background: pink;
-  border-radius: 50%;
-  opacity: 0.7;
-  animation: fall 10s infinite linear;
-}
-.petals::after {
-  left: 50%;
-  animation-delay: 2s;
-}
-@keyframes fall {
-  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
-  100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
-}
-
-
-.sunshine {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: radial-gradient(circle, rgba(255,255,200,0.3) 0%, transparent 70%);
-  animation: glow 5s infinite alternate;
-}
-@keyframes glow {
-  0% { opacity: 0.4; }
-  100% { opacity: 0.8; }
-}
-
-
-.leaves::before, .leaves::after {
-  content: "🍁";
-  position: absolute;
-  top: -10%;
-  font-size: 2rem;
-  animation: leafFall 8s infinite linear;
-}
-.leaves::after {
-  left: 60%;
-  animation-delay: 3s;
-}
-@keyframes leafFall {
-  0% { transform: translateY(0) rotate(0deg); }
-  100% { transform: translateY(110vh) rotate(720deg); opacity: 0.6; }
-}
-
-
-.snow::before, .snow::after {
-  content: "❄️";
-  position: absolute;
-  top: -10%;
-  font-size: 1.5rem;
-  animation: snowFall 6s infinite linear;
-}
-.snow::after {
-  left: 40%;
-  animation-delay: 2s;
-}
-@keyframes snowFall {
-  0% { transform: translateY(0) rotate(0deg); opacity: 0.9; }
-  100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+  padding: 1rem;
+  font-size: 0.9rem;
 }
