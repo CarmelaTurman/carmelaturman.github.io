@@ -1,46 +1,73 @@
- body {
+ * {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.step {
-  height: 120vh; 
+body, html {
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.panel {
+  position: relative;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   background-size: cover;
   background-position: center;
-  position: relative;
-  overflow: hidden;
-  padding: 2rem;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.intro { background: url('long-story/four seasons.jpg') no-repeat center/cover; }
-.spring { background: url('long-story/joanna-huang-k7lM-KTlke4-unsplash.jpg') no-repeat center/cover; }
-.summer { background: url('long-story/saiph-muhammad-CSs8aiN_LkI-unsplash.jpg') no-repeat center/cover; }
-.autumn { background: url('long-story/michael-hamments-77t8IqvAUBU-unsplash.jpg') no-repeat center/cover; }
-.winter { background: url('long-story/ian-keefe-OgcJIKRnRC8-unsplash.jpg') no-repeat center/cover; }
+.content {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
 
-h1 { font-family: 'Pacifico', cursive; font-size: 4rem; text-shadow: 3px 3px 15px rgba(0,0,0,0.6); margin-bottom: 1rem; }
-p { font-size: 1.3rem; line-height: 1.8; max-width: 750px; background: rgba(0,0,0,0.4); padding: 2rem; border-radius: 20px; }
+h1, h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
 
-.spring-font { font-family: 'Dancing Script', cursive; font-size: 3.5rem; color: #ffe6f0; }
-.summer-font { font-family: 'Gloria Hallelujah', cursive; font-size: 3.5rem; color: #fff68f; }
-.autumn-font { font-family: 'Shadows Into Light', cursive; font-size: 3.5rem; color: #ffb347; }
-.winter-font { font-family: 'Pacifico', cursive; font-size: 3.5rem; color: #aeefff; }
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.intro {
+  background-image: url('long-story/four seasons.jpg');
+}
+
+.spring {
+  background-image: url('long-story/joanna-huang-k7lM-KTlke4-unsplash.jpg');
+}
+
+.summer {
+  background-image: url('long-story/saiph-muhammad-CSs8aiN_LkI-unsplash.jpg');
+}
+
+.autumn {
+  background-image: url('long-story/michael-hamments-77t8IqvAUBU-unsplash.jpg');
+}
+
+.winter {
+  background-image: url('long-story/ian-keefe-OgcJIKRnRC8-unsplash.jpg');
+}
 
 footer {
-  background: #111;
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
+  background-color: #111;
   color: #eee;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
-footer a { color: #9cf; text-decoration: none; }
-footer a:hover { text-decoration: underline; }
-.references { margin-top: 1rem; }
