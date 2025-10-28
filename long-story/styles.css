@@ -7,7 +7,7 @@ body {
 }
 
 .step {
-  height: 120vh; 
+  height: 120vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,37 +20,13 @@ body {
   padding: 2rem;
 }
 
-
-.intro { 
-  background: url('long-story/four seasons.jpg') no-repeat center/cover; 
-}
-
-.spring { 
-  background: url('long-story/joanna-huang-k7lM-KTlke4-unsplash.jpg') no-repeat center/cover; 
-}
-
-.summer { 
-  background: url('long-story/saiph-muhammad-CSs8aiN_LkI-unsplash.jpg') no-repeat center/cover; 
-}
-
-.autumn { 
-  background: url('long-story/michael-hamments-77t8IqvAUBU-unsplash.jpg') no-repeat center/cover; 
-}
-
-.winter { 
-  background: url('long-story/ian-keefe-OgcJIKRnRC8-unsplash.jpg') no-repeat center/cover; 
-}
-
-
 h1 { font-family: 'Pacifico', cursive; font-size: 4rem; text-shadow: 3px 3px 15px rgba(0,0,0,0.6); margin-bottom: 1rem; }
 p { font-size: 1.3rem; line-height: 1.8; max-width: 750px; background: rgba(0,0,0,0.4); padding: 2rem; border-radius: 20px; }
-
 
 .spring-font { font-family: 'Dancing Script', cursive; font-size: 3.5rem; color: #ffe6f0; }
 .summer-font { font-family: 'Gloria Hallelujah', cursive; font-size: 3.5rem; color: #fff68f; }
 .autumn-font { font-family: 'Shadows Into Light', cursive; font-size: 3.5rem; color: #ffb347; }
 .winter-font { font-family: 'Pacifico', cursive; font-size: 3.5rem; color: #aeefff; }
-
 
 
 .petals::before, .petals::after {
