@@ -5,6 +5,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Fredoka One', Arial, sans-serif;
+  scroll-behavior: smooth;  
 }
 
  
@@ -21,7 +22,6 @@ body, html {
   background-repeat: no-repeat;
   padding: 20px;
   position: relative;
-  transition: background 0.5s ease;
 }
 
  
@@ -32,20 +32,30 @@ body, html {
 .winter { background-image: url('ian-keefe-OgcJIKRnRC8-unsplash.jpg'); }
 
  
-.intro h1 { font-family: 'Pacifico', cursive; font-size: 3rem; text-shadow: 2px2px5px rgba(0,0,0,0.7);}
-.intro p { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; text-shadow: 1px1px3px rgba(0,0,0,0.6); }
+.text-box {
+  background: rgba(0,0,0,0.5);
+  padding: 20px 30px;
+  border-radius: 15px;
+  display: inline-block;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
 
-.spring-title { font-family: 'Shadows Into Light', cursive; font-size: 3rem; color: #3c9a4f; text-shadow: 2px2px5px rgba(0,0,0,0.5);}
-.spring-text { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; color: #e0f2f1; line-height: 1.6; text-shadow: 1px1px3px rgba(0,0,0,0.6);}
+/* Headings and text per season */
+.intro h1 { font-family: 'Pacifico', cursive; font-size: 3rem; }
+.intro p { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; }
 
-.summer-title { font-family: 'Pacifico', cursive; font-size: 3rem; color: #ffd700; text-shadow: 2px2px5px rgba(0,0,0,0.5);}
-.summer-text { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; color: #fffacd; line-height: 1.6; text-shadow: 1px1px3px rgba(0,0,0,0.6);}
+.spring-title { font-family: 'Shadows Into Light', cursive; font-size: 3rem; color: #3c9a4f; }
+.spring-text { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; line-height:1.6; }
 
-.autumn-title { font-family: 'Shadows Into Light', cursive; font-size: 3rem; color: #ff6f00; text-shadow: 2px2px5px rgba(0,0,0,0.5);}
-.autumn-text { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; color: #ffd180; line-height: 1.6; text-shadow: 1px1px3px rgba(0,0,0,0.6);}
+.summer-title { font-family: 'Pacifico', cursive; font-size: 3rem; color: #ffd700; }
+.summer-text { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; line-height:1.6; }
 
-.winter-title { font-family: 'Pacifico', cursive; font-size: 3rem; color: #00bfff; text-shadow: 2px2px5px rgba(0,0,0,0.5);}
-.winter-text { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; color: #e0f7fa; line-height: 1.6; text-shadow: 1px1px3px rgba(0,0,0,0.6);}
+.autumn-title { font-family: 'Shadows Into Light', cursive; font-size: 3rem; color: #ff6f00; }
+.autumn-text { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; line-height:1.6; }
+
+.winter-title { font-family: 'Pacifico', cursive; font-size: 3rem; color: #00bfff; }
+.winter-text { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; line-height:1.6; }
 
  
 .spring::before, .summer::before, .autumn::before, .winter::before {
@@ -71,60 +81,4 @@ body, html {
   width:100%; height:100%;
   pointer-events: none;
   overflow: hidden;
-  z-index:0;
-}
-
  
-@keyframes floatUp {
-  0% { transform: translateY(100vh) rotate(0deg); opacity:0; }
-  10% { opacity:1; }
-  100% { transform: translateY(-10vh) rotate(360deg); opacity:0; }
-}
-
- 
-.spring-petal {
-  position:absolute; bottom:0; width:15px; height:15px; background:pink; border-radius:50%; animation: floatUp linear infinite;
-}
-.spring-petal:nth-child(1) { left:10%; animation-duration:8s; animation-delay:0s;}
-.spring-petal:nth-child(2) { left:30%; animation-duration:10s; animation-delay:1s;}
-.spring-petal:nth-child(3) { left:50%; animation-duration:9s; animation-delay:2s;}
-.spring-petal:nth-child(4) { left:70%; animation-duration:11s; animation-delay:3s;}
-.spring-petal:nth-child(5) { left:90%; animation-duration:12s; animation-delay:4s;}
-
- 
-.summer-spark {
-  position:absolute; bottom:0; width:5px; height:5px; background:yellow; border-radius:50%; box-shadow:0 0 10px yellow; animation: floatUp linear infinite;
-}
-.summer-spark:nth-child(1) { left:20%; animation-duration:6s;}
-.summer-spark:nth-child(2) { left:40%; animation-duration:7s;}
-.summer-spark:nth-child(3) { left:60%; animation-duration:8s;}
-
- 
-.autumn-leaf {
-  position:absolute; bottom:0; width:20px; height:10px; background:orange; border-radius:50%; animation: floatUp linear infinite;
-}
-.autumn-leaf:nth-child(1) { left:15%; animation-duration:9s;}
-.autumn-leaf:nth-child(2) { left:35%; animation-duration:10s;}
-.autumn-leaf:nth-child(3) { left:55%; animation-duration:11s;}
-.autumn-leaf:nth-child(4) { left:75%; animation-duration:12s;}
-
- 
-.snowflake {
-  position:absolute; bottom:0; width:10px; height:10px; background:white; border-radius:50%; box-shadow:0 0 8px white; animation: floatUp linear infinite;
-}
-.snowflake:nth-child(1) { left:10%; animation-duration:6s;}
-.snowflake:nth-child(2) { left:30%; animation-duration:7s;}
-.snowflake:nth-child(3) { left:50%; animation-duration:8s;}
-.snowflake:nth-child(4) { left:70%; animation-duration:9s;}
-.snowflake:nth-child(5) { left:90%; animation-duration:10s;}
-
- 
-footer {
-  background-color:#222;
-  color:#fff;
-  text-align:center;
-  padding:20px;
-  font-family:'Fredoka One', Arial, sans-serif;
-  font-size:0.9rem;
-}
-footer p { margin:5px 0; text-shadow:1px1px3px rgba(255,255,255,0.5); }
