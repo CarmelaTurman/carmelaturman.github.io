@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+.intro { background: url('images/intro.jpg') no-repeat center/cover; }
+.spring { background: url('images/spring.jpg') no-repeat center/cover; }
+.summer { background: url('images/summer.jpg') no-repeat center/cover; }
+.autumn { background: url('images/autumn.jpg') no-repeat center/cover; }
+.winter { background: url('images/winter.jpg') no-repeat center/cover; }
+
+
+h1, h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 3px 3px 15px rgba(0,0,0,0.6);
+}
+
+p {
+  font-size: 1.5rem;
+  max-width: 700px;
+  background-color: rgba(0,0,0,0.4);
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  line-height: 1.7;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+}
+
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+  opacity: 0.3;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(0,0,0,0.3));
+}
+
+section * { position: relative; z-index: 1; }
+
+.spring::before { background: linear-gradient(135deg, rgba(140,255,160,0.4), rgba(70,170,255,0.3)); }
+.summer::before { background: linear-gradient(135deg, rgba(255,230,120,0.4), rgba(255,100,100,0.3)); }
+.autumn::before { background: linear-gradient(135deg, rgba(255,170,80,0.5), rgba(190,50,20,0.3)); }
+.winter::before { background: linear-gradient(135deg, rgba(180,220,255,0.5), rgba(60,100,200,0.3)); }
+
+
+footer {
+  background: linear-gradient(135deg, #222, #444);
+  color: #f8f8f8;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.references {
+  margin-top: 1rem;
+}
+
+.references h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: #ffcc80;
+}
+
+.references ul {
+  list-style: none;
+  padding: 0;
+}
+
+.references li {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+.references a {
+  color: #82dfff;
+  text-decoration: none;
+}
+
+.references a:hover {
+  text-decoration: underline;
+}
