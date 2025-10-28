@@ -25,37 +25,56 @@ body, html {
 }
 
  
-.intro h1 { font-family: 'Pacifico', cursive; font-size: 3rem; text-shadow: 2px 2px 5px rgba(0,0,0,0.7); }
-.intro p { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; max-width: 600px; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); line-height: 1.6; }
+.intro { background-image: url('long-story/four-seasons.jpg'); }
+.spring { background-image: url('long-story/joanna-huang-k7lM-KTlke4-unsplash.jpg'); }
+.summer { background-image: url('long-story/saiph-muhammad-CSs8aiN_LkI-unsplash.jpg'); }
+.autumn { background-image: url('long-story/michael-hamments-77t8IqvAUBU-unsplash.jpg'); }
+.winter { background-image: url('long-story/ian-keefe-OgcJIKRnRC8-unsplash.jpg'); }
 
  
-.spring-title { font-family: 'Shadows Into Light', cursive; font-size: 3rem; color: #3c9a4f; text-shadow: 2px 2px 5px rgba(0,0,0,0.5); }
-.spring-text { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; color: #e0f2f1; line-height: 1.6; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); }
- 
+.intro h1 { font-family: 'Pacifico', cursive; font-size: 3rem; text-shadow: 2px 2px 5px rgba(0,0,0,0.7);}
+.intro p { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); }
 
-.summer-title { font-family: 'Pacifico', cursive; font-size: 3rem; color: #ffd700; text-shadow: 2px 2px 5px rgba(0,0,0,0.5); }
-.summer-text { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; color: #fffacd; line-height: 1.6; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); }
+.spring-title { font-family: 'Shadows Into Light', cursive; font-size: 3rem; color: #3c9a4f; text-shadow: 2px2px5px rgba(0,0,0,0.5);}
+.spring-text { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; color: #e0f2f1; line-height: 1.6; text-shadow: 1px1px3px rgba(0,0,0,0.6);}
 
- 
-.autumn-title { font-family: 'Shadows Into Light', cursive; font-size: 3rem; color: #ff6f00; text-shadow: 2px 2px 5px rgba(0,0,0,0.5); }
-.autumn-text { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; color: #ffd180; line-height: 1.6; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); }
+.summer-title { font-family: 'Pacifico', cursive; font-size: 3rem; color: #ffd700; text-shadow: 2px2px5px rgba(0,0,0,0.5);}
+.summer-text { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; color: #fffacd; line-height: 1.6; text-shadow: 1px1px3px rgba(0,0,0,0.6);}
 
- 
-.winter-title { font-family: 'Pacifico', cursive; font-size: 3rem; color: #00bfff; text-shadow: 2px 2px 5px rgba(0,0,0,0.5); }
-.winter-text { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; color: #e0f7fa; line-height: 1.6; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); }
+.autumn-title { font-family: 'Shadows Into Light', cursive; font-size: 3rem; color: #ff6f00; text-shadow: 2px2px5px rgba(0,0,0,0.5);}
+.autumn-text { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; color: #ffd180; line-height: 1.6; text-shadow: 1px1px3px rgba(0,0,0,0.6);}
+
+.winter-title { font-family: 'Pacifico', cursive; font-size: 3rem; color: #00bfff; text-shadow: 2px2px5px rgba(0,0,0,0.5);}
+.winter-text { font-family: 'Fredoka One', sans-serif; font-size: 1.5rem; color: #e0f7fa; line-height: 1.6; text-shadow: 1px1px3px rgba(0,0,0,0.6);}
 
  
 .spring::before, .summer::before, .autumn::before, .winter::before {
   content: '';
   position: absolute;
   top:0; left:0;
-  width: 100%; height: 100%;
-  opacity: 0.3;
-  z-index: 0;
+  width:100%; height:100%;
+  opacity:0.3;
+  z-index:0;
 }
 .spring::before { background: #a8e6cf; }
 .summer::before { background: #ffd3b6; }
 .autumn::before { background: #ffaaa5; }
 .winter::before { background: #dcedf7; }
 
-.step * { position: relative; z-index: 1;
+ 
+.step * { position: relative; z-index: 1; }
+
+ 
+.floating-elements {
+  position: absolute;
+  top:0; left:0;
+  width:100%;
+  height:100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index:0;
+}
+
+ 
+@keyframes floatUp {
+  0% { transform: translateY
