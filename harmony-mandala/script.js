@@ -1,4 +1,3 @@
-
 const accordions = document.querySelectorAll(".accordion");
 
 accordions.forEach(acc => {
@@ -8,26 +7,23 @@ accordions.forEach(acc => {
     const panel = acc.nextElementSibling;
     panel.classList.toggle("open");
 
-
-    if(panel.classList.contains("open")) {
+    if (panel.classList.contains("open")) {
       panel.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   });
 });
 
 
-document.addEventListener("click", e => {
 
-  if(e.target.id === "scrollTopBtn") return;
+document.addEventListener("click", e => {
+  if (e.target.id === "scrollTopBtn") return;
 
   const sparkle = document.createElement("div");
   sparkle.className = "sparkle";
 
-  
   sparkle.style.left = e.pageX + "px";
   sparkle.style.top = e.pageY + "px";
 
- 
   sparkle.style.setProperty("--x", `${(Math.random() - 0.5) * 150}px`);
   sparkle.style.setProperty("--y", `${(Math.random() - 0.5) * 150}px`);
 
@@ -54,7 +50,7 @@ scrollTopBtn.addEventListener("click", () => {
 const swatches = document.querySelectorAll(".swatch");
 
 swatches.forEach(swatch => {
-  swatch.addEventListener("mouseenter", e => {
+  swatch.addEventListener("mouseenter", () => {
     const sparkle = document.createElement("div");
     sparkle.className = "sparkle";
 
@@ -69,3 +65,32 @@ swatches.forEach(swatch => {
     setTimeout(() => sparkle.remove(), 800);
   });
 });
+
+
+
+function justifyContent() {
+  const textElements = document.querySelectorAll(
+    "p, li, h1, h2, h3, h4, h5, h6, .panel, .decorative-box"
+  );
+
+  textElements.forEach(el => {
+    el.style.textAlign = "justify";
+    el.style.textJustify = "inter-word";
+  });
+
+
+  const images = document.querySelectorAll("img");
+
+  images.forEach(img => {
+    img.style.display = "block";
+    img.style.margin = "0 auto";
+    img.style.maxWidth = "100%";
+  });
+}
+
+
+window.addEventListener("DOMContentLoaded", justifyContent);
+
+
+setTimeout(justifyContent, 500);
+setTimeout(justifyContent, 1500);
