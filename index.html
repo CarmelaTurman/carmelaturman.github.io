@@ -3,15 +3,120 @@
 
 <head>
 
-	<!-- meta tags and title -->
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Carmela's Website</title>
 
-	<!-- external and internal CSS -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
 	<link rel="stylesheet" href="styles.css" media="all">
 	<style>
-		/* in-file CSS here */
+
+		
+		body {
+			font-family: 'Roboto', sans-serif;
+			margin: 0;
+			padding: 0;
+			background: #f5f5f5;
+			color: #333;
+			line-height: 1.6;
+		}
+
+		header {
+			background-color: #3498db;
+			color: white;
+			padding: 2rem;
+			text-align: center;
+		}
+
+		header h1 {
+			margin: 0;
+			font-size: 2.5rem;
+		}
+
+		header p {
+			margin: 0.5rem 0 0 0;
+			font-size: 1.2rem;
+			font-style: italic;
+		}
+
+		nav {
+			background-color: #2980b9;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			padding: 1rem;
+		}
+
+		nav a {
+			color: white;
+			text-decoration: none;
+			margin: 0 1rem;
+			font-weight: bold;
+			transition: color 0.3s ease;
+		}
+
+		nav a:hover {
+			color: #f1c40f;
+		}
+
+		main {
+			max-width: 900px;
+			margin: 2rem auto;
+			padding: 0 1rem;
+			background: white;
+			border-radius: 8px;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		h2 {
+			color: #3498db;
+			margin-top: 1.5rem;
+		}
+
+		ul {
+			list-style: none;
+			padding-left: 0;
+		}
+
+		li {
+			margin: 0.5rem 0;
+		}
+
+		a.project-link {
+			color: #2980b9;
+			text-decoration: underline;
+			transition: color 0.3s ease;
+		}
+
+		a.project-link:hover {
+			color: #f39c12;
+		}
+
+		footer {
+			text-align: center;
+			padding: 1rem;
+			margin-top: 2rem;
+			background-color: #3498db;
+			color: white;
+		}
+
+		/* Responsive */
+		@media (max-width: 600px) {
+			header h1 {
+				font-size: 2rem;
+			}
+
+			nav {
+				flex-direction: column;
+			}
+
+			nav a {
+				margin: 0.5rem 0;
+			}
+		}
 	</style>
 
 </head>
@@ -35,20 +140,22 @@
 		<li><a href="https://carmelaturman.github.io/CSS-Color/CSS-Color.html">CSS Colors</a></li>
 		<li><a href="https://carmelaturman.github.io/Images/Images.html">Images</a></li>
 		<li><a href=https://carmelaturman.github.io/code-references/code-references.html> Code References</a></li>
-		
-	<ul>
+
+		<ul>
 
 			<h2>Tiny Projects</h2>
 			<ul>
 				<li><a href="/favorite-recipe/index.html">Tiny Project 2: Favorite Recipe</a></li>
 				<li><a href="/anni-albers/">Tiny Project 3: Anni Albers</a></li>
 				<li><a href="/rhododendron/index.html">Tiny Project 4: Pacific Rhododendron</a></li>
-				<li><a href="https://www.figma.com/site/JSUN1VS1ZyrsE9gjEAG3op/Desktop-Recipe-Layout?node-id=0-1&p=f&t=NSraEW7rCtT8KZg2-0">Tiny Project 5: Recipe Wireframing</a></li>
+				<li><a
+						href="https://www.figma.com/site/JSUN1VS1ZyrsE9gjEAG3op/Desktop-Recipe-Layout?node-id=0-1&p=f&t=NSraEW7rCtT8KZg2-0">Tiny
+						Project 5: Recipe Wireframing</a></li>
 				<li><a href="responsive-recipe/responsive-recipe.html">Tiny Project 6: Responsive Recipe</a></li>
 				<li><a href="recipe-minisite/index.html">Not So Tiny Project 7: Recipe Minisite</a></li>
 				<li><a href="dark-flower/index.html"> Tiny Project 8: Dark Flower</a></li>
 				<li><a href="long-story/index.html"> Tiny Project 9: Long Story</a></li>
-			
+
 			</ul>
 
 			<h2>Major Projects</h2>
