@@ -4,23 +4,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(135deg,
-    #FFB3BA,
-    #FFDFBA,
-    #FFFFBA,
-    #BAFFC9,
-    #BAE1FF,
-    #D9BAFF
-  );
+  background: linear-gradient(135deg, #FFB3BA, #FFDFBA, #FFFFBA, #BAFFC9, #BAE1FF, #D9BAFF);
   background-size: 400% 400%;
   animation: bgRainbow 20s ease infinite;
   color: #111;
   line-height: 1.6;
   overflow-x: hidden;
 }
-
 
 @keyframes bgRainbow {
   0% { background-position: 0% 50%; }
@@ -55,7 +49,7 @@ header nav a:hover {
   background: rgba(255,255,255,0.7);
 }
 
-
+/* Main content */
 main {
   padding: 24px;
   max-width: 960px;
@@ -65,25 +59,18 @@ main {
 }
 
 
-.wrap, .panel {
-  background: rgba(255,255,255,0.8);
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+h1, h2, h3 {
+  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(90deg, #FF6B6B, #FFD93D, #6BCB77, #4D96FF, #9B5DE5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbowText 6s ease infinite;
 }
 
-
-button {
-  cursor: pointer;
-  padding: 8px 14px;
-  border: none;
-  border-radius: 6px;
-  background: linear-gradient(135deg, #FF9A9E, #FAD0C4);
-  color: #333;
-  font-weight: 500;
-  transition: transform 0.2s;
-}
-button:hover {
-  transform: scale(1.05);
+@keyframes rainbowText {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 
 
@@ -96,26 +83,18 @@ button:hover {
 }
 .glitter {
   position: absolute;
-  width: 3px; height: 3px;
-  background: rgba(255,255,255,0.85);
+  width: 3px;
+  height: 3px;
   border-radius: 50%;
+  background: rgba(255,255,255,0.85);
   opacity: 0;
-  will-change: transform, opacity;
   animation: glitterAnim 6s infinite ease-in-out;
 }
+
 @keyframes glitterAnim {
-  0% {
-    opacity: 0;
-    transform: translateY(100vh) scale(0.3);
-  }
-  50% {
-    opacity: 0.8;
-    transform: translateY(-5vh) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-10vh) scale(0.5);
-  }
+  0% {opacity:0; transform: translateY(100vh) scale(0.3);}
+  50% {opacity:0.8; transform: translateY(-5vh) scale(1);}
+  100% {opacity:0; transform: translateY(-10vh) scale(0.5);}
 }
 
 
@@ -123,4 +102,14 @@ img {
   max-width: 100%;
   border-radius: 8px;
   margin: 16px 0;
+}
+
+
+footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 0.9em;
+  background: rgba(255,255,255,0.85);
+  margin-top: 20px;
+  border-radius: 12px;
 }
