@@ -1,210 +1,86 @@
+@keyframes gradientShift {
+  0% { background-position: 0% }
+  100% { background-position: 100% }
+}
+
 body {
-    font-family: "Comic Neue", "Comic Sans MS", "Segoe UI", sans-serif;
-    background: linear-gradient(135deg, #fff8f0, #e0f7fa, #fff0f5);
-    color: #333;
-    margin: 0;
-    padding: 40px;
-    line-height: 1.8;
-    animation: backgroundGradient 20s infinite alternate;
+  font-family: Montserrat;
+  margin:0;
+  background:#fff;
 }
 
-@keyframes backgroundGradient {
-    0% { background: linear-gradient(135deg, #fff8f0, #e0f7fa, #fff0f5); }
-    50% { background: linear-gradient(135deg, #ffe5ec, #d0f4de, #caf0f8); }
-    100% { background: linear-gradient(135deg, #fff0f5, #ffd6a5, #ffadad); }
+
+nav {
+  position: sticky;
+  top:0;
+  display:flex;
+  gap:15px;
+  justify-content:center;
+  padding:18px;
+  background: linear-gradient(90deg, #ffb3c6, #fcbad3, #c7ceea, #b5ead7, #ffdac1);
+  background-size: 300%;
+  animation: gradientShift 12s linear infinite;
 }
 
-.pattern-container {
-    max-width: 900px;
-    margin: auto;
-    background: #ffffffcc;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    border: 4px solid #ff7eb9;
-    position: relative;
-    overflow: hidden;
+
+nav a {
+  padding:8px 15px;
+  font-weight:600;
+  text-decoration:none;
+  border-radius:14px;
+  color:#fff;
+  transition: transform .3s, background .3s;
 }
 
-.pattern-container::before,
-.pattern-container::after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.35;
+nav a:hover {
+  transform:scale(1.1) rotate(-2deg);
+  background:rgba(255,255,255,.3);
 }
 
-.pattern-container::before {
-    top: -60px;
-    left: -60px;
-    width: 220px;
-    height: 220px;
-    background: radial-gradient(circle, #ffadad, transparent);
-    animation: floatCircle 12s infinite alternate ease-in-out;
-}
 
-.pattern-container::after {
-    bottom: -70px;
-    right: -70px;
-    width: 270px;
-    height: 270px;
-    background: radial-gradient(circle, #ffd6a5, transparent);
-    animation: floatCircleReverse 15s infinite alternate ease-in-out;
-}
-
-@keyframes floatCircle {
-    0% { transform: translate(0,0) rotate(0deg); }
-    50% { transform: translate(30px,20px) rotate(45deg); }
-    100% { transform: translate(0,40px) rotate(0deg); }
-}
-
-@keyframes floatCircleReverse {
-    0% { transform: translate(0,0) rotate(0deg); }
-    50% { transform: translate(-30px,-20px) rotate(-45deg); }
-    100% { transform: translate(0,-40px) rotate(0deg); }
+main {
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+  padding:40px;
 }
 
 h1 {
-    text-align: center;
-    font-size: 3.5rem;
-    letter-spacing: 3px;
-    color: #ff4d6d;
-    margin-bottom: 35px;
-    text-transform: uppercase;
-    font-weight: 900;
-    animation: bounceTitle 2s infinite;
-    text-shadow: 2px 2px 5px #ffadad, -2px -2px 5px #ffd6a5;
+  font-family:"Dancing Script";
+  font-size:3rem;
+  color:#555;
 }
 
-@keyframes bounceTitle {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-15px) scale(1.05); }
+
+img {
+  width:270px;
+  border-radius:15px;
+  margin:10px;
+  transition: all .3s ease-in-out;
 }
 
-h2 {
-    margin-top: 45px;
-    padding-bottom: 10px;
-    font-size: 2rem;
-    border-bottom: 3px dotted #ff7eb9;
-    color: #00bfa6;
-    transition: color 0.5s ease, transform 0.3s ease;
-}
-h2:hover {
-    color: #ff4d6d;
-    transform: scale(1.05);
+img:hover {
+  transform:scale(1.05);
+  filter:drop-shadow(0 0 12px rgba(255,200,255,.4));
 }
 
-.round-block {
-    background: linear-gradient(135deg, #ffd6a5, #ffadad);
-    border-left: 10px solid #ff4d6d;
-    padding: 25px 30px;
-    margin-top: 25px;
-    margin-bottom: 35px;
-    border-radius: 16px;
-    font-size: 1.2rem;
-    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
-}
-.round-block:hover {
-    transform: translateY(-7px) rotate(-1deg);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
-    background: linear-gradient(135deg, #ff9ce1, #ffe57f);
+
+
+footer { text-align:center; opacity:.7; padding:20px; }
+
+
+
+
+.sparkle-bg {
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:radial-gradient(circle,rgba(255,255,255,.7), transparent);
+  pointer-events:none;
+  animation:sparkle 9s infinite alternate;
 }
 
-.note {
-    background: #fff3d1;
-    border-left: 10px solid #ff7eb9;
-    padding: 20px;
-    margin-bottom: 25px;
-    border-radius: 16px;
-    font-style: italic;
-    animation: pulseNote 1.8s infinite alternate;
-}
-@keyframes pulseNote {
-    0% { box-shadow: 0 0 0 rgba(244,162,97,0.2); }
-    100% { box-shadow: 0 0 25px rgba(244,162,97,0.6); }
-}
-
-.stitch-count {
-    background: #d0f4de;
-    padding: 18px;
-    border-radius: 16px;
-    font-weight: bold;
-    margin-top: 20px;
-    border-left: 8px solid #00bfa6;
-    animation: glowStitch 2.5s infinite alternate;
-}
-@keyframes glowStitch {
-    0% { box-shadow: 0 0 0 rgba(42,157,143,0.2); }
-    100% { box-shadow: 0 0 25px rgba(42,157,143,0.7); }
-}
-
-pre {
-    background: #f0f0ff;
-    padding: 22px;
-    border-radius: 16px;
-    border: 2px dashed #a29bfe;
-    white-space: pre-wrap;
-    margin-bottom: 30px;
-    font-size: 1.15rem;
-    font-family: "Courier New", Courier, monospace;
-    color: #333;
-}
-
-a {
-    color: #ff7eb9;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-a:hover {
-    color: #ff4d6d;
-    text-decoration: underline;
-    transform: scale(1.05);
-}
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 1.2rem 2.5rem;
-    background: linear-gradient(135deg, #ff9ce1, #ffe57f);
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    backdrop-filter: blur(10px);
-    animation: navbarColorShift 15s infinite alternate;
-}
-
-.navbar a {
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none;
-    padding: 0 12px;
-    position: relative;
-    font-size: 1.15rem;
-    transition: 0.3s ease;
-}
-
-.navbar a + a::before {
-    content: "";
-    position: absolute;
-    left: -10px;
-    top: 10%;
-    height: 80%;
-    width: 2px;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 1px;
-}
-
-.navbar a:hover {
-    color: #ff4d6d;
-    transform: scale(1.15);
-}
-
-@keyframes navbarColorShift {
-    0% { background: linear-gradient(135deg, #ff9ce1, #ffe57f); }
-    50% { background: linear-gradient(135deg, #a0e7e5, #b4f8c8); }
-    100% { background: linear-gradient(135deg, #ff9ce1, #ffe57f); }
+@keyframes sparkle {
+  from { opacity:.3 }
+  to { opacity:.7 }
 }
