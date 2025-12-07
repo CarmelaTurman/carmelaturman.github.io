@@ -39,7 +39,34 @@ header {
   100% { transform: translateY(800px) rotate(720deg); opacity: 0; }
 }
 
- 
+ .navbar{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  background:#282a36;
+  padding:1rem;
+  border-bottom:8px solid #444;
+}
+
+.menu-btn{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:900;
+  letter-spacing:2px;
+  border:none;
+  padding:0.8rem 1.5rem;
+  background:#FF6EB4;
+  color:#fff;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:0.9rem;
+  text-transform:uppercase;
+}
+
+.menu-btn:hover{
+  background:#ff3d8e;
+  transform:scale(1.08);
+}
+
 img:hover {
   transform: scale(1.2) rotate(15deg);
   box-shadow: 0 0 15px #fff, 0 0 30px #ff3cac, 0 0 45px #784ba0;
