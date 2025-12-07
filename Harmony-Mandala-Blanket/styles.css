@@ -1,173 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&family=Pacifico&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Pacifico&display=swap');
-
+ 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(135deg, #2a0035, #45005a, #2e0050);
-  color: #ffe8fa;
+  background: linear-gradient(120deg, #fff3e8, #fff0ff, #e8f7ff);
+  color: #333;
   margin: 0;
   padding: 0;
+  position: relative;
   overflow-x: hidden;
 }
 
-/* HEADER */
-header {
-  text-align: center;
-  padding: 3rem 1rem;
-  background: linear-gradient(90deg, #7a00c8, #b700ff);
-  color: #fff;
-  font-family: 'Pacifico', cursive;
-  font-size: 3rem;
-}
-
-
-
-nav {
-  text-align: center;
-  padding: 1rem 0;
-}
-
-.menu-btn {
-  display: inline-block;
-  background: linear-gradient(45deg, #FF4893, #F78BE5);
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 14px;
-  margin: 0.5rem;
-  border: none;
-  font-weight: 800;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  box-shadow: 0 5px 15px rgba(255, 0, 128, 0.5);
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.menu-btn:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 0 25px #ff4bd4;
-}
-
-
-
-main {
-  max-width: 1000px;
-  margin: auto;
-  padding: 2rem;
-}
-
-
-h1, h2, h3 {
-  font-family: 'Pacifico', cursive;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 10px rgba(255,255,255,0.2);
-}
-
-h2 {
-  margin-top: 2rem;
-  font-size: 2.3rem;
-  color: #ff9ce7;
-  background: rgba(255,255,255,0.05);
-  padding: .5rem 1rem;
-  border-left: 7px solid #ff66d4;
-  border-radius: 12px;
-}
-
-
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1.5rem;
-  background: rgba(255,255,255,0.09);
-  border-radius: 14px;
-  overflow: hidden;
-}
-
-th, td {
-  padding: 1rem;
-  border: 1px solid rgba(255,255,255,0.2);
-  font-weight: 300;
-  color: #ffeaff;
-}
-
-th {
-  font-weight: 700;
-  background: rgba(0,0,0,0.25);
-}
-
-/* alternating rows */
-tr:nth-child(even) td {
-  background: rgba(0,0,0,0.15);
-}
-
-
-
-img {
-  max-width: 100%;
-  border-radius: 16px;
-  margin: 1rem 0;
-  border: 6px solid rgba(255,255,255,0.2);
-  transition: transform .4s;
-}
-
-img:hover {
-  transform: scale(1.04);
-}
-
-
-
-.btn {
-  display: inline-block;
-  padding: 0.9rem 2rem;
-  background: #ff00b7;
-  border-radius: 40px;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  margin-top: 1rem;
-  transition: .3s;
-  font-weight: 600;
-}
-
-.btn:hover {
-  background: #c2008b;
-  transform: translateY(-3px);
-}
-
-
-
-section {
-  margin-bottom: 3rem;
-  padding: 1.5rem;
-  background: rgba(255,255,255,0.07);
-  border-radius: 20px;
-}
-
-
-
-footer {
-  text-align: center;
-  padding: 2rem;
-  color: #ff9bfd;
-  background: rgba(0,0,0,0.2);
-  font-family: 'Pacifico', cursive;
-}
-
-
-
+ 
 .glitter {
   position: fixed;
-  width: 3px;
-  height: 3px;
-  background: radial-gradient(circle, #ffe0ff, #ff48cb, #ff00b3);
+  width: 4px;
+  height: 4px;
+  background: rgba(255,255,255,0.75);
   border-radius: 50%;
   pointer-events: none;
-  animation: fall linear infinite;
-  opacity: .8;
+  z-index: -1;
+  animation: floatGlitter 6s infinite linear;
 }
 
-@keyframes fall {
-  0% { transform: translateY(-30px); }
-  100% { transform: translateY(110vh); }
+@keyframes floatGlitter {
+  0% { transform: translateY(0) rotate(0); opacity: 0.9; }
+  100% { transform: translateY(-300px) rotate(180deg); opacity: 0; }
+}
+
+ 
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,.8) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255,255,255,.6) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255,255,255,.4) 1px, transparent 1px);
+  background-size: 50px 50px, 80px 80px, 120px 120px;
+  z-index: -2;
+  animation: sparkle 16s linear infinite;
+}
+
+@keyframes sparkle {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-200px); }
+}
+
+
+ 
+header {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  font-family: 'Pacifico', cursive;
+  font-size: 2.8rem;
+  color: #444;
+}
+
+ 
+nav {
+  text-align: center;
+  background: rgba(255,255,255,0.7);
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+ 
+.menu-btn {
+  display: inline-block;
+  margin: 6px;
+  padding: 10px 18px;
+  background: linear-gradient(90deg,#ff94c2,#ffe496);
+  color: #222;
+  font-size: .85rem;
+  font-weight: 800;
+  border-radius: 8px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+ 
+section {
+  background: rgba(255,255,255,0.5);
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  border-radius: 16px;
+}
+
+ 
+h1, h2, h3 {
+  font-family: 'Pacifico', cursive;
+  color: #444;
+}
+
+ 
+img {
+  width: 100%;
+  border-radius: 14px;
+  margin: 1rem 0;
+}
+ 
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  background: rgba(255,255,255,0.55);
+  margin-top: 3rem;
 }
