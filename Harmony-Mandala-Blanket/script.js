@@ -28,6 +28,15 @@ function createGlitter(num = 80) {
 }
 createGlitter();
 
+const navButtons = document.querySelectorAll('.nav-btn');
+
+navButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const targetId = btn.getAttribute('data-target');
+    const targetSection = document.getElementById(targetId);
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+  });
+});
  
 function createYarnBall() {
   const container = document.getElementById('yarnContainer');
@@ -36,8 +45,7 @@ function createYarnBall() {
   yarn.classList.add('yarn-ball');
 
   container.appendChild(yarn);
-
-  // Spawn additional yarn balls at intervals
+ 
   setInterval(() => {
     const newYarn = yarn.cloneNode(true);
     container.appendChild(newYarn);
