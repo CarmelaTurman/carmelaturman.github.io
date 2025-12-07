@@ -1,14 +1,4 @@
  
-const navButtons = document.querySelectorAll('.nav-btn');
-
-navButtons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const targetId = btn.getAttribute('data-target');
-    const targetSection = document.getElementById(targetId);
-    targetSection.scrollIntoView({ behavior: 'smooth' });
-  });
-});
- 
 const numGlitters = 60;
 for (let i = 0; i < numGlitters; i++) {
   const glitter = document.createElement('div');
@@ -25,3 +15,12 @@ for (let i = 0; i < numGlitters; i++) {
   
   document.body.appendChild(glitter);
 }
+
+ 
+const yarnContainer = document.createElement('div');
+yarnContainer.id = 'yarnContainer';
+document.body.appendChild(yarnContainer);
+
+const yarnBall = document.createElement('div');
+yarnBall.classList.add('yarn-ball');
+yarnContainer.appendChild(yarnBall);
