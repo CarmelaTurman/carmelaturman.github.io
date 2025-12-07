@@ -1,200 +1,173 @@
- 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Pacifico&display=swap');
+
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(135deg, #fceabb, #f8b500);  
+  background: linear-gradient(135deg, #2a0035, #45005a, #2e0050);
+  color: #ffe8fa;
   margin: 0;
   padding: 0;
-  color: #333;  
   overflow-x: hidden;
 }
 
- 
+/* HEADER */
 header {
-  background: linear-gradient(90deg, #ff6b6b, #ff3cac);  
-  color: #fff; 
   text-align: center;
   padding: 3rem 1rem;
-  font-family: 'Dancing Script', cursive;
-  font-size: 3rem;
-  border-bottom: 8px dashed #fff;
-  animation: pulse 3s infinite alternate;
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
- 
-.glitter {
-  position: absolute;
-  background: #fff0f5;
-  border-radius: 50%;
-  opacity: 0.8;
-  animation: glitterMove 4s linear infinite;
-}
-
-@keyframes glitterMove {
-  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
-  100% { transform: translateY(800px) rotate(720deg); opacity: 0; }
-}
-
- .navbar{
-  display:flex;
-  gap:10px;
-  justify-content:center;
-  background:#282a36;
-  padding:1rem;
-  border-bottom:8px solid #444;
-}
-
-.menu-btn{
-  font-family: 'Montserrat', sans-serif;
-  font-weight:900;
-  letter-spacing:2px;
-  border:none;
-  padding:0.8rem 1.5rem;
-  background:#FF6EB4;
-  color:#fff;
-  border-radius:6px;
-  cursor:pointer;
-  font-size:0.9rem;
-  text-transform:uppercase;
-}
-
-.menu-btn:hover{
-  background:#ff3d8e;
-  transform:scale(1.08);
-}
-
-img:hover {
-  transform: scale(1.2) rotate(15deg);
-  box-shadow: 0 0 15px #fff, 0 0 30px #ff3cac, 0 0 45px #784ba0;
-}
- 
-.navbar {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background: #ffafbd;  
-  padding: 1rem;
-}
-
-.navbar .btn {
-  display: inline-block;
-  margin: 0.5rem;
-  padding: 1rem 2rem;
-  background: linear-gradient(45deg, #ff6b6b, #ff3cac);
+  background: linear-gradient(90deg, #7a00c8, #b700ff);
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+}
+
+
+
+nav {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.menu-btn {
+  display: inline-block;
+  background: linear-gradient(45deg, #FF4893, #F78BE5);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 14px;
+  margin: 0.5rem;
+  border: none;
+  font-weight: 800;
   text-transform: uppercase;
-  border-radius: 12px;
-  border: 3px dashed #fff;
+  font-size: 0.9rem;
+  box-shadow: 0 5px 15px rgba(255, 0, 128, 0.5);
   cursor: pointer;
-  transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
-  box-shadow: 2px 4px 15px rgba(255, 99, 132, 0.5);
+  transition: all 0.3s;
 }
 
-.navbar .btn:hover {
-  transform: scale(1.1) rotate(-2deg);
-  background: linear-gradient(45deg, #784ba0, #ff3cac);
-  box-shadow: 2px 6px 20px rgba(255, 99, 132, 0.7);
+.menu-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 0 25px #ff4bd4;
 }
 
- 
+
+
 main {
   max-width: 1000px;
   margin: auto;
   padding: 2rem;
 }
 
- 
+
+h1, h2, h3 {
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px rgba(255,255,255,0.2);
+}
+
 h2 {
-  font-family: 'Dancing Script', cursive;
-  color: #ff6b6b; /* strong, readable */
-  font-size: 2.2rem;
-  margin-top: 2.5rem;
-  border-left: 8px solid #ff3cac;
-  padding-left: 0.8rem;
-  border-radius: 8px;
-  background: rgba(255, 200, 200, 0.2);  
-  box-shadow: 2px 2px 10px rgba(255, 150, 150, 0.3);
-  transition: transform 0.3s, text-shadow 0.3s;
+  margin-top: 2rem;
+  font-size: 2.3rem;
+  color: #ff9ce7;
+  background: rgba(255,255,255,0.05);
+  padding: .5rem 1rem;
+  border-left: 7px solid #ff66d4;
+  border-radius: 12px;
 }
 
-h2:hover {
-  transform: rotate(-2deg) scale(1.05);
-  text-shadow: 0 0 10px #ff3cac;
-}
 
-/* Tables */
+
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 1rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  border-radius: 12px;
+  margin-top: 1.5rem;
+  background: rgba(255,255,255,0.09);
+  border-radius: 14px;
   overflow: hidden;
-  animation: fadeIn 1.5s ease forwards;
 }
 
 th, td {
-  padding: 0.8rem 1rem;
-  border: 1px solid #ffb6c1;
-  text-align: left;
-  background: #fff8f0;
-  color: #333;
+  padding: 1rem;
+  border: 1px solid rgba(255,255,255,0.2);
+  font-weight: 300;
+  color: #ffeaff;
 }
 
 th {
-  background: #ffafbd;
-  color: #fff;  
-  font-weight: bold;
+  font-weight: 700;
+  background: rgba(0,0,0,0.25);
 }
 
+/* alternating rows */
 tr:nth-child(even) td {
-  background: #ffe4e1;
+  background: rgba(0,0,0,0.15);
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
 
- 
+
 img {
   max-width: 100%;
-  border-radius: 12px;
+  border-radius: 16px;
   margin: 1rem 0;
-  border: 5px dotted #ff3cac;
-  transition: transform 0.5s, box-shadow 0.5s;
+  border: 6px solid rgba(255,255,255,0.2);
+  transition: transform .4s;
 }
 
 img:hover {
-  transform: scale(1.05) rotate(1deg);
-  box-shadow: 0 0 15px #ff3cac;
+  transform: scale(1.04);
 }
 
- 
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 1rem;
+
+
+.btn {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  background: #ff00b7;
+  border-radius: 40px;
   color: #fff;
-  background: linear-gradient(90deg, #ff6b6b, #ff3cac);
-  border-top: 5px dashed #fff;
-  font-family: 'Dancing Script', cursive;
-  text-shadow: 0 0 5px #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: .3s;
+  font-weight: 600;
 }
 
- 
+.btn:hover {
+  background: #c2008b;
+  transform: translateY(-3px);
+}
+
+
+
 section {
   margin-bottom: 3rem;
   padding: 1.5rem;
-  border: 3px dashed #ff3cac;
+  background: rgba(255,255,255,0.07);
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  animation: fadeIn 2s ease;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #ff9bfd;
+  background: rgba(0,0,0,0.2);
+  font-family: 'Pacifico', cursive;
+}
+
+
+
+.glitter {
+  position: fixed;
+  width: 3px;
+  height: 3px;
+  background: radial-gradient(circle, #ffe0ff, #ff48cb, #ff00b3);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: fall linear infinite;
+  opacity: .8;
+}
+
+@keyframes fall {
+  0% { transform: translateY(-30px); }
+  100% { transform: translateY(110vh); }
 }
