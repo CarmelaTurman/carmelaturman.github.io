@@ -30,7 +30,7 @@ function createFloatingMandala() {
   imgElement.src = randomMandala;
   imgElement.alt = 'Floating Mandala';
 
-  // Small size
+  
   imgElement.style.width = '60px';
   imgElement.style.height = '60px';
   imgElement.style.position = 'absolute';
@@ -42,7 +42,7 @@ function createFloatingMandala() {
 
   document.body.appendChild(imgElement);
 
-  // Animate movement
+  
   function floatMandala() {
     imgElement.style.left = Math.random() * window.innerWidth + 'px';
     imgElement.style.top = Math.random() * window.innerHeight + 'px';
@@ -52,13 +52,13 @@ function createFloatingMandala() {
   setInterval(floatMandala, 3000);  
 }
 
-// Create multiple floating mandalas
+ 
 for (let i = 0; i < 10; i++) {
   createFloatingMandala();
 }
 
  
-const menuButtons = document.querySelectorAll('.navbar .btn');
+const menuButtons =document.querySelectorAll('.menu-btn');
 menuButtons.forEach(btn => {
   btn.addEventListener('mouseenter', () => {
     btn.style.boxShadow = '0 0 20px #fff, 0 0 30px #ff6b6b, 0 0 40px #ff3cac';
@@ -67,3 +67,4 @@ menuButtons.forEach(btn => {
     btn.style.boxShadow = '2px 4px 15px rgba(255, 99, 132, 0.5)';
   });
 });
+
