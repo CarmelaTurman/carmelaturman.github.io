@@ -1,89 +1,126 @@
-body{
-  background:#0b0b12;
-  color:white;
-  margin:0;
-  font-family:Arial;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:40px;
-  overflow:hidden;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg,
+    #FFB3BA,
+    #FFDFBA,
+    #FFFFBA,
+    #BAFFC9,
+    #BAE1FF,
+    #D9BAFF
+  );
+  background-size: 400% 400%;
+  animation: bgRainbow 20s ease infinite;
+  color: #111;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
 
-body::before{
-  content:"";
-  position:fixed;
-  inset:0;
-  background-image:url("https://www.transparenttextures.com/patterns/knitted-netting.png");
-  opacity:.09;
-  pointer-events:none;
-}
-
-.wrap{display:flex;}
-
-.panel{
-  background:#111;
-  padding:20px;
-  border-radius:12px;
-  display:flex;
-  gap:20px;
-  backdrop-filter:blur(6px);
-}
-
-.controls{
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-  width:200px;
+@keyframes bgRainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 
-.mandala-wrap{
-  width:500px;
-  height:500px;
+header {
+  background: rgba(255,255,255,0.85);
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(8px);
 }
-svg{
-  width:100%;
-  height:100%;
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+header nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 6px 10px;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+header nav a:hover {
+  background: rgba(255,255,255,0.7);
 }
 
 
-.ring{
-  stroke:url(#rainbowStroke);
-  fill:url(#crochet);
-  stroke-width:24;
-  transition: transform .5s;
+main {
+  padding: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.9);
+  border-radius: 12px;
 }
 
 
-.pulse{
-  animation:pulse 1.8s ease-in-out infinite;
-}
-@keyframes pulse{
-  50%{transform:scale(1.04)}
+.wrap, .panel {
+  background: rgba(255,255,255,0.8);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
 }
 
 
-.glitter-area{
-  position:fixed;
-  inset:0;
-  pointer-events:none;
-  overflow:hidden;
+button {
+  cursor: pointer;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #FF9A9E, #FAD0C4);
+  color: #333;
+  font-weight: 500;
+  transition: transform 0.2s;
 }
-.glitter{
-  position:absolute;
-  width:4px;height:4px;
-  background:white;
-  border-radius:50%;
-  opacity:.7;
-  animation: glitterFloat 6s infinite ease-in-out;
+button:hover {
+  transform: scale(1.05);
 }
-@keyframes glitterFloat{
-  0%{
-    transform:translateY(100vh) scale(.5);
+
+
+.glitter-area {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: -5;
+}
+.glitter {
+  position: absolute;
+  width: 3px; height: 3px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 50%;
+  opacity: 0;
+  will-change: transform, opacity;
+  animation: glitterAnim 6s infinite ease-in-out;
+}
+@keyframes glitterAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh) scale(0.3);
   }
-  100%{
-    transform:translateY(-5vh) scale(1.1);
+  50% {
+    opacity: 0.8;
+    transform: translateY(-5vh) scale(1);
   }
+  100% {
+    opacity: 0;
+    transform: translateY(-10vh) scale(0.5);
+  }
+}
+
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 16px 0;
 }
