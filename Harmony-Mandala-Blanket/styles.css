@@ -1,7 +1,7 @@
  
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(135deg, #fff1f8, #ffe5d9);
+  background: linear-gradient(135deg, #ffe066, #ff6b6b);
   margin: 0;
   padding: 0;
   color: #333;
@@ -10,7 +10,7 @@ body {
 
  
 header {
-  background: linear-gradient(90deg, #ff7eb9, #ff758c);
+  background: linear-gradient(90deg, #ff3cac, #784ba0);
   color: #fff;
   text-align: center;
   padding: 3rem 1rem;
@@ -33,25 +33,50 @@ main {
   padding: 2rem;
 }
 
+ 
 h2 {
-  font-family: 'Patrick Hand', cursive;
-  color: #ff5e99;
-  font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
+  color: #ffed66;
+  font-size: 2.2rem;
   margin-top: 2.5rem;
-  border-left: 8px solid #ff9a9e;
+  border-left: 8px solid #fff;
   padding-left: 0.8rem;
   border-radius: 8px;
-  background: #fff0f5;
-  padding: 0.5rem 1rem;
-  box-shadow: 2px 2px 10px rgba(255, 0, 128, 0.2);
-  transition: transform 0.3s;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s, text-shadow 0.3s;
 }
 
 h2:hover {
   transform: rotate(-2deg) scale(1.05);
+  text-shadow: 0 0 10px #fff, 0 0 20px #ff3cac;
 }
 
  
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  background: linear-gradient(45deg, #ff6b6b, #ff3cac);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-radius: 12px;
+  border: 3px dashed #fff;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+  box-shadow: 2px 4px 15px rgba(255, 99, 132, 0.5);
+}
+
+.btn:hover {
+  transform: scale(1.1) rotate(-2deg);
+  background: linear-gradient(45deg, #ff3cac, #784ba0);
+  box-shadow: 2px 6px 20px rgba(255, 99, 132, 0.7);
+}
+
+/* Tables */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -90,11 +115,12 @@ img {
   border-radius: 12px;
   margin: 1rem 0;
   border: 5px dotted #ff9a9e;
-  transition: transform 0.5s;
+  transition: transform 0.5s, box-shadow 0.5s;
 }
 
 img:hover {
   transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 0 15px #fff, 0 0 30px #ff3cac;
 }
 
  
@@ -102,39 +128,19 @@ footer {
   text-align: center;
   padding: 2rem;
   font-size: 1rem;
-  color: #ff5e99;
-  background: #fff0f5;
-  border-top: 5px dashed #ff9a9e;
-  font-family: 'Patrick Hand', cursive;
-}
-
- 
-.btn {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  margin: 1rem 0;
-  background: #ff7eb9;
   color: #fff;
-  font-family: 'Patrick Hand', cursive;
-  font-size: 1rem;
-  border-radius: 50px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.3s, background 0.3s;
-  box-shadow: 2px 4px 10px rgba(255, 126, 185, 0.4);
-}
-
-.btn:hover {
-  transform: scale(1.1) rotate(-2deg);
-  background: #ff5e99;
+  background: #ff3cac;
+  border-top: 5px dashed #fff;
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 0 0 5px #fff;
 }
 
  
 section {
   margin-bottom: 3rem;
-  padding: 1rem;
-  border: 3px dashed #ff9a9e;
+  padding: 1.5rem;
+  border: 3px dashed #fff;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
   animation: fadeIn 2s ease;
 }
