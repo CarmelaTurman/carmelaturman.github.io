@@ -1,17 +1,17 @@
  
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(135deg, #fceabb, #f8b500); /* Warm yellow-orange gradient */
+  background: linear-gradient(135deg, #fceabb, #f8b500);  
   margin: 0;
   padding: 0;
-  color: #333; /* dark text for light background */
+  color: #333;  
   overflow-x: hidden;
 }
 
  
 header {
-  background: linear-gradient(90deg, #ff6b6b, #ff3cac); /* vibrant pink-purple */
-  color: #fff; /* white works here because background is dark */
+  background: linear-gradient(90deg, #ff6b6b, #ff3cac);  
+  color: #fff; 
   text-align: center;
   padding: 3rem 1rem;
   font-family: 'Dancing Script', cursive;
@@ -25,13 +25,31 @@ header {
   50% { transform: scale(1.05); }
   100% { transform: scale(1); }
 }
+ 
+.glitter {
+  position: absolute;
+  background: #fff0f5;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: glitterMove 4s linear infinite;
+}
 
+@keyframes glitterMove {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(800px) rotate(720deg); opacity: 0; }
+}
+
+ 
+img:hover {
+  transform: scale(1.2) rotate(15deg);
+  box-shadow: 0 0 15px #fff, 0 0 30px #ff3cac, 0 0 45px #784ba0;
+}
  
 .navbar {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background: #ffafbd; /* lighter pink for menu bar */
+  background: #ffafbd;  
   padding: 1rem;
 }
 
@@ -74,7 +92,7 @@ h2 {
   border-left: 8px solid #ff3cac;
   padding-left: 0.8rem;
   border-radius: 8px;
-  background: rgba(255, 200, 200, 0.2); /* slightly tinted background for readability */
+  background: rgba(255, 200, 200, 0.2);  
   box-shadow: 2px 2px 10px rgba(255, 150, 150, 0.3);
   transition: transform 0.3s, text-shadow 0.3s;
 }
@@ -105,7 +123,7 @@ th, td {
 
 th {
   background: #ffafbd;
-  color: #fff; /* readable on darker header cell */
+  color: #fff;  
   font-weight: bold;
 }
 
