@@ -1,29 +1,37 @@
+ 
 
-const numGlitters = 60;
-for (let i = 0; i < numGlitters; i++) {
-  const glitter = document.createElement('div');
-  glitter.classList.add('glitter');
+function createGlitter(num = 60) {
+  for (let i = 0; i < num; i++) {
+    const glitter = document.createElement('div');
+    glitter.classList.add('glitter');
 
-  glitter.style.left = Math.random() * window.innerWidth + 'px';
-  glitter.style.top = Math.random() * window.innerHeight + 'px';
+ 
+    glitter.style.left = Math.random() * window.innerWidth + 'px';
+    glitter.style.top = Math.random() * window.innerHeight + 'px';
 
-  const size = Math.random() * 3 + 1;
-  glitter.style.width = size + 'px';
-  glitter.style.height = size + 'px';
+ 
+    const size = Math.random() * 3 + 2; // 2px - 5px
+    glitter.style.width = size + 'px';
+    glitter.style.height = size + 'px';
 
-  glitter.style.animationDuration = (Math.random() * 4 + 2) + 's';
+ 
+    glitter.style.opacity = Math.random() * 0.6 + 0.4;
 
-  document.body.appendChild(glitter);
+ 
+    glitter.style.animationDuration = (Math.random() * 5 + 4) + 's';
+
+ 
+    glitter.style.animationDelay = (Math.random() * 5) + 's';
+
+    document.body.appendChild(glitter);
+
+    // Respawn glitter after animation ends
+    glitter.addEventListener('animationend', () => {
+      glitter.remove();
+      createGlitter(1); // respawn one new glitter
+    });
+  }
 }
 
-const menuButtons = document.querySelectorAll('.menu-btn');
-
-menuButtons.forEach(btn => {
-  btn.addEventListener('mouseenter', () => {
-    btn.style.boxShadow = '0 0 20px #fff, 0 0 30px #ff6b6b, 0 0 40px #ff3cac';
-  });
-  btn.addEventListener('mouseleave', () => {
-    btn.style.boxShadow = '2px 4px 15px rgba(255, 99, 132, 0.5)';
-  });
-});
-
+ 
+createGlitter();
