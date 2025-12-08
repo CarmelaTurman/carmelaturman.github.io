@@ -93,6 +93,15 @@ p {
   transform: scale(1.05);
 }
 
+img {
+  display: block;
+  max-width: calc(100% - 2in); /* leave 1 inch on each side */
+  height: auto;
+  margin: 1in auto;  
+  border: 2px solid #333;  
+  border-radius: 12px; 
+  box-sizing: border-box;
+}
  
 .gallery-img {
   max-width: 150px;
