@@ -1,16 +1,22 @@
  
-document.getElementById('funBtn').addEventListener('click', () => {
-  alert("You clicked the fun button!");
+document.querySelectorAll('.btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    alert("You clicked a fun button!");
+  });
 });
 
-document.getElementById('funBtn2').addEventListener('click', () => {
-  const colors = [
-    'linear-gradient(135deg, #ff66b2, #fff59d)',
-    'linear-gradient(135deg, #ff99cc, #fff9b3)',
-    'linear-gradient(135deg, #ff4da6, #fff0b3)',
-  ];
-  const randomColor = colors[Math.floor(Math.random() * colors.length)];
-  document.body.style.background = randomColor;
+ 
+const bgColors = [
+  'linear-gradient(135deg, #ff66b2, #fff59d)',
+  'linear-gradient(135deg, #ff99cc, #fff9b3)',
+  'linear-gradient(135deg, #ff4da6, #fff0b3)',
+];
+
+document.querySelectorAll('.btn.change-bg').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const randomColor = bgColors[Math.floor(Math.random() * bgColors.length)];
+    document.body.style.background = randomColor;
+  });
 });
 
  
